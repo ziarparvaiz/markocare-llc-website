@@ -1,0 +1,68 @@
+import type { Metadata } from 'next';
+import { Hospital } from 'lucide-react';
+import { brand } from '@/config/brand';
+import ServicePageLayout from '@/components/sections/ServicePageLayout';
+
+export const metadata: Metadata = {
+  title: 'Post-Hospital Home Care | MarkoCare Maryland',
+  description:
+    'Post-hospital care services in Maryland. MarkoCare helps patients safely transition from hospital to home, reducing readmission risk with RN-supervised care plans.',
+  alternates: { canonical: `${brand.siteUrl}/services/post-hospital-support` },
+};
+
+export default function PostHospitalSupportPage() {
+  return (
+    <ServicePageLayout
+      name="Post-Hospital Support"
+      tagline="Safe Hospital-to-Home Transitions, Supervised by an RN"
+      heroDesc="The first 30 days after a hospital discharge are critical. MarkoCare's post-hospital support program ensures safe transitions with RN-coordinated care plans, reducing the risk of readmission and helping patients recover confidently at home."
+      whoIsItFor="Post-hospital support is designed for patients discharged after surgery, acute illness, fall recovery, cardiac events, stroke, or any hospitalization that results in temporary or ongoing functional limitations."
+      included={[
+        'Hospital discharge coordination and planning',
+        'RN assessment within 24 hours of home arrival',
+        'Medication management and reconciliation support',
+        'Wound care monitoring (per physician orders)',
+        'Physical therapy exercise reinforcement',
+        'Fall prevention assessment and home safety',
+        'Vital signs monitoring and reporting',
+        'Physician appointment coordination',
+        'Nutrition and hydration support',
+        'Family caregiver education and training',
+      ]}
+      safety={[
+        'RN conducts home safety assessment on day of discharge',
+        'Direct communication with hospital discharge teams',
+        'Medication reconciliation reduces adverse drug events',
+        'Fall risk protocols implemented based on functional assessment',
+        'Physician follow-up appointments tracked and supported',
+        '24/7 on-call support for post-hospital concerns',
+        'Early warning sign monitoring to prevent readmission',
+      ]}
+      faqs={[
+        {
+          q: 'How quickly can you start care after discharge?',
+          a: 'For urgent discharges, we aim for same-day or next-day placement. We work directly with hospital discharge planners to ensure there is no gap in care. Contact our intake line for time-sensitive placements.',
+        },
+        {
+          q: 'Will an RN be involved in my care after hospital discharge?',
+          a: 'Yes. Our RN conducts an initial assessment at home, develops a personalized recovery care plan, and makes regular supervisory visits throughout the post-hospital recovery period.',
+        },
+        {
+          q: 'Can MarkoCare work with my home health nurse?',
+          a: 'Absolutely. We coordinate with skilled home health agencies, physical therapists, occupational therapists, and other providers to ensure a cohesive recovery plan.',
+        },
+        {
+          q: 'Do you accept insurance for post-hospital care?',
+          a: 'We currently serve private-pay clients and are working toward Medicaid and insurance acceptance. Some long-term care insurance policies cover post-hospital home care — contact us to discuss.',
+        },
+      ]}
+      relatedServices={[
+        { name: 'Personal Care', slug: 'personal-care' },
+        { name: 'IPOP Transitional Care', slug: 'ipop-transitional-care' },
+        { name: 'Cancer Care Support', slug: 'cancer-care-support' },
+      ]}
+      icon={Hospital}
+      accentColor="text-mc-leaf-600 bg-mc-sage"
+    />
+  );
+}

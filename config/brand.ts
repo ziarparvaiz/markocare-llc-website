@@ -1,0 +1,51 @@
+export const brand = {
+  brandName: "MarkoCare",
+  tagline: "Compassionate Home Care in Maryland",
+  phone: "+1 240 432 4374",
+  phoneDisplay: "(240) 432-4374",
+  email: "hello@markocare.com",
+  address: "10490 Little Patuxent Pkwy #600, Columbia, MD 21044",
+  addressShort: "Columbia, MD 21044",
+  googleMapsUrl: "https://maps.google.com/?q=10490+Little+Patuxent+Pkwy+600+Columbia+MD+21044",
+  counties: [
+    "Howard County",
+    "Carroll County",
+    "Anne Arundel County",
+    "Frederick County",
+  ],
+  countyPages: [
+    { name: "Howard County", slug: "howard-county" },
+    { name: "Carroll County", slug: "carroll-county" },
+    { name: "Anne Arundel County", slug: "anne-arundel-county" },
+    { name: "Frederick County", slug: "frederick-county" },
+  ],
+  serviceAreaHeadline: "Serving Maryland Families Across Key Counties",
+  isLicensed: false,
+  licenseStatusLabel: "Maryland Residential Service Agency (Licensure in Progress)",
+  licenseNote:
+    "MarkoCare is actively pursuing licensure as a Residential Service Agency (RSA) with the Maryland Department of Health. We are operating in pre-launch readiness and will begin accepting clients upon license approval.",
+  acceptsMedicaid: true,
+  offersPrivatePay: true,
+  hasRNSupervision: true,
+  caregiverModel: "W2 Employees",
+  insuranceVerified: true,
+  backgroundChecked: true,
+  officeHours: "Monday – Friday: 8:00 AM – 6:00 PM",
+  emergencyLine: "24/7 On-Call Support Available",
+  siteUrl: "https://www.markocare.com",
+  socialLinks: {
+    facebook: "https://facebook.com/markocare",
+    linkedin: "https://linkedin.com/company/markocare",
+  },
+  services: [
+    { name: "Personal Care", slug: "personal-care" },
+    { name: "Companion Care", slug: "companion-care" },
+    { name: "Dementia Care", slug: "dementia-care" },
+    { name: "Respite Care", slug: "respite-care" },
+    { name: "Post-Hospital Support", slug: "post-hospital-support" },
+    { name: "Cancer Care Support", slug: "cancer-care-support" },
+    { name: "IPOP Transitional Care", slug: "ipop-transitional-care" },
+  ],
+} as const;
+
+export type Brand = typeof brand;

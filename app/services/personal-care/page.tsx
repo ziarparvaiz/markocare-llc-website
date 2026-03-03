@@ -1,0 +1,68 @@
+import type { Metadata } from 'next';
+import { Heart } from 'lucide-react';
+import { brand } from '@/config/brand';
+import ServicePageLayout from '@/components/sections/ServicePageLayout';
+
+export const metadata: Metadata = {
+  title: 'Personal Care Services | MarkoCare Maryland',
+  description:
+    'Professional personal care assistance in Maryland. MarkoCare caregivers provide dignified help with bathing, grooming, dressing, and daily activities under RN supervision.',
+  alternates: { canonical: `${brand.siteUrl}/services/personal-care` },
+};
+
+export default function PersonalCarePage() {
+  return (
+    <ServicePageLayout
+      name="Personal Care"
+      tagline="Dignified Daily Living Assistance at Home"
+      heroDesc="Our personal care services provide compassionate, hands-on support for activities of daily living (ADLs) — helping clients maintain independence, dignity, and quality of life in the comfort of their own home."
+      whoIsItFor="Personal care is designed for seniors, adults with chronic illness, post-surgical patients, or individuals with physical disabilities who need assistance with daily tasks but prefer to remain at home rather than transition to a facility."
+      included={[
+        'Bathing and showering assistance',
+        'Grooming (hair, oral care, shaving)',
+        'Dressing and undressing',
+        'Toileting and incontinence care',
+        'Mobility and transfer assistance',
+        'Medication reminders',
+        'Meal preparation and feeding assistance',
+        'Light housekeeping related to client care',
+        'Vital signs monitoring (per RN orders)',
+        'Documentation and care plan compliance',
+      ]}
+      safety={[
+        'All caregivers are W2 employees with verified credentials',
+        'State and federal background checks completed before hire',
+        'RN develops individualized care plan for each client',
+        'Regular RN supervisory visits ensure care quality',
+        'Caregivers trained in fall prevention and safe mobility techniques',
+        'Agency is fully insured including workers\' compensation',
+        'Incident reporting protocols in place for all adverse events',
+      ]}
+      faqs={[
+        {
+          q: 'What is the difference between personal care and companion care?',
+          a: 'Personal care involves hands-on physical assistance with activities of daily living (ADLs) such as bathing, dressing, and mobility. Companion care focuses on social interaction, light housekeeping, and non-physical daily support. Many clients receive a combination of both.',
+        },
+        {
+          q: 'Do I need a doctor\'s order to start personal care?',
+          a: 'For private-pay clients, a doctor\'s order is not required. Our RN will conduct an in-home assessment to establish an appropriate care plan. For Medicaid or insurance-funded care, additional documentation may be required.',
+        },
+        {
+          q: 'How many hours per day can I receive personal care?',
+          a: 'We offer flexible scheduling from a few hours per day up to 24-hour care, depending on your needs and budget. Our care coordinator will work with your family to find the right schedule.',
+        },
+        {
+          q: 'Will I always have the same caregiver?',
+          a: 'We strive for caregiver consistency because it builds trust and improves care quality. While occasional substitutions may occur, we always notify clients in advance and ensure substitute caregivers are fully briefed on your care plan.',
+        },
+      ]}
+      relatedServices={[
+        { name: 'Companion Care', slug: 'companion-care' },
+        { name: 'Post-Hospital Support', slug: 'post-hospital-support' },
+        { name: 'Respite Care', slug: 'respite-care' },
+      ]}
+      icon={Heart}
+      accentColor="text-rose-600 bg-rose-50"
+    />
+  );
+}

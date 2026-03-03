@@ -1,0 +1,68 @@
+import type { Metadata } from 'next';
+import { Brain } from 'lucide-react';
+import { brand } from '@/config/brand';
+import ServicePageLayout from '@/components/sections/ServicePageLayout';
+
+export const metadata: Metadata = {
+  title: 'Dementia & Alzheimer\'s Care | MarkoCare Maryland',
+  description:
+    'Specialized dementia and Alzheimer\'s care in Maryland. MarkoCare provides structured, compassionate memory care by trained caregivers under RN supervision.',
+  alternates: { canonical: `${brand.siteUrl}/services/dementia-care` },
+};
+
+export default function DementiaCarePage() {
+  return (
+    <ServicePageLayout
+      name="Dementia Care"
+      tagline="Specialized Memory Care at Home"
+      heroDesc="Living with dementia or Alzheimer's disease requires specialized understanding, patience, and skill. Our trained dementia care team follows structured cognitive safety protocols to provide your loved one with consistent, compassionate care in a familiar environment."
+      whoIsItFor="Our dementia care services are designed for individuals with Alzheimer's disease, vascular dementia, Lewy body dementia, frontotemporal dementia, or other forms of memory impairment who wish to remain at home safely."
+      included={[
+        'Structured daily routine maintenance',
+        'Cognitive stimulation activities',
+        'Personal care with dementia-informed approach',
+        'Wandering prevention and safety monitoring',
+        'Medication reminders and administration support',
+        'Behavioral redirection techniques',
+        'Sundowning management strategies',
+        'Family communication and education',
+        'Meal preparation adapted to cognitive needs',
+        'Safe home environment checks',
+      ]}
+      safety={[
+        'Caregivers complete specialized dementia care training',
+        'RN creates individualized memory care plan',
+        'Safety assessment of home environment conducted at start of care',
+        'Wandering and elopement risk protocols in place',
+        'Regular RN supervisory visits to monitor cognitive status changes',
+        'Family members are kept informed of behavioral and health changes',
+        'Crisis escalation protocols available 24/7',
+      ]}
+      faqs={[
+        {
+          q: 'Are your caregivers specifically trained in dementia care?',
+          a: 'Yes. Caregivers assigned to dementia clients complete specialized dementia care training covering communication techniques, behavioral management, safety protocols, and family support strategies.',
+        },
+        {
+          q: 'Can you help someone with dementia who has difficult behaviors?',
+          a: 'Our caregivers are trained in non-pharmacological behavioral management techniques including redirection, validation therapy, and structured routines that can significantly reduce challenging behaviors.',
+        },
+        {
+          q: 'How do you keep my loved one safe at home?',
+          a: 'Our RN conducts a safety assessment of the home environment and creates a plan to address risks such as wandering, falls, medication errors, and kitchen hazards. Caregivers actively monitor these risks throughout every shift.',
+        },
+        {
+          q: 'What if my loved one\'s dementia progresses and care needs increase?',
+          a: 'We reassess care needs regularly. Our RN will update the care plan as the disease progresses. We coordinate with physicians and specialists to ensure the level of care evolves appropriately.',
+        },
+      ]}
+      relatedServices={[
+        { name: 'Personal Care', slug: 'personal-care' },
+        { name: 'Respite Care', slug: 'respite-care' },
+        { name: 'Companion Care', slug: 'companion-care' },
+      ]}
+      icon={Brain}
+      accentColor="text-purple-600 bg-purple-50"
+    />
+  );
+}
