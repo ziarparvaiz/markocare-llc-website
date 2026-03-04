@@ -1,17 +1,31 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
+import type { Metadata } from "next";
+import Link from "next/link";
 import {
-  Phone, ArrowRight, MapPin, CheckCircle, Clock, Hospital,
-  ShieldCheck, UserCheck, Stethoscope, Heart, Users, Brain,
-  RefreshCw, Ribbon, Star, Quote, Award,
-} from 'lucide-react';
-import { brand } from '@/config/brand';
-import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
+  Phone,
+  ArrowRight,
+  MapPin,
+  CheckCircle,
+  Clock,
+  Hospital,
+  ShieldCheck,
+  UserCheck,
+  Stethoscope,
+  Heart,
+  Users,
+  Brain,
+  RefreshCw,
+  Ribbon,
+  Star,
+  Quote,
+  Award,
+} from "lucide-react";
+import { brand } from "@/config/brand";
+import LocalBusinessSchema from "@/components/seo/LocalBusinessSchema";
 
 export const metadata: Metadata = {
-  title: 'Maryland Home Care Agency | MarkoCare',
+  title: "Maryland Home Care Agency | MarkoCare",
   description:
-    'MarkoCare is a Maryland Residential Service Agency providing compassionate, RN-supervised home care through a W2 employee model in Howard, Carroll, Anne Arundel, and Frederick Counties.',
+    "MarkoCare is a Maryland Residential Service Agency providing compassionate, RN-supervised home care through a W2 employee model in Howard, Carroll, Anne Arundel, and Frederick Counties.",
   alternates: {
     canonical: brand.siteUrl,
   },
@@ -22,91 +36,91 @@ export const metadata: Metadata = {
 const trustMetrics = [
   {
     icon: Stethoscope,
-    title: 'RN Supervised Care',
-    desc: 'Every care plan developed and monitored by a Registered Nurse',
+    title: "RN Supervised Care",
+    desc: "Every care plan developed and monitored by a Registered Nurse",
   },
   {
     icon: UserCheck,
-    title: 'W2 Employee Model',
-    desc: 'All caregivers are direct employees — never independent contractors',
+    title: "W2 Employee Model",
+    desc: "All caregivers are direct employees — never independent contractors",
   },
   {
     icon: ShieldCheck,
-    title: 'Fully Insured & Bonded',
-    desc: 'Comprehensive liability coverage protecting your family',
+    title: "Fully Insured & Bonded",
+    desc: "Comprehensive liability coverage protecting your family",
   },
   {
     icon: Clock,
-    title: '24/7 On-Call Support',
-    desc: 'Around-the-clock availability for urgent care needs',
+    title: "24/7 On-Call Support",
+    desc: "Around-the-clock availability for urgent care needs",
   },
 ];
 
 const services = [
   {
     icon: Heart,
-    name: 'Personal Care',
-    slug: 'personal-care',
-    desc: 'Dignified assistance with bathing, grooming, and daily activities — tailored to each individual.',
+    name: "Personal Care",
+    slug: "personal-care",
+    desc: "Dignified assistance with bathing, grooming, and daily activities — tailored to each individual.",
   },
   {
     icon: Brain,
-    name: 'Dementia Care',
-    slug: 'dementia-care',
-    desc: 'Specialized memory care with structured cognitive safety protocols and compassionate support.',
+    name: "Dementia Care",
+    slug: "dementia-care",
+    desc: "Specialized memory care with structured cognitive safety protocols and compassionate support.",
   },
   {
     icon: Hospital,
-    name: 'Post-Hospital Support',
-    slug: 'post-hospital-support',
-    desc: 'Safe transitions from hospital to home with RN-supervised care plans to prevent readmission.',
+    name: "Post-Hospital Support",
+    slug: "post-hospital-support",
+    desc: "Safe transitions from hospital to home with RN-supervised care plans to prevent readmission.",
   },
   {
     icon: Ribbon,
-    name: 'Cancer Care Support',
-    slug: 'cancer-care-support',
-    desc: 'Compassionate assistance for cancer patients managing fatigue, treatment schedules, and comfort.',
+    name: "Cancer Care Support",
+    slug: "cancer-care-support",
+    desc: "Compassionate assistance for cancer patients managing fatigue, treatment schedules, and comfort.",
   },
   {
     icon: RefreshCw,
-    name: 'Respite Care',
-    slug: 'respite-care',
-    desc: 'Relief for family caregivers — from a few hours to extended support — so you can recharge.',
+    name: "Respite Care",
+    slug: "respite-care",
+    desc: "Relief for family caregivers — from a few hours to extended support — so you can recharge.",
   },
   {
     icon: Users,
-    name: 'Companion Care',
-    slug: 'companion-care',
-    desc: 'Meaningful social engagement, light housekeeping, errands, and transportation support.',
+    name: "Companion Care",
+    slug: "companion-care",
+    desc: "Meaningful social engagement, light housekeeping, errands, and transportation support.",
   },
 ];
 
 const featuredTestimonial = {
-  name: 'Patricia M.',
-  relation: 'Daughter of a Howard County client',
-  initial: 'P',
+  name: "Patricia M.",
+  relation: "Daughter of a Howard County client",
+  initial: "P",
   stars: 5,
   text: "The team at MarkoCare truly understands what it means to care. My mother's caregiver was not only professional but genuinely warm. The RN check-ins gave us real peace of mind during a very difficult time — I can't recommend them enough.",
 };
 
 const secondaryTestimonials = [
   {
-    name: 'Robert T.',
-    relation: 'Post-surgical client · Anne Arundel County',
+    name: "Robert T.",
+    relation: "Post-surgical client · Anne Arundel County",
     stars: 5,
     text: "After my hip replacement I wasn't sure how I'd manage at home. MarkoCare's caregiver arrived the day of discharge and handled everything. The coordination with my discharge planner was seamless.",
   },
   {
-    name: 'Sandra K.',
-    relation: 'Family caregiver – Respite client · Carroll County',
+    name: "Sandra K.",
+    relation: "Family caregiver – Respite client · Carroll County",
     stars: 5,
     text: "Caring for my husband with dementia was overwhelming. MarkoCare's respite service gave me the break I desperately needed. Patient, calm, and deeply knowledgeable.",
   },
   {
-    name: 'James W.',
-    relation: 'Cancer care client · Frederick County',
+    name: "James W.",
+    relation: "Cancer care client · Frederick County",
     stars: 5,
-    text: 'The compassion shown throughout my treatment was exceptional. They truly go above and beyond to make difficult days more manageable and less lonely.',
+    text: "The compassion shown throughout my treatment was exceptional. They truly go above and beyond to make difficult days more manageable and less lonely.",
   },
 ];
 
@@ -126,10 +140,8 @@ export default function HomePage() {
 
         <div className="container-pad relative py-20 md:py-28 lg:py-32">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-
             {/* LEFT — Copy */}
             <div className="lg:pr-6 xl:pr-12">
-
               {/* RSA status pill */}
               <div className="mc-status-pill mb-7 w-fit">
                 <span className="w-2 h-2 rounded-full bg-mc-leaf-400 shrink-0" />
@@ -140,30 +152,42 @@ export default function HomePage() {
 
               {/* Headline */}
               <h1 className="heading-display text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.08] mb-6">
-                Compassionate Home Care<br />
+                Compassionate Home Care
+                <br />
                 <span className="text-mc-leaf-400">for Maryland</span> Families
               </h1>
 
               {/* Lead */}
               <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-[520px]">
-                Professional, RN-supervised home care delivered by W2 employees —
-                not contractors. We bring medical credibility and genuine warmth
-                into every home we serve.
+                Professional, RN-supervised home care delivered by W2 employees
+                — not contractors. We bring medical credibility and genuine
+                warmth into every home we serve.
               </p>
 
               {/* Trust bullets */}
               <ul className="space-y-3.5 mb-9">
                 {[
-                  { label: 'RN Supervision', desc: 'All care plans clinically overseen' },
-                  { label: 'W2 Caregivers',  desc: 'Direct employees, never contractors' },
-                  { label: '24/7 Support',   desc: 'Around-the-clock on-call availability' },
+                  {
+                    label: "RN Supervision",
+                    desc: "All care plans clinically overseen",
+                  },
+                  {
+                    label: "W2 Caregivers",
+                    desc: "Direct employees, never contractors",
+                  },
+                  {
+                    label: "24/7 Support",
+                    desc: "Around-the-clock on-call availability",
+                  },
                 ].map((item) => (
                   <li key={item.label} className="flex items-center gap-3">
                     <div className="w-6 h-6 rounded-full bg-mc-leaf-100 flex items-center justify-center shrink-0">
                       <CheckCircle className="h-3.5 w-3.5 text-mc-leaf-500" />
                     </div>
                     <span className="text-sm text-gray-700">
-                      <strong className="font-semibold text-mc-forest">{item.label}:</strong>{' '}
+                      <strong className="font-semibold text-mc-forest">
+                        {item.label}:
+                      </strong>{" "}
                       {item.desc}
                     </span>
                   </li>
@@ -172,7 +196,10 @@ export default function HomePage() {
 
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-8">
-                <Link href="/contact" className="btn-mc-primary text-[0.9rem] px-8 py-4">
+                <Link
+                  href="/contact"
+                  className="btn-mc-primary text-[0.9rem] px-8 py-4"
+                >
                   Request Free In-Home Assessment
                   <ArrowRight className="h-4 w-4" />
                 </Link>
@@ -191,7 +218,9 @@ export default function HomePage() {
                   <Phone className="h-4 w-4 text-mc-leaf-500" />
                 </div>
                 <div>
-                  <p className="text-[11px] text-gray-400 uppercase tracking-wide">Call anytime</p>
+                  <p className="text-[11px] text-gray-400 uppercase tracking-wide">
+                    Call anytime
+                  </p>
                   <a
                     href={`tel:${brand.phone}`}
                     className="text-sm font-bold text-mc-forest hover:text-mc-leaf-500 transition-colors"
@@ -212,15 +241,12 @@ export default function HomePage() {
                 <div className="absolute -top-12 -right-12 w-64 h-64 rounded-full bg-mc-leaf-200/40" />
                 <div className="absolute -bottom-16 -left-8 w-48 h-48 rounded-full bg-mc-leaf-100/60" />
 
-                {/* Placeholder center content */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 opacity-30">
-                  <div className="w-24 h-24 rounded-full bg-mc-leaf-200 flex items-center justify-center">
-                    <Heart className="h-12 w-12 text-mc-leaf-600" />
-                  </div>
-                  <p className="text-sm font-medium text-mc-leaf-700">
-                    Replace with caregiver + client photo
-                  </p>
-                </div>
+                {/* Hero image — public/HeroSectionImage/heroimage.png served from root */}
+                <img
+                  src="/HeroSectionImage/heroimage.png"
+                  alt="MarkoCare — compassionate home care for Maryland families"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
 
                 {/* Bottom gradient for badge legibility */}
                 <div className="absolute bottom-0 left-0 right-0 h-36 bg-gradient-to-t from-white/70 to-transparent" />
@@ -232,12 +258,19 @@ export default function HomePage() {
                       <ShieldCheck className="h-5 w-5 text-mc-leaf-500" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="text-xs font-bold text-mc-forest leading-tight">Maryland Residential Service Agency</p>
-                      <p className="text-[11px] text-gray-400 mt-0.5">Licensure In Progress</p>
+                      <p className="text-xs font-bold text-mc-forest leading-tight">
+                        Maryland Residential Service Agency
+                      </p>
+                      <p className="text-[11px] text-gray-400 mt-0.5">
+                        Licensure In Progress
+                      </p>
                     </div>
                     <div className="flex gap-0.5 shrink-0">
                       {[1, 2, 3, 4, 5].map((i) => (
-                        <Star key={i} className="h-3 w-3 fill-amber-400 text-amber-400" />
+                        <Star
+                          key={i}
+                          className="h-3 w-3 fill-amber-400 text-amber-400"
+                        />
                       ))}
                     </div>
                   </div>
@@ -246,8 +279,14 @@ export default function HomePage() {
 
               {/* Floating counties stat */}
               <div className="absolute -top-5 -right-5 bg-white rounded-2xl p-4 shadow-premium-xl border border-mc-stone hidden sm:block">
-                <p className="text-3xl font-serif font-bold text-mc-leaf-400 leading-none">4</p>
-                <p className="text-[11px] text-gray-500 mt-1 leading-tight">Maryland<br />Counties</p>
+                <p className="text-3xl font-serif font-bold text-mc-leaf-400 leading-none">
+                  4
+                </p>
+                <p className="text-[11px] text-gray-500 mt-1 leading-tight">
+                  Maryland
+                  <br />
+                  Counties
+                </p>
               </div>
 
               {/* Floating IPOP badge */}
@@ -255,13 +294,16 @@ export default function HomePage() {
                 <div className="flex items-center gap-2.5">
                   <Hospital className="h-4 w-4 text-mc-leaf-300 shrink-0" />
                   <div>
-                    <p className="text-[10px] font-bold text-white leading-tight">IPOP Ready</p>
-                    <p className="text-[9px] text-white/50 mt-0.5">Post-Hospital Care</p>
+                    <p className="text-[10px] font-bold text-white leading-tight">
+                      IPOP Ready
+                    </p>
+                    <p className="text-[9px] text-white/50 mt-0.5">
+                      Post-Hospital Care
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -282,7 +324,9 @@ export default function HomePage() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-white">{title}</p>
-                  <p className="text-xs text-white/50 mt-1 leading-relaxed">{desc}</p>
+                  <p className="text-xs text-white/50 mt-1 leading-relaxed">
+                    {desc}
+                  </p>
                 </div>
               </div>
             ))}
@@ -296,30 +340,37 @@ export default function HomePage() {
       <section className="section-pad bg-white">
         <div className="container-pad">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 xl:gap-20 items-center">
-
             {/* Image column */}
             <div className="relative max-w-md mx-auto lg:mx-0 w-full">
               {/* Dot-grid decoration */}
               <div
                 className="absolute -top-7 -left-7 w-28 h-28 opacity-20 pointer-events-none"
                 style={{
-                  backgroundImage: 'radial-gradient(circle, #52b848 1.5px, transparent 1.5px)',
-                  backgroundSize: '10px 10px',
+                  backgroundImage:
+                    "radial-gradient(circle, #52b848 1.5px, transparent 1.5px)",
+                  backgroundSize: "10px 10px",
                 }}
               />
 
               {/* Image area */}
               <div className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-gradient-to-br from-mc-sage to-mc-leaf-100">
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 opacity-30">
-                  <Users className="h-20 w-20 text-mc-leaf-600" />
-                  <p className="text-sm font-medium text-mc-leaf-700">Team / caregiver photo</p>
-                </div>
+                <img
+                  src="/TeamCaregiverPhoto/caregiverphoto.png"
+                  alt="MarkoCare team and caregivers — professional, compassionate home care"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
               </div>
 
               {/* Floating 25+ stat */}
               <div className="absolute -right-6 bottom-14 bg-white rounded-2xl p-5 shadow-premium-xl border border-mc-stone">
-                <p className="text-4xl font-serif font-bold text-mc-leaf-400 leading-none">25+</p>
-                <p className="text-xs text-gray-500 mt-2 leading-tight">Years Combined<br />Experience</p>
+                <p className="text-4xl font-serif font-bold text-mc-leaf-400 leading-none">
+                  25+
+                </p>
+                <p className="text-xs text-gray-500 mt-2 leading-tight">
+                  Years Combined
+                  <br />
+                  Experience
+                </p>
               </div>
 
               {/* Accent rectangle */}
@@ -330,31 +381,37 @@ export default function HomePage() {
             <div>
               <span className="eyebrow">About MarkoCare</span>
               <h2 className="heading-display text-3xl md:text-4xl mt-3 mb-5">
-                Where Professional Care<br />Feels Like Family
+                Where Professional Care
+                <br />
+                Feels Like Family
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
                 MarkoCare was founded on a simple belief: that professional,
-                clinical-grade home care and genuine human warmth are not mutually exclusive.
-                We combine rigorous medical oversight — a Registered Nurse supervises
-                every care plan — with the kind of relationship-centered approach
-                that truly transforms a client's daily life.
+                clinical-grade home care and genuine human warmth are not
+                mutually exclusive. We combine rigorous medical oversight — a
+                Registered Nurse supervises every care plan — with the kind of
+                relationship-centered approach that truly transforms a client's
+                daily life.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
-                Every caregiver on our team is a W2 employee, thoroughly background-checked,
-                trained, and held to the highest standards of professional conduct.
-                We serve families across Howard, Carroll, Anne Arundel, and Frederick
-                Counties in Maryland.
+                Every caregiver on our team is a W2 employee, thoroughly
+                background-checked, trained, and held to the highest standards
+                of professional conduct. We serve families across Howard,
+                Carroll, Anne Arundel, and Frederick Counties in Maryland.
               </p>
 
               {/* Feature list */}
               <ul className="space-y-3.5 mb-9">
                 {[
-                  'RN-supervised care plans for every client',
-                  'W2 employees with full background verification',
-                  'Private pay and Medicaid-ready placement',
-                  'Dedicated care coordinator for every family',
+                  "RN-supervised care plans for every client",
+                  "W2 employees with full background verification",
+                  "Private pay and Medicaid-ready placement",
+                  "Dedicated care coordinator for every family",
                 ].map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-sm text-gray-700">
+                  <li
+                    key={item}
+                    className="flex items-center gap-3 text-sm text-gray-700"
+                  >
                     <CheckCircle className="h-4 w-4 text-mc-leaf-400 shrink-0" />
                     {item}
                   </li>
@@ -364,14 +421,18 @@ export default function HomePage() {
               {/* Stat row */}
               <div className="flex items-center gap-8 mb-9 py-5 border-y border-mc-stone">
                 {[
-                  { value: '4',    label: 'Maryland Counties' },
-                  { value: 'RN',   label: 'Supervised Care' },
-                  { value: 'W2',   label: 'Employee Model' },
-                  { value: '24/7', label: 'On-Call Support' },
+                  { value: "4", label: "Maryland Counties" },
+                  { value: "RN", label: "Supervised Care" },
+                  { value: "W2", label: "Employee Model" },
+                  { value: "24/7", label: "On-Call Support" },
                 ].map((s) => (
                   <div key={s.label} className="text-center">
-                    <p className="text-2xl font-serif font-bold text-mc-leaf-400">{s.value}</p>
-                    <p className="text-[11px] text-gray-400 mt-0.5 leading-tight">{s.label}</p>
+                    <p className="text-2xl font-serif font-bold text-mc-leaf-400">
+                      {s.value}
+                    </p>
+                    <p className="text-[11px] text-gray-400 mt-0.5 leading-tight">
+                      {s.label}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -381,7 +442,6 @@ export default function HomePage() {
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
-
           </div>
         </div>
       </section>
@@ -391,7 +451,6 @@ export default function HomePage() {
       ════════════════════════════════════════════════════════════════════════ */}
       <section className="section-pad bg-mc-sage">
         <div className="container-pad">
-
           {/* Header */}
           <div className="text-center mb-14 max-w-2xl mx-auto">
             <span className="eyebrow">Our Services</span>
@@ -419,7 +478,9 @@ export default function HomePage() {
                   <h3 className="font-serif font-semibold text-lg text-mc-forest mb-2 group-hover:text-mc-leaf-500 transition-colors leading-snug">
                     {name}
                   </h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{desc}</p>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {desc}
+                  </p>
                 </div>
                 <div className="flex items-center gap-1.5 text-sm font-semibold text-mc-leaf-500 group-hover:gap-3 transition-all duration-200 mt-auto">
                   Learn More <ArrowRight className="h-3.5 w-3.5" />
@@ -445,27 +506,30 @@ export default function HomePage() {
         <div
           className="absolute inset-0 opacity-[0.035] pointer-events-none"
           style={{
-            backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)',
-            backgroundSize: '24px 24px',
+            backgroundImage:
+              "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
+            backgroundSize: "24px 24px",
           }}
         />
 
         <div className="container-pad relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-16 items-center">
-
             {/* Copy */}
             <div>
               <span className="inline-block text-xs font-bold uppercase tracking-widest text-mc-leaf-300 mb-5">
                 For Healthcare Professionals
               </span>
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-5 leading-tight">
-                A Trusted Partner for<br />Discharge Planners
+                A Trusted Partner for
+                <br />
+                Discharge Planners
               </h2>
               <p className="text-white/65 leading-relaxed mb-5 text-[0.95rem]">
-                We understand the urgency and complexity of post-hospital placements.
-                MarkoCare provides 24-hour intake response, RN-supervised care plans,
-                and direct coordination with your discharge team to ensure safe,
-                seamless transitions from hospital to home.
+                We understand the urgency and complexity of post-hospital
+                placements. MarkoCare provides 24-hour intake response,
+                RN-supervised care plans, and direct coordination with your
+                discharge team to ensure safe, seamless transitions from
+                hospital to home.
               </p>
 
               {/* 24-hr highlight chip */}
@@ -493,23 +557,23 @@ export default function HomePage() {
               {[
                 {
                   icon: Hospital,
-                  title: 'Discharge Coordination',
-                  desc: '24-hour placement readiness for urgent discharges',
+                  title: "Discharge Coordination",
+                  desc: "24-hour placement readiness for urgent discharges",
                 },
                 {
                   icon: Stethoscope,
-                  title: 'RN Care Oversight',
-                  desc: 'Clinical transition plans developed by our Registered Nurse',
+                  title: "RN Care Oversight",
+                  desc: "Clinical transition plans developed by our Registered Nurse",
                 },
                 {
                   icon: ShieldCheck,
-                  title: 'Insurance Verified',
-                  desc: 'We verify coverage before every placement',
+                  title: "Insurance Verified",
+                  desc: "We verify coverage before every placement",
                 },
                 {
                   icon: Award,
-                  title: 'Dedicated Intake Line',
-                  desc: 'Priority access and direct line for referral partners',
+                  title: "Dedicated Intake Line",
+                  desc: "Priority access and direct line for referral partners",
                 },
               ].map(({ icon: Icon, title, desc }) => (
                 <div
@@ -519,12 +583,15 @@ export default function HomePage() {
                   <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center mb-4">
                     <Icon className="h-5 w-5 text-mc-leaf-300" />
                   </div>
-                  <h3 className="text-sm font-semibold text-white mb-1.5">{title}</h3>
-                  <p className="text-xs text-white/50 leading-relaxed">{desc}</p>
+                  <h3 className="text-sm font-semibold text-white mb-1.5">
+                    {title}
+                  </h3>
+                  <p className="text-xs text-white/50 leading-relaxed">
+                    {desc}
+                  </p>
                 </div>
               ))}
             </div>
-
           </div>
         </div>
       </section>
@@ -534,7 +601,6 @@ export default function HomePage() {
       ════════════════════════════════════════════════════════════════════════ */}
       <section className="section-pad bg-white">
         <div className="container-pad">
-
           {/* Header */}
           <div className="text-center mb-12">
             <span className="eyebrow">What Families Say</span>
@@ -557,9 +623,14 @@ export default function HomePage() {
             {/* Content */}
             <div className="flex-1">
               <div className="flex gap-0.5 mb-4">
-                {Array.from({ length: featuredTestimonial.stars }).map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-amber-400 text-amber-400" />
-                ))}
+                {Array.from({ length: featuredTestimonial.stars }).map(
+                  (_, i) => (
+                    <Star
+                      key={i}
+                      className="h-4 w-4 fill-amber-400 text-amber-400"
+                    />
+                  ),
+                )}
               </div>
               <Quote className="h-8 w-8 text-mc-leaf-100 mb-3" />
               <p className="text-[1.05rem] text-gray-700 leading-relaxed italic mb-7">
@@ -567,8 +638,12 @@ export default function HomePage() {
               </p>
               <div className="flex items-center gap-4">
                 <div>
-                  <p className="font-semibold text-mc-forest">{featuredTestimonial.name}</p>
-                  <p className="text-sm text-gray-400 mt-0.5">{featuredTestimonial.relation}</p>
+                  <p className="font-semibold text-mc-forest">
+                    {featuredTestimonial.name}
+                  </p>
+                  <p className="text-sm text-gray-400 mt-0.5">
+                    {featuredTestimonial.relation}
+                  </p>
                 </div>
                 <span className="mc-badge">Howard County</span>
               </div>
@@ -582,22 +657,30 @@ export default function HomePage() {
                 <Quote className="absolute top-4 right-4 h-7 w-7 text-mc-leaf-50 pointer-events-none" />
                 <div className="flex gap-0.5 mb-3">
                   {Array.from({ length: t.stars }).map((_, i) => (
-                    <Star key={i} className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
+                    <Star
+                      key={i}
+                      className="h-3.5 w-3.5 fill-amber-400 text-amber-400"
+                    />
                   ))}
                 </div>
                 <p className="text-sm text-gray-700 leading-relaxed italic mb-5 flex-1">
                   "{t.text}"
                 </p>
                 <div className="pt-4 border-t border-mc-stone">
-                  <p className="text-sm font-semibold text-mc-forest">{t.name}</p>
-                  <p className="text-[11px] text-gray-400 mt-0.5">{t.relation}</p>
+                  <p className="text-sm font-semibold text-mc-forest">
+                    {t.name}
+                  </p>
+                  <p className="text-[11px] text-gray-400 mt-0.5">
+                    {t.relation}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
 
           <p className="text-center text-[11px] text-gray-300 mt-7">
-            * Testimonials reflect the experiences of actual clients. Individual outcomes may vary.
+            * Testimonials reflect the experiences of actual clients. Individual
+            outcomes may vary.
           </p>
         </div>
       </section>
@@ -610,7 +693,9 @@ export default function HomePage() {
           <div className="text-center mb-11">
             <span className="eyebrow">Service Areas</span>
             <h2 className="heading-display text-3xl md:text-4xl mt-3">
-              Serving Maryland Families<br />Across Four Counties
+              Serving Maryland Families
+              <br />
+              Across Four Counties
             </h2>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
@@ -643,8 +728,9 @@ export default function HomePage() {
         <div
           className="absolute inset-0 opacity-10 pointer-events-none"
           style={{
-            backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)',
-            backgroundSize: '28px 28px',
+            backgroundImage:
+              "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
+            backgroundSize: "28px 28px",
           }}
         />
         {/* Decorative circles */}
@@ -656,14 +742,18 @@ export default function HomePage() {
             Start Your Care Journey
           </span>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 leading-tight max-w-2xl mx-auto">
-            Your Family Deserves Professional,<br className="hidden md:block" /> Compassionate Care
+            Your Family Deserves Professional,
+            <br className="hidden md:block" /> Compassionate Care
           </h2>
           <p className="text-white/80 text-[1.05rem] max-w-xl mx-auto mb-9 leading-relaxed">
             Our care coordinators are ready to guide you through the process.
             Request a no-obligation, free in-home assessment today.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/contact" className="btn-mc-white text-[0.9rem] px-8 py-4">
+            <Link
+              href="/contact"
+              className="btn-mc-white text-[0.9rem] px-8 py-4"
+            >
               Request Free In-Home Assessment
               <ArrowRight className="h-4 w-4" />
             </Link>
@@ -678,8 +768,17 @@ export default function HomePage() {
 
           {/* Trust micro-row */}
           <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-            {['W2 Employees', 'RN Supervised', 'Background Checked', 'Fully Insured', '24/7 Support'].map((label) => (
-              <div key={label} className="flex items-center gap-1.5 text-white/70 text-xs font-medium">
+            {[
+              "W2 Employees",
+              "RN Supervised",
+              "Background Checked",
+              "Fully Insured",
+              "24/7 Support",
+            ].map((label) => (
+              <div
+                key={label}
+                className="flex items-center gap-1.5 text-white/70 text-xs font-medium"
+              >
                 <CheckCircle className="h-3.5 w-3.5 text-white/60 shrink-0" />
                 {label}
               </div>
