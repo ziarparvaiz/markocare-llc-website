@@ -280,7 +280,7 @@ export default function HomePage() {
               {/* Floating counties stat */}
               <div className="absolute -top-5 -right-5 bg-white rounded-2xl p-4 shadow-premium-xl border border-mc-stone hidden sm:block">
                 <p className="text-3xl font-serif font-bold text-mc-leaf-400 leading-none">
-                  4
+                  4+
                 </p>
                 <p className="text-[11px] text-gray-500 mt-1 leading-tight">
                   Maryland
@@ -421,7 +421,7 @@ export default function HomePage() {
               {/* Stat row */}
               <div className="flex items-center gap-8 mb-9 py-5 border-y border-mc-stone">
                 {[
-                  { value: "4", label: "Maryland Counties" },
+                  { value: "4+", label: "Maryland Counties" },
                   { value: "RN", label: "Supervised Care" },
                   { value: "W2", label: "Employee Model" },
                   { value: "24/7", label: "On-Call Support" },

@@ -26,7 +26,7 @@ const clientRights = [
 export default function CompliancePage() {
   return (
     <>
-      <section className="bg-brand-navy-800 text-white py-16">
+      <section className="bg-mc-forest text-white py-16">
         <div className="container-pad max-w-3xl">
           <Shield className="h-10 w-10 text-brand-green-400 mb-4" />
           <h1 className="text-4xl font-bold mb-4">Compliance & Client Rights</h1>

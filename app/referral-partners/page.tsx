@@ -60,7 +60,7 @@ export default function ReferralPartnersPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-brand-navy-900 text-white py-16 md:py-20">
+      <section className="bg-mc-forest text-white py-16 md:py-20">
         <div className="container-pad">
           <div className="max-w-3xl">
             <span className="badge-green mb-4 inline-flex">Referral Partners</span>

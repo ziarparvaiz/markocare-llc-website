@@ -15,7 +15,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-brand-navy-800 text-white py-16 md:py-18">
+      <section className="bg-mc-forest text-white py-16 md:py-18">
         <div className="container-pad max-w-3xl">
           <span className="badge-green mb-4 inline-flex">Contact Us</span>
           <h1 className="text-4xl md:text-5xl font-bold mb-5">
