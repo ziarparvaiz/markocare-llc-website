@@ -19,10 +19,22 @@ import { brand } from '@/config/brand';
 import LicenseBanner from '@/components/ui/LicenseBanner';
 
 export const metadata: Metadata = {
-  title: 'About MarkoCare | Maryland Home Care Agency',
+  title: 'Licensed Home Care Agency Maryland | MarkoCare',
   description:
-    "Learn about MarkoCare's mission, values, RN supervision model, and W2 employee hiring standards. A Maryland Residential Service Agency built on trust.",
+    'MarkoCare is a Maryland RSA-licensed home care agency (COMAR 10.07.05). Learn about our mission, values, and commitment to dignified senior care across 4 counties.',
+  keywords: [
+    'Maryland RSA licensed home care agency',
+    'about MarkoCare Maryland',
+    'licensed home care agency background MD',
+    'Maryland OHCQ home care agency',
+  ],
   alternates: { canonical: `${brand.siteUrl}/about` },
+  openGraph: {
+    title: 'Licensed Home Care Agency Maryland | MarkoCare',
+    description: 'Learn about MarkoCare — Maryland\'s RSA-licensed home care agency. Our mission, caregivers, and commitment to dignified senior care across 4 counties.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: "MarkoCare team members representing the Maryland home care agency's caregiving mission" }],
+  },
+  robots: { index: true, follow: true },
 };
 
 const approachPillars = [

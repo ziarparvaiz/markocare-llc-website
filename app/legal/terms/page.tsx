@@ -3,8 +3,13 @@ import { brand } from '@/config/brand';
 
 export const metadata: Metadata = {
   title: 'Terms of Service | MarkoCare',
-  description: 'MarkoCare\'s terms of service governing use of our website and home care services.',
+  description: 'MarkoCare\'s terms of service governing use of our website and home care services in Maryland.',
   alternates: { canonical: `${brand.siteUrl}/legal/terms` },
+  openGraph: {
+    title: 'Terms of Service | MarkoCare',
+    description: 'MarkoCare\'s terms of service for website use and home care service agreements in Maryland.',
+  },
+  robots: { index: false, follow: false },
 };
 
 export default function TermsPage() {

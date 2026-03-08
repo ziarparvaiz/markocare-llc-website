@@ -3,14 +3,22 @@ import { brand } from '@/config/brand';
 import CountyPageLayout from '@/components/sections/CountyPageLayout';
 
 export const metadata: Metadata = {
-  title: 'Home Care in Howard County, MD | MarkoCare',
+  title: 'Home Care Howard County Maryland | MarkoCare',
   description:
-    'Professional home care services in Howard County, Maryland. MarkoCare provides personal care, companion care, and post-hospital support in Columbia, Ellicott City, and surrounding areas.',
+    'MarkoCare provides RSA-licensed in-home senior care across Howard County, MD — Columbia, Ellicott City, Clarksville & more. Call for a free consultation today.',
+  keywords: [
+    'home care Howard County Maryland',
+    'in-home care Columbia MD',
+    'senior care Ellicott City MD',
+    'home care agency Howard County',
+  ],
   alternates: { canonical: `${brand.siteUrl}/service-areas/howard-county` },
   openGraph: {
-    title: 'Home Care in Howard County, MD | MarkoCare',
-    description: 'Compassionate, RN-supervised home care in Howard County, MD. Serving Columbia, Ellicott City, Laurel, and surrounding communities.',
+    title: 'Home Care Howard County Maryland | MarkoCare',
+    description: 'RSA-licensed in-home senior care across Howard County, MD. Serving Columbia, Ellicott City, Clarksville & more. RN-supervised, private pay. Free consultation.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'MarkoCare caregiver with a Howard County Maryland senior in their Columbia or Ellicott City home' }],
   },
+  robots: { index: true, follow: true },
 };
 
 export default function HowardCountyPage() {

@@ -3,10 +3,22 @@ import { brand } from '@/config/brand';
 import CountyPageLayout from '@/components/sections/CountyPageLayout';
 
 export const metadata: Metadata = {
-  title: 'Home Care in Anne Arundel County, MD | MarkoCare',
+  title: 'Home Care Anne Arundel County MD | MarkoCare',
   description:
-    'Professional home care in Anne Arundel County, Maryland. MarkoCare serves Annapolis, Glen Burnie, Severna Park, and surrounding areas with W2 caregivers under RN supervision.',
+    'MarkoCare delivers RSA-licensed in-home senior care across Anne Arundel County, MD — Annapolis, Glen Burnie, Severna Park & more. Call for a free consultation today.',
+  keywords: [
+    'home care Anne Arundel County Maryland',
+    'in-home care Annapolis MD',
+    'senior care Anne Arundel MD',
+    'home care agency Glen Burnie Maryland',
+  ],
   alternates: { canonical: `${brand.siteUrl}/service-areas/anne-arundel-county` },
+  openGraph: {
+    title: 'Home Care Anne Arundel County MD | MarkoCare',
+    description: 'RSA-licensed in-home care for seniors across Anne Arundel County, MD. Serving Annapolis, Glen Burnie, Severna Park & more. Free consultation available.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'MarkoCare caregiver assisting an Anne Arundel County senior at home near Annapolis, Maryland' }],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function AnneArundelCountyPage() {

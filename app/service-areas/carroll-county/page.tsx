@@ -3,10 +3,22 @@ import { brand } from '@/config/brand';
 import CountyPageLayout from '@/components/sections/CountyPageLayout';
 
 export const metadata: Metadata = {
-  title: 'Home Care in Carroll County, MD | MarkoCare',
+  title: 'Home Care Carroll County Maryland | MarkoCare',
   description:
-    'Professional home care services in Carroll County, Maryland. MarkoCare serves Westminster, Eldersburg, Sykesville, and surrounding communities with RN-supervised in-home care.',
+    'MarkoCare provides RSA-licensed in-home senior care across Carroll County, MD — Westminster, Eldersburg, Sykesville & more. Call today for a free consultation.',
+  keywords: [
+    'home care Carroll County Maryland',
+    'in-home care Westminster MD',
+    'senior care Carroll County',
+    'home care agency Eldersburg MD',
+  ],
   alternates: { canonical: `${brand.siteUrl}/service-areas/carroll-county` },
+  openGraph: {
+    title: 'Home Care Carroll County Maryland | MarkoCare',
+    description: 'RSA-licensed in-home senior care across Carroll County, MD. Serving Westminster, Eldersburg, Sykesville & surrounding areas. Call for a free consultation.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'MarkoCare caregiver visiting a Carroll County Maryland senior at their home in Westminster' }],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function CarrollCountyPage() {

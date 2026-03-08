@@ -8,10 +8,22 @@ import CTABanner from '@/components/sections/CTABanner';
 import SectionHeader from '@/components/ui/SectionHeader';
 
 export const metadata: Metadata = {
-  title: 'Home Care Services | MarkoCare Maryland',
+  title: 'Home Care Services Maryland | MarkoCare',
   description:
-    'MarkoCare offers personal care, companion care, dementia care, respite care, post-hospital support, cancer care, and IPOP transitional care across Maryland.',
+    'Explore MarkoCare\'s full range of in-home care services in Maryland. RSA-licensed, RN-supervised care tailored to seniors in 4 counties. Learn more or call today.',
+  keywords: [
+    'home care services Maryland',
+    'in-home senior care services MD',
+    'personal care services Maryland',
+    'licensed home care services Maryland',
+  ],
   alternates: { canonical: `${brand.siteUrl}/services` },
+  openGraph: {
+    title: 'Home Care Services Maryland | MarkoCare',
+    description: 'Explore MarkoCare\'s full range of RSA-licensed in-home care services in Maryland. Personalized care plans for seniors across 4 counties.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'MarkoCare caregiver reviewing care plan with senior client in Maryland home' }],
+  },
+  robots: { index: true, follow: true },
 };
 
 const services = [

@@ -6,10 +6,22 @@ import CTABanner from '@/components/sections/CTABanner';
 import SectionHeader from '@/components/ui/SectionHeader';
 
 export const metadata: Metadata = {
-  title: 'Home Care Resources & Blog | MarkoCare Maryland',
+  title: 'Home Care Resources for Maryland Families | MarkoCare',
   description:
-    'Home care guides, tips, and resources for Maryland families. Learn about senior care, post-hospital recovery, dementia care, and more from MarkoCare.',
+    "MarkoCare's resource library for Maryland families navigating senior home care — guides, checklists, local agencies, and aging-in-place tools. Start here.",
+  keywords: [
+    'home care resources Maryland families',
+    'senior care resources Maryland',
+    'Maryland home care guide',
+    'aging in place resources MD',
+  ],
   alternates: { canonical: `${brand.siteUrl}/resources` },
+  openGraph: {
+    title: 'Home Care Resources for Maryland Families | MarkoCare',
+    description: 'Guides, checklists & Maryland-specific resources for families navigating senior home care. From the team at MarkoCare, RSA-licensed in 4 Maryland counties.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Maryland family reviewing home care planning resources and guides' }],
+  },
+  robots: { index: true, follow: true },
 };
 
 const articles = [

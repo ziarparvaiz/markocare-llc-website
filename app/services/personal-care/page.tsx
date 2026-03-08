@@ -4,10 +4,22 @@ import { brand } from '@/config/brand';
 import ServicePageLayout from '@/components/sections/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'Personal Care Services | MarkoCare Maryland',
+  title: 'Personal Care Aide Services Maryland | MarkoCare',
   description:
-    'Professional personal care assistance in Maryland. MarkoCare caregivers provide dignified help with bathing, grooming, dressing, and daily activities under RN supervision.',
+    'MarkoCare provides professional personal care aide services for Maryland seniors. RSA-licensed, RN-supervised ADL support across 4 counties. Request a free assessment.',
+  keywords: [
+    'personal care aide Maryland',
+    'personal care assistant MD',
+    'in-home personal care seniors Maryland',
+    'ADL assistance Maryland home care',
+  ],
   alternates: { canonical: `${brand.siteUrl}/services/personal-care` },
+  openGraph: {
+    title: 'Personal Care Aide Services Maryland | MarkoCare',
+    description: 'RSA-licensed personal care aide services for Maryland seniors. Dignified ADL support, RN-supervised care plans across Howard, Anne Arundel, Carroll & Frederick Counties.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'MarkoCare personal care aide assisting a senior with morning grooming at their Maryland home' }],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function PersonalCarePage() {

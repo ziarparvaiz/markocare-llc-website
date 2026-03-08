@@ -3,8 +3,13 @@ import { brand } from '@/config/brand';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | MarkoCare',
-  description: 'MarkoCare\'s privacy policy — how we collect, use, and protect your personal information.',
+  description: 'MarkoCare\'s privacy policy describing how we collect, use, and protect the personal information of clients, families, and website visitors.',
   alternates: { canonical: `${brand.siteUrl}/legal/privacy` },
+  openGraph: {
+    title: 'Privacy Policy | MarkoCare',
+    description: 'MarkoCare\'s privacy policy for clients, families, and website visitors.',
+  },
+  robots: { index: false, follow: false },
 };
 
 export default function PrivacyPage() {

@@ -4,10 +4,22 @@ import { brand } from '@/config/brand';
 import ServicePageLayout from '@/components/sections/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'Post-Hospital Home Care | MarkoCare Maryland',
+  title: 'Post-Hospital Home Care Maryland | MarkoCare',
   description:
-    'Post-hospital care services in Maryland. MarkoCare helps patients safely transition from hospital to home, reducing readmission risk with RN-supervised care plans.',
+    'MarkoCare\'s post-hospital home care in Maryland helps seniors recover safely at home after discharge. Reduce readmissions. RN-supervised. Call for rapid-start care.',
+  keywords: [
+    'post-hospital home care Maryland',
+    'hospital discharge home care MD',
+    'recovery care at home Maryland',
+    'prevent hospital readmission Maryland',
+  ],
   alternates: { canonical: `${brand.siteUrl}/services/post-hospital-support` },
+  openGraph: {
+    title: 'Post-Hospital Home Care Maryland | MarkoCare',
+    description: 'MarkoCare helps Maryland seniors recover safely at home after hospitalization. RN-supervised, rapid-start care to prevent readmissions across 4 counties.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'MarkoCare caregiver supporting a senior patient\'s recovery at home in Maryland after hospital discharge' }],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function PostHospitalSupportPage() {

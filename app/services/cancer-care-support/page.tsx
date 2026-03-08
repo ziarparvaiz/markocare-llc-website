@@ -4,10 +4,22 @@ import { brand } from '@/config/brand';
 import ServicePageLayout from '@/components/sections/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'Cancer Care Support at Home | MarkoCare Maryland',
+  title: 'Cancer Care Support at Home Maryland | MarkoCare',
   description:
-    'Compassionate cancer care support services in Maryland. MarkoCare helps cancer patients manage fatigue, treatment schedules, and daily needs at home.',
+    'MarkoCare provides compassionate in-home cancer care support in Maryland. Help with daily needs, appointments & recovery across Howard, Anne Arundel & more. Call today.',
+  keywords: [
+    'cancer care support at home Maryland',
+    'home care for cancer patients Maryland',
+    'oncology home support MD',
+    'in-home cancer assistance Maryland',
+  ],
   alternates: { canonical: `${brand.siteUrl}/services/cancer-care-support` },
+  openGraph: {
+    title: 'Cancer Care Support at Home Maryland | MarkoCare',
+    description: 'Compassionate in-home cancer care support in Maryland. Daily living help, appointment transportation & companionship for patients across 4 counties.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'MarkoCare caregiver providing warm in-home support to a cancer patient in Maryland' }],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function CancerCareSupportPage() {

@@ -4,10 +4,22 @@ import { brand } from '@/config/brand';
 import ServicePageLayout from '@/components/sections/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'IPOP Transitional Care Support | MarkoCare Maryland',
+  title: 'IPOP Transitional Care Maryland | MarkoCare',
   description:
-    'MarkoCare supports Johns Hopkins IPOP patients with specialized transitional home care in Maryland. Fast intake, RN coordination, and W2 caregiver placement.',
+    'MarkoCare\'s IPOP transitional care in Maryland bridges the gap from hospital to home after surgery. RN-supervised recovery support across 4 counties. Call today.',
+  keywords: [
+    'IPOP transitional care Maryland',
+    'post-operative home care Maryland',
+    'hospital to home transition MD',
+    'surgical recovery home care Maryland',
+  ],
   alternates: { canonical: `${brand.siteUrl}/services/ipop-transitional-care` },
+  openGraph: {
+    title: 'IPOP Transitional Care Maryland | MarkoCare',
+    description: 'MarkoCare\'s IPOP transitional care bridges hospital discharge to home recovery in Maryland. RN-supervised, rapid-start care across 4 counties.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'MarkoCare caregiver assisting a post-surgery patient with mobility at home in Maryland' }],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function IPOPTransitionalCarePage() {

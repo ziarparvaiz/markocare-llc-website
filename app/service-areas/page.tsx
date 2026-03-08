@@ -5,10 +5,22 @@ import { brand } from '@/config/brand';
 import CTABanner from '@/components/sections/CTABanner';
 
 export const metadata: Metadata = {
-  title: 'Maryland Home Care Service Areas | MarkoCare',
+  title: 'Home Care Service Areas Maryland | MarkoCare',
   description:
-    'MarkoCare provides home care across Howard, Carroll, Anne Arundel, and Frederick Counties in Maryland. Find care near you.',
+    'MarkoCare provides licensed in-home care across Howard, Anne Arundel, Carroll & Frederick Counties in Maryland. Find care near you. Call for a free consultation.',
+  keywords: [
+    'home care service areas Maryland',
+    'Maryland counties home care agency',
+    'where MarkoCare serves MD',
+    'home care coverage Maryland',
+  ],
   alternates: { canonical: `${brand.siteUrl}/service-areas` },
+  openGraph: {
+    title: 'Home Care Service Areas Maryland | MarkoCare',
+    description: 'MarkoCare serves Howard, Anne Arundel, Carroll & Frederick Counties in Maryland with RSA-licensed in-home care. Find local care near you.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: "Map of Maryland showing MarkoCare's four service counties — Howard, Anne Arundel, Carroll, and Frederick" }],
+  },
+  robots: { index: true, follow: true },
 };
 
 const countyDescriptions: Record<string, string> = {

@@ -6,10 +6,22 @@ import CTABanner from '@/components/sections/CTABanner';
 import SectionHeader from '@/components/ui/SectionHeader';
 
 export const metadata: Metadata = {
-  title: 'Referral Partners – Hospital & Discharge Planner Network | MarkoCare',
+  title: 'Home Care Referral Partners Maryland | MarkoCare',
   description:
-    'Partner with MarkoCare for fast, reliable home care placement. We serve Maryland discharge planners, hospitals, Johns Hopkins IPOP teams, and case managers with 24-hour placement readiness.',
+    'MarkoCare partners with Maryland discharge planners, social workers & case managers. Refer patients to our RSA-licensed home care team. Learn how to partner with us.',
+  keywords: [
+    'home care referral partners Maryland',
+    'hospital discharge planner home care Maryland',
+    'social worker home care referral MD',
+    'case manager home care partner Maryland',
+  ],
   alternates: { canonical: `${brand.siteUrl}/referral-partners` },
+  openGraph: {
+    title: 'Home Care Referral Partners Maryland | MarkoCare',
+    description: 'Maryland discharge planners and social workers — refer patients to MarkoCare\'s RSA-licensed home care team. 24-hour response, 4-county coverage.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Maryland hospital discharge planner collaborating with MarkoCare care coordinator on a patient referral' }],
+  },
+  robots: { index: true, follow: true },
 };
 
 const advantages = [

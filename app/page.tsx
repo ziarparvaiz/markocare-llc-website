@@ -23,12 +23,31 @@ import { brand } from "@/config/brand";
 import LocalBusinessSchema from "@/components/seo/LocalBusinessSchema";
 
 export const metadata: Metadata = {
-  title: "Maryland Home Care Agency | MarkoCare",
+  title: "Home Care Agency Maryland | MarkoCare",
   description:
-    "MarkoCare is a Maryland Residential Service Agency providing compassionate, RN-supervised home care through a W2 employee model in Howard, Carroll, Anne Arundel, and Frederick Counties.",
+    "Maryland's RSA-licensed home care agency. Compassionate in-home care across Howard, Anne Arundel, Carroll & Frederick Counties. Call for a free consultation.",
+  keywords: [
+    "home care agency Maryland",
+    "senior home care Maryland",
+    "in-home care Maryland",
+    "RSA licensed home care agency",
+  ],
   alternates: {
     canonical: brand.siteUrl,
   },
+  openGraph: {
+    title: "Home Care Agency Maryland | MarkoCare",
+    description:
+      "Maryland's RSA-licensed home care agency. Compassionate in-home care across Howard, Anne Arundel, Carroll & Frederick Counties. Call for a free consultation.",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "MarkoCare caregiver assisting a senior at home in Maryland" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Home Care Agency Maryland | MarkoCare",
+    description:
+      "Maryland's RSA-licensed home care agency. Compassionate in-home care across Howard, Anne Arundel, Carroll & Frederick Counties.",
+  },
+  robots: { index: true, follow: true },
 };
 
 /* ─── Static data ──────────────────────────────────────────────────────────── */

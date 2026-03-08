@@ -4,10 +4,15 @@ import { brand } from '@/config/brand';
 import LicenseBanner from '@/components/ui/LicenseBanner';
 
 export const metadata: Metadata = {
-  title: 'Compliance & Client Rights | MarkoCare',
+  title: 'Compliance | MarkoCare',
   description:
-    'MarkoCare\'s compliance framework including client rights, non-discrimination policy, complaint process, and license status disclosure.',
+    'MarkoCare\'s compliance page covering Maryland RSA licensure under COMAR 10.07.05, OHCQ oversight, and our commitment to regulatory standards in home care.',
   alternates: { canonical: `${brand.siteUrl}/legal/compliance` },
+  openGraph: {
+    title: 'Compliance | MarkoCare',
+    description: 'MarkoCare\'s Maryland RSA compliance information — COMAR 10.07.05 licensure, OHCQ oversight, and client rights.',
+  },
+  robots: { index: false, follow: false },
 };
 
 const clientRights = [

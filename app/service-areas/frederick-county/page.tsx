@@ -3,10 +3,22 @@ import { brand } from '@/config/brand';
 import CountyPageLayout from '@/components/sections/CountyPageLayout';
 
 export const metadata: Metadata = {
-  title: 'Home Care in Frederick County, MD | MarkoCare',
+  title: 'Home Care Frederick County MD | MarkoCare',
   description:
-    'Professional home care services in Frederick County, Maryland. MarkoCare serves Frederick City, Germantown, and surrounding communities with compassionate, RN-supervised care.',
+    'MarkoCare provides RSA-licensed in-home senior care across Frederick County, MD — Frederick, Middletown, Brunswick & more. Call today for a free consultation.',
+  keywords: [
+    'home care Frederick County Maryland',
+    'in-home care Frederick MD',
+    'senior care Frederick County',
+    'home care agency Middletown Maryland',
+  ],
   alternates: { canonical: `${brand.siteUrl}/service-areas/frederick-county` },
+  openGraph: {
+    title: 'Home Care Frederick County MD | MarkoCare',
+    description: 'RSA-licensed in-home senior care across Frederick County, MD. Serving Frederick, Middletown, Brunswick, Urbana & more. Call for a free consultation.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'MarkoCare caregiver assisting a Frederick County Maryland senior at home near the city of Frederick' }],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function FrederickCountyPage() {

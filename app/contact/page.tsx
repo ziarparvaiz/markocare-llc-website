@@ -5,10 +5,22 @@ import AssessmentForm from '@/components/forms/AssessmentForm';
 import SectionHeader from '@/components/ui/SectionHeader';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | MarkoCare Maryland Home Care',
+  title: 'Contact Our Maryland Home Care Team | MarkoCare',
   description:
-    'Contact MarkoCare for home care services in Maryland. Request a free assessment, reach our care team, or get directions to our Columbia, MD office.',
+    'Contact MarkoCare to request a free in-home care consultation in Maryland. Serving Howard, Anne Arundel, Carroll & Frederick Counties. Call or message us today.',
+  keywords: [
+    'contact home care agency Maryland',
+    'home care consultation Maryland',
+    'Maryland home care free assessment',
+    'MarkoCare contact',
+  ],
   alternates: { canonical: `${brand.siteUrl}/contact` },
+  openGraph: {
+    title: 'Contact Our Maryland Home Care Team | MarkoCare',
+    description: 'Request a free in-home care consultation in Maryland. MarkoCare serves Howard, Anne Arundel, Carroll & Frederick Counties. 24/7 coordination available.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'MarkoCare care coordinator speaking with a Maryland family about their home care options' }],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function ContactPage() {

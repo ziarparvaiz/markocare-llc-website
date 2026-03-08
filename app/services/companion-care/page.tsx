@@ -4,10 +4,22 @@ import { brand } from '@/config/brand';
 import ServicePageLayout from '@/components/sections/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'Companion Care Services | MarkoCare Maryland',
+  title: 'Companion Care for Seniors Maryland | MarkoCare',
   description:
-    'Compassionate companion care in Maryland. MarkoCare provides social engagement, light housekeeping, errands, and transportation to combat senior isolation.',
+    'MarkoCare\'s companion care for seniors in Maryland provides meaningful social connection, light daily support & safe supervision. Serving 4 counties. Call today.',
+  keywords: [
+    'companion care for seniors Maryland',
+    'companionship care elderly Maryland',
+    'senior companion services MD',
+    'in-home social support Maryland',
+  ],
   alternates: { canonical: `${brand.siteUrl}/services/companion-care` },
+  openGraph: {
+    title: 'Companion Care for Seniors Maryland | MarkoCare',
+    description: 'Meaningful in-home companion care for Maryland seniors. Social engagement, daily support & safe supervision across Howard, Anne Arundel, Carroll & Frederick Counties.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'MarkoCare companion caregiver sharing a laugh with a senior at their Maryland home' }],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function CompanionCarePage() {

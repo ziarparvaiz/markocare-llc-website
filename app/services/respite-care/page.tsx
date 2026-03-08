@@ -4,10 +4,22 @@ import { brand } from '@/config/brand';
 import ServicePageLayout from '@/components/sections/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'Respite Care Services | MarkoCare Maryland',
+  title: 'Respite Care for Family Caregivers Maryland | MarkoCare',
   description:
-    'Respite care for Maryland family caregivers. MarkoCare provides temporary relief so family members can rest, recharge, and avoid caregiver burnout.',
+    'MarkoCare offers trusted respite care for Maryland family caregivers. Take a break — hourly, overnight, or extended relief across 4 counties. Call today.',
+  keywords: [
+    'respite care Maryland family caregivers',
+    'caregiver respite care MD',
+    'temporary home care Maryland',
+    'short-term senior care Maryland',
+  ],
   alternates: { canonical: `${brand.siteUrl}/services/respite-care` },
+  openGraph: {
+    title: 'Respite Care for Family Caregivers Maryland | MarkoCare',
+    description: 'MarkoCare provides hourly, overnight & extended respite care for Maryland family caregivers across 4 counties. Take a real break — your loved one is in good hands.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Family caregiver resting while a MarkoCare professional cares for their senior loved one in Maryland' }],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RespiteCarePage() {

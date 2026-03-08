@@ -5,10 +5,22 @@ import CaregiverForm from '@/components/forms/CaregiverForm';
 import SectionHeader from '@/components/ui/SectionHeader';
 
 export const metadata: Metadata = {
-  title: 'Careers – Join Our Care Team | MarkoCare Maryland',
+  title: 'Caregiver Jobs Maryland | MarkoCare',
   description:
-    'MarkoCare is hiring caregivers, CNAs, and RNs in Maryland. W2 employment, competitive pay, RN supervision, and a team that truly cares. Apply today.',
+    'MarkoCare is hiring compassionate caregivers in Maryland. Competitive pay, flexible schedules & RN support. Join our team serving 4 counties. Apply today.',
+  keywords: [
+    'caregiver jobs Maryland',
+    'home care jobs Maryland',
+    'CNA jobs Maryland home care',
+    'personal care aide jobs MD',
+  ],
   alternates: { canonical: `${brand.siteUrl}/careers` },
+  openGraph: {
+    title: 'Caregiver Jobs Maryland | MarkoCare',
+    description: "Join MarkoCare — Maryland's RSA-licensed home care agency. Competitive pay, flexible schedules & RN support for caregivers across 4 counties. Apply now.",
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'MarkoCare caregiver team member working in a Maryland senior\'s home' }],
+  },
+  robots: { index: true, follow: true },
 };
 
 const benefits = [

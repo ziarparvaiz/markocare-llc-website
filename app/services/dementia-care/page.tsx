@@ -4,10 +4,22 @@ import { brand } from '@/config/brand';
 import ServicePageLayout from '@/components/sections/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'Dementia & Alzheimer\'s Care | MarkoCare Maryland',
+  title: 'Dementia Care at Home Maryland | MarkoCare',
   description:
-    'Specialized dementia and Alzheimer\'s care in Maryland. MarkoCare provides structured, compassionate memory care by trained caregivers under RN supervision.',
+    'Specialized in-home dementia care in Maryland. MarkoCare\'s trained caregivers support Alzheimer\'s patients with dignity & safety across 4 counties. Call today.',
+  keywords: [
+    'dementia care at home Maryland',
+    "Alzheimer's care Maryland",
+    'memory care at home MD',
+    'in-home dementia support Maryland counties',
+  ],
   alternates: { canonical: `${brand.siteUrl}/services/dementia-care` },
+  openGraph: {
+    title: 'Dementia Care at Home Maryland | MarkoCare',
+    description: 'Specialized in-home dementia & Alzheimer\'s care in Maryland. Trained caregivers, structured routines & RN supervision across 4 counties.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'MarkoCare caregiver engaging a dementia patient in a gentle activity at their Maryland home' }],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function DementiaCarePage() {
