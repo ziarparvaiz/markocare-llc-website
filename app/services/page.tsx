@@ -19,56 +19,56 @@ const services = [
     icon: Heart,
     name: 'Personal Care',
     slug: 'personal-care',
-    desc: 'Dignified, hands-on assistance with ADLs including bathing, grooming, dressing, toileting, and mobility support.',
-    forWho: 'Seniors, adults with disabilities, or anyone needing daily living support.',
+    desc: 'Bathing, dressing, grooming, mobility assistance — our caregivers deliver every activity of daily living with the respect and sensitivity your loved one deserves.',
+    forWho: 'Seniors, adults with chronic illness, post-surgical patients, or anyone needing dignified daily living support at home.',
     color: 'text-rose-600 bg-rose-50',
   },
   {
     icon: Users,
     name: 'Companion Care',
     slug: 'companion-care',
-    desc: 'Meaningful companionship, light housekeeping, meal preparation, errands, and transportation.',
-    forWho: 'Seniors experiencing isolation, or those needing non-medical daily support.',
+    desc: 'Loneliness diminishes quality of life. Our caregivers provide meaningful conversation, engaging activities, light housekeeping, errands, and transportation — so every day feels purposeful.',
+    forWho: 'Seniors experiencing isolation, or anyone who benefits from consistent, friendly support and non-medical daily assistance.',
     color: 'text-mc-leaf-700 bg-mc-leaf-50',
   },
   {
     icon: Brain,
     name: 'Dementia Care',
     slug: 'dementia-care',
-    desc: "Structured, compassionate care for clients with Alzheimer's and dementia, following cognitive safety protocols.",
-    forWho: "Clients with memory loss, Alzheimer's disease, or related dementias.",
+    desc: "Our specially trained caregivers create safe, structured routines that reduce anxiety, support memory, and bring peace of mind to families navigating Alzheimer's or other forms of dementia.",
+    forWho: "Clients with Alzheimer's disease, vascular dementia, Lewy body dementia, or any form of memory impairment who wish to remain safely at home.",
     color: 'text-purple-600 bg-purple-50',
   },
   {
     icon: RefreshCw,
     name: 'Respite Care',
     slug: 'respite-care',
-    desc: 'Temporary relief for family caregivers — from a few hours to extended coverage — ensuring continuity of care.',
-    forWho: 'Family members who are primary caregivers in need of a break.',
+    desc: 'Family caregivers need rest too. Our respite services give you a break — hourly, daily, or weekly — while your loved one remains in safe, caring, professional hands.',
+    forWho: 'Family members who serve as primary caregivers and need planned or emergency relief to recharge.',
     color: 'text-sky-600 bg-sky-50',
   },
   {
     icon: Hospital,
     name: 'Post-Hospital Support',
     slug: 'post-hospital-support',
-    desc: 'RN-coordinated care plans to safely transition patients from hospital to home and reduce readmission risk.',
-    forWho: 'Patients discharged after surgery, illness, or acute hospitalization.',
+    desc: 'Recovery at home is possible with the right support. Our RN-coordinated care plans address medication management, wound care monitoring, therapy reinforcement, and readmission prevention.',
+    forWho: 'Patients discharged after surgery, acute illness, fall recovery, cardiac events, or any hospitalization resulting in functional limitations.',
     color: 'text-mc-leaf-600 bg-mc-sage',
   },
   {
     icon: Ribbon,
     name: 'Cancer Care Support',
     slug: 'cancer-care-support',
-    desc: 'Compassionate support for cancer patients managing fatigue, treatment schedules, and comfort needs at home.',
-    forWho: 'Cancer patients undergoing treatment or in recovery at home.',
+    desc: 'We walk alongside clients through every stage of treatment and recovery — managing fatigue, tracking medications, providing transportation to appointments, and offering steady emotional encouragement.',
+    forWho: 'Cancer patients undergoing chemotherapy, radiation, or surgical recovery, as well as those in remission managing ongoing side effects.',
     color: 'text-amber-600 bg-amber-50',
   },
   {
     icon: Activity,
     name: 'IPOP Transitional Care',
     slug: 'ipop-transitional-care',
-    desc: 'Specialized transitional care supporting Johns Hopkins IPOP patients with structured home-based recovery.',
-    forWho: 'Johns Hopkins IPOP patients and complex post-hospital care needs.',
+    desc: 'Going home after a hospital stay should feel like relief, not risk. Our iPOP program bridges the gap between discharge and full recovery with structured, high-acuity home-based support.',
+    forWho: 'Complex post-hospital patients — including Johns Hopkins IPOP program participants — requiring intensive transitional care at home.',
     color: 'text-teal-600 bg-teal-50',
   },
 ];
@@ -84,8 +84,9 @@ export default function ServicesPage() {
             Comprehensive Home Care Services
           </h1>
           <p className="text-lg text-white/80 leading-relaxed">
-            From personal assistance to specialized post-hospital transitions, MarkoCare offers
-            a full continuum of in-home care delivered by W2 employees under RN supervision.
+            No two people age, heal, or need support in exactly the same way. That is why
+            MarkoCare offers a full spectrum of in-home care — each service delivered according
+            to a personalized plan developed with your family and supervised by a Registered Nurse.
           </p>
         </div>
       </section>
@@ -96,7 +97,7 @@ export default function ServicesPage() {
           <SectionHeader
             badge="All Services"
             title="What We Offer"
-            subtitle="Every service is delivered by trained, background-checked W2 caregivers following RN-supervised care plans."
+            subtitle="Whether your loved one needs a little help around the house, specialized dementia support, or intensive post-hospital care, our trained W2 caregivers are ready — following RN-supervised care plans built around the person, not just the condition."
           />
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service) => {
@@ -130,8 +131,8 @@ export default function ServicesPage() {
       </section>
 
       <CTABanner
-        title="Not Sure Which Service Is Right?"
-        subtitle="Our care coordinators will help you find the right fit. Request a free assessment today."
+        title="Not Sure Which Service Is Right for You?"
+        subtitle="Our care coordinators are trained to help you navigate your options. A brief conversation is all it takes to identify the right level and type of care for your loved one."
         variant="green"
       />
     </>

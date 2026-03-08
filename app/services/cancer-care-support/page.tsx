@@ -14,9 +14,9 @@ export default function CancerCareSupportPage() {
   return (
     <ServicePageLayout
       name="Cancer Care Support"
-      tagline="Compassionate Support Through Every Step of Your Journey"
-      heroDesc="A cancer diagnosis changes everything. Our cancer care support services help patients and families navigate the practical and daily challenges of treatment — providing professional, empathetic in-home support so patients can focus on healing."
-      whoIsItFor="Our cancer care support is for patients undergoing chemotherapy, radiation, immunotherapy, or surgical recovery, as well as those in remission managing ongoing side effects. We support both the patient and their family caregivers."
+      tagline="Walk Beside You Through Every Stage of Treatment and Recovery"
+      heroDesc="A cancer diagnosis changes everything — schedules, energy levels, family roles and emotional wellbeing. At MarkoCare, we help clients and their families navigate the practical and personal challenges of treatment and recovery so they can focus on what truly matters: time, connection, and healing. Our caregivers handle the daily logistics so your loved one can conserve energy, maintain dignity, and stay in the place where they feel most at ease — home."
+      whoIsItFor="Our cancer care support is for patients undergoing chemotherapy, radiation, immunotherapy, or surgical recovery, as well as those in remission managing ongoing side effects. We support both the patient and their family caregivers throughout the journey."
       included={[
         'Personal care during treatment-related fatigue',
         'Transportation to chemotherapy and radiation appointments',

@@ -14,9 +14,9 @@ export default function PersonalCarePage() {
   return (
     <ServicePageLayout
       name="Personal Care"
-      tagline="Dignified Daily Living Assistance at Home"
-      heroDesc="Our personal care services provide compassionate, hands-on support for activities of daily living (ADLs) — helping clients maintain independence, dignity, and quality of life in the comfort of their own home."
-      whoIsItFor="Personal care is designed for seniors, adults with chronic illness, post-surgical patients, or individuals with physical disabilities who need assistance with daily tasks but prefer to remain at home rather than transition to a facility."
+      tagline="Assistance With Daily Life — Delivered With Dignity"
+      heroDesc="The ability to bathe, dress, and care for oneself is deeply tied to self-worth. When age, illness, or injury makes these tasks difficult, having the right support makes all the difference — not just physically, but emotionally. MarkoCare's personal care services provide skilled, respectful assistance with activities of daily living so your loved one can maintain their hygiene, comfort, and dignity without depending entirely on family."
+      whoIsItFor="Personal care is designed for seniors, adults with chronic illness, post-surgical patients, or individuals with physical disabilities who need hands-on assistance with daily tasks but prefer to remain in their own home rather than transition to a care facility."
       included={[
         'Bathing and showering assistance',
         'Grooming (hair, oral care, shaving)',

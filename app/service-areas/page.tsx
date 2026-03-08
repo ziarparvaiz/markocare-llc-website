@@ -39,9 +39,10 @@ export default function ServiceAreasPage() {
             {brand.serviceAreaHeadline}
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed">
-            MarkoCare provides professional, RN-supervised home care services across four key
-            Maryland counties — bringing consistent, clinically overseen care directly to
-            your family.
+            MarkoCare is rooted in the communities we serve. We are not a distant corporate
+            agency — we are your neighbors. Our caregivers, coordinators, and registered nurses
+            live and work in these counties, bringing professional, clinically overseen care
+            directly to your family.
           </p>
         </div>
       </section>
@@ -95,7 +96,9 @@ export default function ServiceAreasPage() {
               <p className="text-gray-600 leading-relaxed">
                 Our Columbia, Maryland office serves as the operational hub for all four counties.
                 We maintain close relationships with local hospitals, discharge planners, and county
-                senior services — so care transitions happen faster and more smoothly for your family.
+                senior services — so care transitions happen faster, more smoothly, and with fewer
+                gaps for your family. When you work with MarkoCare, you work with people who
+                genuinely know and love these communities.
               </p>
             </div>
             <ul className="space-y-3">

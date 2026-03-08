@@ -14,33 +14,33 @@ export const metadata: Metadata = {
 const benefits = [
   {
     icon: DollarSign,
-    title: 'Competitive W2 Compensation',
-    desc: 'Competitive hourly pay as a W2 employee with taxes withheld — no 1099 uncertainty.',
+    title: 'Meaningful Work Every Day',
+    desc: 'You will end each shift knowing you made a real difference to a real person. That kind of work is rare, and we do not take it for granted.',
   },
   {
     icon: Shield,
-    title: 'Fully Insured',
-    desc: 'All caregivers are covered by agency liability insurance and workers\' compensation.',
+    title: 'Competitive W2 Compensation',
+    desc: 'Fair hourly wages that recognize the skill and dedication our work requires, with regular performance reviews and clear advancement opportunities.',
   },
   {
     icon: Award,
-    title: 'Ongoing Training',
-    desc: 'Continuing education, orientation, and specialty training provided at no cost.',
+    title: 'Ongoing Training & Development',
+    desc: 'From initial orientation through specialized training in dementia care, cancer support, and post-hospital transitions — we invest in your growth at no cost to you.',
   },
   {
     icon: Heart,
     title: 'Supportive Team Culture',
-    desc: 'A collaborative, family-centered work environment where caregivers are valued.',
+    desc: 'You are never alone at MarkoCare. Our care coordinators and registered nurses back you up, answer your questions, and make sure you feel valued every day.',
   },
   {
     icon: Clock,
     title: 'Flexible Scheduling',
-    desc: 'Part-time, full-time, and flexible shifts to match your availability and lifestyle.',
+    desc: 'Part-time, full-time, and flexible shifts built around your life — whether you need a specific shift pattern or want to grow your hours over time.',
   },
   {
     icon: CheckCircle,
-    title: 'RN Support',
-    desc: 'Never alone on the job — our RN is available for clinical guidance and support.',
+    title: 'RN Supervision & Support',
+    desc: 'Our supervising RN is available for clinical guidance on every assignment — so you always have the professional backup you need to provide excellent care.',
   },
 ];
 
@@ -94,8 +94,9 @@ export default function CareersPage() {
             Join the MarkoCare Family
           </h1>
           <p className="text-lg text-white/80 leading-relaxed">
-            We are actively hiring caregivers, CNAs, and RNs who share our commitment to
-            compassionate, professional home care in Maryland. Join a team that values you.
+            At MarkoCare, our caregivers are not just employees — they are the heart of
+            everything we do. If you are a compassionate, dedicated person who wants to
+            make a real difference in people's lives, every single day, we want to hear from you.
           </p>
         </div>
       </section>
@@ -106,7 +107,7 @@ export default function CareersPage() {
           <SectionHeader
             badge="Why Work With Us"
             title="Why Caregivers Choose MarkoCare"
-            subtitle="We are building a team of dedicated professionals who deserve to be treated with the same care and respect they give to clients."
+            subtitle="We believe that caring for our clients starts with caring for our team. That means fair pay, ongoing training, flexible scheduling, and a culture where every team member feels genuinely valued."
           />
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {benefits.map(({ icon: Icon, title, desc }) => (

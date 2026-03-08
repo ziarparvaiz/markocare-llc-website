@@ -14,9 +14,9 @@ export default function RespiteCarePage() {
   return (
     <ServicePageLayout
       name="Respite Care"
-      tagline="Relief for Family Caregivers — You Deserve a Break Too"
-      heroDesc="Family caregivers are the backbone of home care — but burnout is real. MarkoCare's respite care services provide temporary professional coverage so you can rest, recharge, attend appointments, travel, or simply breathe, knowing your loved one is in safe hands."
-      whoIsItFor="Respite care is for family members who serve as primary caregivers and need planned or emergency relief. Whether you need a few hours weekly or extended coverage during a vacation, we provide professional continuity of care."
+      tagline="Rest and Recharge — Because Caring for the Caregiver Matters Too"
+      heroDesc="If you are caring for a family member at home, you know how demanding — and how deeply loving — that role is. You also know it can be exhausting. Caregiver burnout is real, and it affects not only you but the quality of care your loved one receives. MarkoCare's respite care gives family caregivers the break they need and deserve, stepping in fully prepared so you can rest with complete peace of mind."
+      whoIsItFor="Respite care is for family members who serve as primary caregivers and need planned or emergency relief — whether for a few hours, a full day, overnight, or an extended period. You should never feel guilty about needing rest."
       included={[
         'Flexible scheduling: hourly, daily, or extended stays',
         'Personal care during caregiver absence',

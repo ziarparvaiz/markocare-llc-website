@@ -61,37 +61,37 @@ const services = [
     icon: Heart,
     name: "Personal Care",
     slug: "personal-care",
-    desc: "Dignified assistance with bathing, grooming, and daily activities — tailored to each individual.",
+    desc: "Bathing, dressing, grooming, mobility assistance — our caregivers deliver every service with the respect and sensitivity your loved one deserves.",
   },
   {
     icon: Brain,
     name: "Dementia Care",
     slug: "dementia-care",
-    desc: "Specialized memory care with structured cognitive safety protocols and compassionate support.",
+    desc: "Our specially trained caregivers create safe, structured routines that reduce anxiety, support memory, and bring peace of mind to families navigating Alzheimer's or other forms of dementia.",
   },
   {
     icon: Hospital,
     name: "Post-Hospital Support",
     slug: "post-hospital-support",
-    desc: "Safe transitions from hospital to home with RN-supervised care plans to prevent readmission.",
+    desc: "Recovery at home is possible with the right support. We provide medication management, wound care assistance, and accompaniment to therapy so your loved one heals safely.",
   },
   {
     icon: Ribbon,
     name: "Cancer Care Support",
     slug: "cancer-care-support",
-    desc: "Compassionate assistance for cancer patients managing fatigue, treatment schedules, and comfort.",
+    desc: "We walk alongside clients through every stage of treatment and recovery — helping manage fatigue, tracking medications, and providing the emotional encouragement that makes a real difference.",
   },
   {
     icon: RefreshCw,
     name: "Respite Care",
     slug: "respite-care",
-    desc: "Relief for family caregivers — from a few hours to extended support — so you can recharge.",
+    desc: "Family caregivers need rest too. Our respite services give you a break — hourly, daily, or weekly — while your loved one remains in caring, capable hands.",
   },
   {
     icon: Users,
     name: "Companion Care",
     slug: "companion-care",
-    desc: "Meaningful social engagement, light housekeeping, errands, and transportation support.",
+    desc: "Loneliness diminishes quality of life. Our caregivers engage clients in meaningful conversation, activities, and outings so every day feels purposeful and connected.",
   },
 ];
 
@@ -152,16 +152,16 @@ export default function HomePage() {
 
               {/* Headline */}
               <h1 className="heading-display text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.08] mb-6">
-                Compassionate Home Care
+                Trusted Home Care
                 <br />
                 <span className="text-mc-leaf-400">for Maryland</span> Families
               </h1>
 
               {/* Lead */}
               <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-[520px]">
-                Professional, RN-supervised home care delivered by W2 employees
-                — not contractors. We bring medical credibility and genuine
-                warmth into every home we serve.
+                MarkoCare provides trusted in-home care for seniors and adults
+                across Maryland — delivered by compassionate caregivers and
+                clinically supervised by registered nurses.
               </p>
 
               {/* Trust bullets */}
@@ -386,18 +386,19 @@ export default function HomePage() {
                 Feels Like Family
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                MarkoCare was founded on a simple belief: that professional,
-                clinical-grade home care and genuine human warmth are not
-                mutually exclusive. We combine rigorous medical oversight — a
-                Registered Nurse supervises every care plan — with the kind of
+                MarkoCare was founded on a straightforward conviction: families
+                navigating illness, aging, or recovery deserve a care partner
+                who shows up — reliably, compassionately, and professionally. We
+                combine rigorous clinical oversight with the kind of
                 relationship-centered approach that truly transforms a client's
                 daily life.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
-                Every caregiver on our team is a W2 employee, thoroughly
-                background-checked, trained, and held to the highest standards
-                of professional conduct. We serve families across Howard,
-                Carroll, Anne Arundel, and Frederick Counties in Maryland.
+                Today we serve families across Howard, Carroll, Anne Arundel,
+                and Frederick Counties — each client receiving individualized
+                attention from a team that genuinely treats them like family.
+                Every caregiver is a background-checked, trained W2 employee,
+                held to the highest professional standards.
               </p>
 
               {/* Feature list */}
@@ -458,8 +459,9 @@ export default function HomePage() {
               Comprehensive Care for Every Stage of Life
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              From personal assistance to post-hospital recovery, our trained,
-              RN-supervised caregivers are ready to support your family.
+              From daily personal care to specialized support, we meet your
+              family where you are — with a personalized plan and a caregiver
+              who genuinely cares.
             </p>
           </div>
 
@@ -746,8 +748,9 @@ export default function HomePage() {
             <br className="hidden md:block" /> Compassionate Care
           </h2>
           <p className="text-white/80 text-[1.05rem] max-w-xl mx-auto mb-9 leading-relaxed">
-            Our care coordinators are ready to guide you through the process.
-            Request a no-obligation, free in-home assessment today.
+            A conversation costs nothing. Our care coordinators are standing by
+            to listen, answer your questions, and help you build a plan that is
+            right for your family — with no obligation to proceed.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

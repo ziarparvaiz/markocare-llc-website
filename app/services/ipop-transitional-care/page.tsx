@@ -14,9 +14,9 @@ export default function IPOPTransitionalCarePage() {
   return (
     <ServicePageLayout
       name="IPOP Transitional Care Support"
-      tagline="Supporting Johns Hopkins IPOP Patients at Home"
-      heroDesc="MarkoCare partners with Maryland hospitals and discharge planning teams — including Johns Hopkins IPOP (Intensive Patient Outreach Program) — to provide structured, high-acuity transitional care support. Our RN-supervised model ensures continuity of care from hospital to home."
-      whoIsItFor="IPOP transitional care is designed for complex patients being discharged through the Johns Hopkins IPOP program or similar high-acuity discharge pathways, requiring intensive home-based support to prevent readmission and ensure safe recovery."
+      tagline="A Safer, Smoother Path From Hospital to Home"
+      heroDesc="Leaving the hospital should feel like the beginning of recovery, not the start of a new set of worries. Without adequate support, the transition from inpatient care to home is when health setbacks and readmissions are most likely to occur. MarkoCare partners with Maryland hospitals and discharge planning teams — including Johns Hopkins IPOP — to bridge this critical gap with structured, RN-supervised home-based care that makes recovery safe and successful."
+      whoIsItFor="IPOP transitional care is designed for complex patients being discharged through the Johns Hopkins IPOP program or similar high-acuity discharge pathways, requiring intensive, coordinated home-based support to prevent readmission and ensure a full recovery."
       included={[
         'Immediate post-discharge home care coordination',
         'RN assessment within 24 hours of discharge',

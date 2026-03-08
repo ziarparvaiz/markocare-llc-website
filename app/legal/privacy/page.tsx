@@ -22,11 +22,13 @@ export default function PrivacyPage() {
           <div className="prose-care max-w-none space-y-8">
 
             <div>
-              <h2>1. Introduction</h2>
+              <h2>1. Our Commitment to Your Privacy</h2>
               <p>
-                MarkoCare (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy.
-                This Privacy Policy explains how we collect, use, disclose, and safeguard your
-                information when you visit our website or contact us for home care services.
+                MarkoCare LLC (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) respects your privacy and is committed
+                to protecting the personal and health-related information you share with us. This
+                Privacy Policy explains what information we collect, how we use it, and how we
+                protect it. By using the MarkoCare website and services, you agree to the practices
+                described in this policy.
               </p>
             </div>
 
@@ -55,12 +57,15 @@ export default function PrivacyPage() {
             </div>
 
             <div>
-              <h2>4. Health Information & HIPAA</h2>
+              <h2>4. Health Information &amp; HIPAA Compliance</h2>
               <p>
-                Any protected health information (PHI) shared with us in connection with care
-                coordination is handled in accordance with the Health Insurance Portability and
-                Accountability Act (HIPAA). We do not sell, rent, or trade PHI. PHI is used solely
-                for treatment, payment, and operations (TPO) purposes as permitted by HIPAA.
+                MarkoCare handles health-related information in compliance with the Health Insurance
+                Portability and Accountability Act (HIPAA). Protected Health Information (PHI) is
+                used only for care delivery, billing, and legally required disclosures. We do not
+                sell, rent, or trade PHI. We maintain appropriate administrative, technical, and
+                physical safeguards to protect PHI from unauthorized access, use, or disclosure.
+                Upon becoming a client, you will receive a separate Notice of Privacy Practices
+                describing your rights regarding your health information.
               </p>
             </div>
 

@@ -21,11 +21,13 @@ export default function TermsPage() {
         <div className="container-pad max-w-4xl">
           <div className="prose-care max-w-none space-y-8">
             <div>
-              <h2>1. Acceptance of Terms</h2>
+              <h2>1. Agreement to Terms</h2>
               <p>
-                By accessing or using the MarkoCare website (markocare.com) or requesting our
-                services, you agree to be bound by these Terms of Service. If you do not agree,
-                please do not use our website or services.
+                By accessing or using the MarkoCare website (markocare.com), you agree to be bound
+                by these Terms of Use. The MarkoCare website is provided for informational purposes
+                only. Content on this site does not constitute medical advice and should not be used
+                as a substitute for professional medical, nursing, or healthcare guidance. If you do
+                not agree to these terms, please discontinue use of the site.
               </p>
             </div>
 
@@ -57,11 +59,15 @@ export default function TermsPage() {
             </div>
 
             <div>
-              <h2>5. Website Use</h2>
+              <h2>5. Intellectual Property &amp; Website Use</h2>
               <p>
+                All content on the MarkoCare website — including text, images, graphics, logos, and
+                downloadable materials — is the property of MarkoCare LLC or its content licensors
+                and is protected by applicable copyright and intellectual property laws. You may print
+                or download content for personal, non-commercial use. Reproduction or distribution
+                for any other purpose without written permission from MarkoCare LLC is prohibited.
                 You agree to use this website only for lawful purposes and in a manner that does not
-                infringe on the rights of others. Unauthorized use, scraping, or reproduction of
-                website content is prohibited.
+                infringe the rights of others or restrict their use of the site.
               </p>
             </div>
 

@@ -108,7 +108,7 @@ export default function Header() {
     >
       {/* ── Top bar ─────────────────────────────────────────────────────── */}
       <div className="bg-mc-forest text-white text-[11.5px]">
-        <div className="container-pad flex items-center justify-between py-[7px]">
+        <div className="container-pad flex items-center justify-center gap-6 py-[7px]">
           {/* License label — hidden on smallest screens */}
           <span className="hidden md:block font-medium opacity-85 truncate max-w-xs lg:max-w-none">
             {brand.licenseStatusLabel}

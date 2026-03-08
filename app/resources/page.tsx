@@ -17,7 +17,7 @@ const articles = [
     slug: 'signs-its-time-for-home-care',
     title: '7 Signs It May Be Time to Consider Home Care for Your Parent',
     excerpt:
-      'Recognizing when a loved one needs professional help is one of the hardest decisions a family faces. Here are seven meaningful indicators that home care may be the right next step.',
+      'Recognizing when an aging parent needs professional help is one of the hardest calls a family makes. Here are seven meaningful indicators — physical, cognitive, and behavioral — that home care may be the right next step.',
     category: 'Family Guidance',
     date: 'January 2025',
     readTime: '5 min read',
@@ -26,7 +26,7 @@ const articles = [
     slug: 'post-hospital-discharge-planning',
     title: 'How to Plan a Safe Hospital Discharge to Home Care in Maryland',
     excerpt:
-      'The transition from hospital to home is a high-risk period. This guide walks families through the key steps of discharge planning and how a home care agency can help close care gaps.',
+      'The transition from hospital to home is one of the most vulnerable moments in recovery. This guide walks families through the key steps of discharge planning, what to ask before leaving, and how a home care agency helps close dangerous care gaps.',
     category: 'Post-Hospital Care',
     date: 'January 2025',
     readTime: '7 min read',
@@ -35,7 +35,7 @@ const articles = [
     slug: 'dementia-home-care-tips',
     title: 'Dementia Home Care: Practical Tips for Maryland Families',
     excerpt:
-      'Caring for a loved one with Alzheimer\'s or dementia at home is challenging. These evidence-informed strategies help families provide safer, more compassionate care.',
+      'Caring for a loved one with Alzheimer\'s or dementia at home is challenging and deeply emotional. These evidence-informed strategies help families provide safer, more compassionate daily care — and know when professional support is needed.',
     category: 'Dementia Care',
     date: 'February 2025',
     readTime: '6 min read',
@@ -44,16 +44,16 @@ const articles = [
     slug: 'understanding-rsa-maryland',
     title: 'Understanding Maryland\'s Residential Service Agency (RSA) Model',
     excerpt:
-      'What is a Residential Service Agency, and why does RSA licensure matter when choosing a home care agency in Maryland? A clear, plain-language explanation.',
+      'What is a Residential Service Agency, and why does RSA licensure matter when choosing a home care provider in Maryland? A clear, plain-language guide to what families should look for and why it matters.',
     category: 'Maryland Regulations',
     date: 'February 2025',
     readTime: '4 min read',
   },
   {
     slug: 'caregiver-burnout-prevention',
-    title: 'Caregiver Burnout: How Maryland Families Can Recognize and Prevent It',
+    title: 'Caregiver Burnout: How to Recognize It and Find Relief',
     excerpt:
-      'Family caregivers are among the most vulnerable to burnout. This guide covers warning signs, prevention strategies, and how respite care can provide critical relief.',
+      'Family caregivers are among the most vulnerable to burnout — and it affects not just the caregiver but the quality of care their loved one receives. This guide covers warning signs, prevention strategies, and how respite care provides critical relief.',
     category: 'Caregiver Support',
     date: 'February 2025',
     readTime: '5 min read',
@@ -62,10 +62,28 @@ const articles = [
     slug: 'howard-county-senior-resources',
     title: 'Top Senior Care Resources in Howard County, Maryland',
     excerpt:
-      'A comprehensive guide to senior care resources available in Howard County — from the Area Agency on Aging to local senior centers, transportation, and home care options.',
+      'A comprehensive guide to senior care resources available in Howard County — from the Office on Aging and Independence to local senior centers, transportation programs, Medicaid waiver options, and home care.',
     category: 'Howard County',
     date: 'March 2025',
     readTime: '6 min read',
+  },
+  {
+    slug: 'paying-for-home-care',
+    title: 'Paying for Home Care: A Guide to Your Options in Maryland',
+    excerpt:
+      'From long-term care insurance to Medicaid waiver programs and veterans benefits, this guide explains the financial resources available to Maryland families — so cost is never the only reason a loved one goes without support.',
+    category: 'Financial Guidance',
+    date: 'March 2025',
+    readTime: '6 min read',
+  },
+  {
+    slug: 'talking-to-doctor-about-home-care',
+    title: 'How to Talk to Your Loved One\'s Doctor About Home Care Needs',
+    excerpt:
+      'Many families hesitate to raise home care concerns with a physician. This guide offers practical tips for having an honest, productive conversation that results in better care coordination and a clearer path forward.',
+    category: 'Family Guidance',
+    date: 'March 2025',
+    readTime: '4 min read',
   },
 ];
 
@@ -79,7 +97,9 @@ export default function ResourcesPage() {
             Home Care Guides & Resources
           </h1>
           <p className="text-lg text-white/80 leading-relaxed">
-            Helpful guides, tips, and insights for Maryland families navigating home care decisions.
+            Caring for a loved one or navigating a health transition is complex. MarkoCare is
+            committed to supporting families not just through our care services, but with the
+            knowledge and tools you need to make confident, informed decisions.
           </p>
         </div>
       </section>
@@ -87,9 +107,9 @@ export default function ResourcesPage() {
       <section className="section-pad bg-white">
         <div className="container-pad">
           <SectionHeader
-            badge="Latest Articles"
-            title="Resources for Maryland Families"
-            subtitle="Our resource library is designed to help families make informed, confident care decisions."
+            badge="Educational Articles"
+            title="Resources for Families and Caregivers"
+            subtitle="Practical knowledge, trusted tools, and local connections to help you navigate the journey ahead — from understanding care options to managing the financial side of home care."
           />
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

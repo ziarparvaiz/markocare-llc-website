@@ -19,11 +19,13 @@ export default function ContactPage() {
         <div className="container-pad max-w-3xl">
           <span className="badge-green mb-4 inline-flex">Contact Us</span>
           <h1 className="text-4xl md:text-5xl font-bold mb-5">
-            We&apos;re Here for Your Family
+            We Are Here — Ready to Listen
           </h1>
           <p className="text-lg text-white/80 leading-relaxed">
-            Whether you have questions, need immediate care, or want to explore your options,
-            our care coordinators are ready to help.
+            Choosing home care is a big decision, and you deserve guidance from people who
+            genuinely care about getting it right. Whether you have questions, need immediate
+            care, or just want to talk through your options — our care coordinators are here
+            for you, with no pressure and no obligation.
           </p>
         </div>
       </section>
@@ -139,9 +141,9 @@ export default function ContactPage() {
             {/* Form */}
             <div className="lg:col-span-2">
               <SectionHeader
-                badge="Free Assessment"
+                badge="Free Consultation"
                 title="Request a Free In-Home Assessment"
-                subtitle="Tell us about your care needs and a coordinator will reach out within one business day."
+                subtitle="Our free consultation is a no-pressure conversation where we listen to your situation, answer all your questions honestly, and help you understand what care options are available — with no obligation to proceed."
                 align="left"
               />
               <div className="mt-8 rounded-3xl border border-gray-100 bg-brand-slate p-7">

@@ -15,33 +15,33 @@ export const metadata: Metadata = {
 const advantages = [
   {
     icon: Clock,
-    title: '24-Hour Placement Readiness',
-    desc: 'We can mobilize a caregiver within 24 hours for urgent discharges — reducing length-of-stay risk and preventing unsafe discharge gaps.',
+    title: 'Prompt Response',
+    desc: 'We respond to referrals quickly — often within hours. For urgent discharge situations, we can arrange care within 24 hours. Your patient will not be left without support.',
   },
   {
     icon: UserCheck,
     title: 'W2 Employee Model',
-    desc: 'All our caregivers are W2 employees — fully vetted, insured, and accountable. No staffing agency uncertainty or independent contractor gaps.',
+    desc: 'All caregivers are W2 employees — fully vetted, insured, and accountable to MarkoCare standards. No independent contractor liability gaps or staffing agency uncertainty.',
   },
   {
     icon: Stethoscope,
-    title: 'RN Supervision',
-    desc: 'A Registered Nurse develops and supervises every care plan. Clinical communication with your care team is standard.',
+    title: 'RN-Led Care',
+    desc: 'Every client receives an in-home assessment and individualized care plan from a Registered Nurse. Clinical communication with your team is standard practice, not an exception.',
   },
   {
     icon: Shield,
-    title: 'Insurance Verified',
-    desc: 'We verify insurance and payer status upfront to prevent coverage surprises. Medicaid readiness positioning in progress.',
+    title: 'Clear Documentation',
+    desc: 'Our care records are detailed and organized — supporting continuity of care, coordination with medical teams, and insurance providers throughout the care relationship.',
   },
   {
     icon: CheckCircle,
-    title: 'Background-Checked Caregivers',
-    desc: 'State and federal background checks on every caregiver — giving you confidence in who enters your patient\'s home.',
+    title: 'Reliable Follow-Through',
+    desc: 'When we commit to a care start date, we honor it. Your patients will not face gaps in care due to staffing issues or scheduling failures.',
   },
   {
     icon: Phone,
     title: 'Dedicated Intake Line',
-    desc: 'Referral partners reach a live care coordinator — not a voicemail — for time-sensitive placements.',
+    desc: 'Referral partners reach a live care coordinator — not a voicemail — for time-sensitive placements. Priority access is a standard part of our partner relationship.',
   },
 ];
 
@@ -65,11 +65,13 @@ export default function ReferralPartnersPage() {
           <div className="max-w-3xl">
             <span className="badge-green mb-4 inline-flex">Referral Partners</span>
             <h1 className="text-4xl md:text-5xl font-bold mb-5">
-              A Home Care Partner You Can Count On
+              A Home Care Partner Your Patients Can Trust
             </h1>
             <p className="text-lg text-white/80 leading-relaxed mb-6">
-              MarkoCare is built for hospital discharge planners, case managers, and IPOP teams
-              who need fast, reliable, and clinically sound home care placement in Maryland.
+              When you refer a patient for home care, your professional reputation depends on
+              the quality of the agency you recommend. MarkoCare is built to earn and maintain
+              that trust — with 24-hour placement readiness, W2 caregivers, RN supervision, and
+              a direct line to a real care coordinator every time you call.
             </p>
             <div className="flex flex-wrap gap-3">
               {[
@@ -91,8 +93,8 @@ export default function ReferralPartnersPage() {
         <div className="container-pad">
           <SectionHeader
             badge="Why Partner With Us"
-            title="What Makes MarkoCare the Right Referral Choice"
-            subtitle="We are built from the ground up to support the needs of Maryland's clinical referral community."
+            title="What Our Referral Partners Can Expect"
+            subtitle="We are built from the ground up to support the needs of Maryland's clinical referral community — with the reliability, clinical coordination, and transparent communication your patients deserve."
           />
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {advantages.map(({ icon: Icon, title, desc }) => (
@@ -119,7 +121,8 @@ export default function ReferralPartnersPage() {
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
                 We work with a broad range of clinical and care coordination teams across Maryland
-                to ensure patients receive seamless, safe transitions to home care.
+                to ensure every patient receives a seamless, safe, and well-supported transition
+                to home care — with no gaps, no surprises, and no dropped handoffs.
               </p>
               <ul className="space-y-2.5">
                 {supportedPrograms.map((program) => (

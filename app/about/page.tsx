@@ -29,17 +29,17 @@ const approachPillars = [
   {
     icon: Stethoscope,
     title: 'RN-Supervised Care',
-    desc: 'Every care plan is created, implemented, and monitored by a Registered Nurse — not a coordinator without clinical credentials.',
+    desc: 'Every care plan is created, implemented, and monitored by a Registered Nurse — not a coordinator without clinical credentials. This clinical backbone is non-negotiable.',
   },
   {
     icon: UserCheck,
     title: 'W2 Employee Model',
-    desc: 'Our caregivers are employees, not independent contractors. This means full insurance coverage, accountability, and consistent standards.',
+    desc: 'Our caregivers are employees, not independent contractors. This means full insurance coverage, consistent accountability, and caregivers who are supervised and trained to MarkoCare standards.',
   },
   {
     icon: Heart,
     title: 'Compassion-First Culture',
-    desc: 'We recruit caregivers who treat clients as family — and we reinforce that standard through ongoing training and supervision.',
+    desc: 'We hire for heart and train for excellence. We recruit caregivers who treat clients as family — and we reinforce that standard through ongoing education, supervision, and recognition.',
   },
 ];
 
@@ -132,15 +132,16 @@ export default function AboutPage() {
         <div className="container-pad max-w-4xl mx-auto text-center">
           <span className="eyebrow mb-4 block">Our Mission</span>
           <blockquote className="text-2xl md:text-3xl font-serif font-semibold text-mc-forest leading-relaxed">
-            &ldquo;We founded MarkoCare because Maryland families deserve better — consistent
-            caregivers, clinical oversight, and complete transparency. Not because it was
-            easy, but because it was right.&rdquo;
+            &ldquo;To enhance the quality of life for every client we serve by providing
+            compassionate, dignified and skilled home care — empowering individuals to live
+            safely and independently in the comfort of their own homes.&rdquo;
           </blockquote>
           <p className="mt-8 text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
-            We witnessed firsthand the gap between what families needed and what too many
-            home care agencies delivered. Our answer was clear: build an agency anchored in
-            the W2 employment model, staffed by professionally vetted caregivers, and
-            supervised by a Registered Nurse.
+            We witnessed firsthand how difficult it is to find home care that is both
+            clinically sound and genuinely warm. Too often, families feel caught between
+            sterile institutional options and inconsistent private arrangements. MarkoCare
+            was created to close that gap — with RN oversight, W2 employees, and a
+            compassion-first culture that shows in every visit.
           </p>
         </div>
       </section>
@@ -152,7 +153,8 @@ export default function AboutPage() {
             <span className="eyebrow mb-3 block">How We Work</span>
             <h2 className="text-3xl md:text-4xl font-bold text-mc-forest">Our Approach</h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              Three pillars drive everything we do — and everything that sets MarkoCare apart.
+              Three pillars drive everything we do — and everything that sets MarkoCare apart
+              from agencies that treat care as a commodity.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -207,9 +209,10 @@ export default function AboutPage() {
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
                 Many home care agencies classify caregivers as independent contractors to
-                reduce their own costs. We chose a different path. Every MarkoCare caregiver
-                is a W2 employee — because it protects you, your family, and the caregivers
-                who serve you.
+                reduce their own costs. We chose a different path — because we believe that
+                caring for our clients starts with caring for our team. Every MarkoCare
+                caregiver is a W2 employee, because it protects you, your family, and the
+                caregivers who dedicate themselves to your loved one&rsquo;s wellbeing.
               </p>
               <ul className="space-y-3">
                 {w2Benefits.map((b) => (
@@ -357,7 +360,9 @@ export default function AboutPage() {
             Ready to Start Your Care Journey?
           </h2>
           <p className="text-gray-600 mb-7 leading-relaxed">
-            Our care coordinators are here to listen, answer your questions, and guide your family through next steps — with no obligation.
+            Get to know us the way we hope to know you — through an honest conversation
+            about your loved one&rsquo;s needs. No pressure, no obligation, just real answers
+            from people who genuinely want to help.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/contact" className="btn-mc-primary">

@@ -14,9 +14,9 @@ export default function CompanionCarePage() {
   return (
     <ServicePageLayout
       name="Companion Care"
-      tagline="Meaningful Connection, Everyday Support"
-      heroDesc="Social connection is essential to wellbeing. Our companion care services combat isolation and provide meaningful daily support — from engaging conversation to running errands — helping clients live fuller, happier lives at home."
-      whoIsItFor="Companion care is ideal for seniors who live alone or who may be experiencing social isolation, those who need light household help and oversight, family caregivers who work during the day, and anyone who would benefit from consistent friendly presence."
+      tagline="Because Everyone Deserves a Friendly Face and a Reason to Smile"
+      heroDesc="Loneliness is one of the greatest threats to the health and happiness of older adults. Research consistently shows that social isolation can have serious physical and cognitive consequences — yet many seniors spend most of their day without meaningful human connection. MarkoCare's companion care services are built on a simple truth: connection heals. We match clients with attentive, warm caregivers who bring engagement and purpose into the home alongside practical help."
+      whoIsItFor="Companion care is ideal for seniors who live alone, those experiencing social isolation, family caregivers who work during the day, and anyone who would benefit from consistent, friendly presence and non-medical daily support."
       included={[
         'Friendly conversation and social engagement',
         'Light housekeeping and home organization',

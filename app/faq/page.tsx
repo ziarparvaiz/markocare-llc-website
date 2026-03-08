@@ -111,6 +111,36 @@ const faqCategories = [
       },
     ],
   },
+  {
+    category: 'Home Care vs. Other Options',
+    faqs: [
+      {
+        q: 'How is home care different from assisted living or a nursing home?',
+        a: 'Home care allows your loved one to remain in their own home — surrounded by familiar belongings, routines, and community — while receiving professional support. It is typically more affordable than residential care facilities and offers far greater scheduling flexibility. Many families find that clients do better emotionally and physically when they can age or recover in their own space.',
+      },
+      {
+        q: 'Is home care a cost-effective alternative to a care facility?',
+        a: 'For many families, yes. Home care can be significantly less expensive than assisted living or skilled nursing facilities, especially when only part-time support is needed. It also eliminates the stress and disruption of relocating your loved one. We are happy to discuss a cost comparison during your free assessment.',
+      },
+      {
+        q: 'Can home care be used alongside other medical services?',
+        a: 'Absolutely. MarkoCare works alongside skilled home health agencies, physical therapists, occupational therapists, physicians, and specialists to provide coordinated, comprehensive care. We complement — not replace — the medical services your loved one may be receiving.',
+      },
+    ],
+  },
+  {
+    category: 'Why MarkoCare',
+    faqs: [
+      {
+        q: 'What makes MarkoCare different from other home care agencies?',
+        a: 'MarkoCare combines clinical excellence with genuine human warmth. Our care is supervised by registered nurses, our caregivers are W2 employees who are thoroughly vetted, and our care plans are truly individualized — not templated. Beyond credentials, we are a local agency with deep community roots, and we treat every client with the dignity and respect their family expects.',
+      },
+      {
+        q: 'What if I am not happy with my assigned caregiver?',
+        a: 'Your comfort and satisfaction are our priority. If a caregiver is not the right fit — for any reason — please let us know immediately. We will arrange a replacement promptly and without judgment. Good matching matters, and we take the time to get it right.',
+      },
+    ],
+  },
 ];
 
 function FAQItem({ q, a }: { q: string; a: string }) {
@@ -149,7 +179,8 @@ export default function FAQPage() {
             Frequently Asked Questions
           </h1>
           <p className="text-lg text-white/80 leading-relaxed">
-            Clear answers to help you make confident decisions about home care for your family.
+            We know choosing home care raises a lot of questions. Here are honest, straightforward
+            answers to the ones we hear most often — so your family can make confident, informed decisions.
           </p>
         </div>
       </section>

@@ -32,7 +32,7 @@ export default function Footer() {
               compassionate home care.
             </p>
             {/* License badge */}
-            <div className="inline-flex items-center gap-2 rounded-xl bg-white/10 border border-white/15 px-3 py-2 text-xs text-white/60">
+            <div className="inline-flex items-center gap-2 rounded-xl bg-white/10 border border-mc-leaf-400 px-3 py-2 text-xs text-white/60">
               <Shield className="h-3.5 w-3.5 text-mc-leaf-400 shrink-0" />
               {brand.isLicensed
                 ? "Licensed RSA – Maryland"

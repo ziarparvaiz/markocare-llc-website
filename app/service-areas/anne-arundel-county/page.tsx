@@ -14,8 +14,8 @@ export default function AnneArundelCountyPage() {
     <CountyPageLayout
       county="Anne Arundel County"
       slug="anne-arundel-county"
-      intro="MarkoCare proudly serves Anne Arundel County, Maryland — home to Annapolis, the state capital, and a diverse mix of waterfront communities and suburban neighborhoods. Our professional home care team is ready to serve you in Annapolis, Glen Burnie, Severna Park, Pasadena, and beyond."
-      paragraph2="Anne Arundel County's senior population spans a wide range of needs — from active older adults seeking companionship and light assistance to complex patients requiring post-hospital care coordination. MarkoCare's flexible, scalable model meets each client wherever they are in their care journey, with the clinical oversight of a Registered Nurse ensuring quality and safety."
+      intro="MarkoCare proudly serves Anne Arundel County, Maryland — home to Annapolis, the state capital, and a vibrant mix of waterfront communities, historic neighborhoods, and suburban families. Our professional, RN-supervised home care team is ready to serve families in Annapolis, Glen Burnie, Severna Park, Pasadena, and beyond."
+      paragraph2="Our Anne Arundel County caregivers are local. They understand the roads, the proximity to Anne Arundel Medical Center, and the community resources available to seniors and families in this area. Anne Arundel County's senior population spans a wide range of needs — from active older adults seeking companionship to complex patients requiring post-hospital care coordination. MarkoCare's flexible, personalized model meets each client exactly where they are, with registered nurse oversight ensuring quality and safety at every step."
       localFacts={[
         'Serving Annapolis, Glen Burnie, Severna Park, Pasadena, and surrounding areas',
         'Coordination with Anne Arundel Medical Center and area hospitals',

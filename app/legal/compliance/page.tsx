@@ -32,7 +32,7 @@ export default function CompliancePage() {
           <h1 className="text-4xl font-bold mb-4">Compliance & Client Rights</h1>
           <p className="text-lg text-white/80">
             MarkoCare is committed to operating with full transparency, regulatory compliance,
-            and the highest ethical standards.
+            and the highest ethical standards — in every interaction, in every home, every day.
           </p>
         </div>
       </section>
@@ -88,12 +88,14 @@ export default function CompliancePage() {
                   MarkoCare does not discriminate in the provision of services or in employment
                   practices on the basis of race, color, religion, national origin, sex, age,
                   disability, sexual orientation, gender identity, marital status, or any other
-                  characteristic protected by federal, state, or local law.
+                  characteristic protected by federal, state, or local law. This commitment applies
+                  equally to client intake, caregiver assignment, scheduling, and all business operations.
                 </p>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  This policy applies to all aspects of service delivery, including client intake,
-                  caregiver assignment, scheduling, and all business operations. MarkoCare
-                  is committed to providing equitable, dignified care to every individual we serve.
+                  MarkoCare is committed to providing equitable, dignified care to every individual
+                  we serve — and to building a workforce that reflects the diversity of the communities
+                  we are privileged to serve. We treat every client and every team member with respect,
+                  always.
                 </p>
               </div>
             </div>

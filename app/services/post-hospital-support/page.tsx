@@ -14,9 +14,9 @@ export default function PostHospitalSupportPage() {
   return (
     <ServicePageLayout
       name="Post-Hospital Support"
-      tagline="Safe Hospital-to-Home Transitions, Supervised by an RN"
-      heroDesc="The first 30 days after a hospital discharge are critical. MarkoCare's post-hospital support program ensures safe transitions with RN-coordinated care plans, reducing the risk of readmission and helping patients recover confidently at home."
-      whoIsItFor="Post-hospital support is designed for patients discharged after surgery, acute illness, fall recovery, cardiac events, stroke, or any hospitalization that results in temporary or ongoing functional limitations."
+      tagline="Recover at Home — Safely, Comfortably, With Expert Support"
+      heroDesc="Surgery, injury, or a serious illness is stressful enough. The recovery period at home should be a time of rest and healing — not uncertainty and worry. Without proper support, complications can arise, medications can be mismanaged, and the risk of a setback climbs significantly. MarkoCare's post-hospital support program provides hands-on, compassionate care under registered nurse supervision to make recovery at home not just possible — but successful."
+      whoIsItFor="Post-hospital support is designed for patients discharged after surgery, acute illness, fall recovery, cardiac events, stroke, or any hospitalization that results in temporary or ongoing functional limitations requiring at-home care."
       included={[
         'Hospital discharge coordination and planning',
         'RN assessment within 24 hours of home arrival',

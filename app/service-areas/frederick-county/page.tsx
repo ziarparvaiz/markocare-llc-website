@@ -14,8 +14,8 @@ export default function FrederickCountyPage() {
     <CountyPageLayout
       county="Frederick County"
       slug="frederick-county"
-      intro="MarkoCare extends its professional home care services to Frederick County, Maryland — a growing community with a rich history and a vibrant senior population. We serve Frederick City, Germantown, Middletown, Brunswick, and surrounding communities."
-      paragraph2="Frederick County's seniors increasingly seek quality in-home care alternatives to assisted living and nursing facilities. MarkoCare meets this demand with a professional, structured care model: W2 employees, RN-supervised care plans, and transparent communication with families. Whether you need post-hospital support, dementia care, or daily personal assistance, MarkoCare is here for Frederick County families."
+      intro="MarkoCare serves Frederick County, Maryland — a community that blends rich history with a growing, dynamic population. Families here span a wide range: longtime residents, young households, and seniors who have called this area home for decades. We serve Frederick City, Middletown, Thurmont, Brunswick, and surrounding communities with professional, compassionate home care."
+      paragraph2="Frederick County seniors increasingly prefer to age in place rather than transition to facilities — and MarkoCare is here to make that possible. We coordinate closely with Frederick Health Hospital and other regional medical centers, and our caregivers know the landscape of this county well. Whether your family needs post-hospital support, dementia care, personal care, or respite, MarkoCare delivers RN-supervised, W2-employee care with transparent communication every step of the way."
       localFacts={[
         'Serving Frederick City, Germantown, Middletown, Brunswick, and surrounding areas',
         'Coordination with Frederick Health Hospital discharge teams',

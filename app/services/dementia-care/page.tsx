@@ -14,9 +14,9 @@ export default function DementiaCarePage() {
   return (
     <ServicePageLayout
       name="Dementia Care"
-      tagline="Specialized Memory Care at Home"
-      heroDesc="Living with dementia or Alzheimer's disease requires specialized understanding, patience, and skill. Our trained dementia care team follows structured cognitive safety protocols to provide your loved one with consistent, compassionate care in a familiar environment."
-      whoIsItFor="Our dementia care services are designed for individuals with Alzheimer's disease, vascular dementia, Lewy body dementia, frontotemporal dementia, or other forms of memory impairment who wish to remain at home safely."
+      tagline="Expert, Patient, and Compassionate Memory Care at Home"
+      heroDesc="Watching a loved one experience cognitive decline is one of the most emotionally complex challenges a family can face. There is grief, uncertainty, and often an exhausting mix of love and worry. MarkoCare's dementia care team is here to ease that burden — with professional expertise, proven approaches, and genuine compassion. Our caregivers understand how dementia progresses and how to create an environment where clients feel calm, safe, and respected — even as the disease advances."
+      whoIsItFor="Our dementia care services are designed for individuals with Alzheimer's disease, vascular dementia, Lewy body dementia, frontotemporal dementia, or other forms of memory impairment who wish to remain at home safely and comfortably."
       included={[
         'Structured daily routine maintenance',
         'Cognitive stimulation activities',

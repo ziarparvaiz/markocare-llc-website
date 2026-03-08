@@ -14,8 +14,8 @@ export default function CarrollCountyPage() {
     <CountyPageLayout
       county="Carroll County"
       slug="carroll-county"
-      intro="MarkoCare serves Carroll County, Maryland — a community with deep roots and a strong tradition of family values. We provide professional, compassionate home care to Westminster, Eldersburg, Sykesville, Taneytown, and all Carroll County communities."
-      paragraph2="Carroll County has a significant and growing senior population, with many residents preferring to age in place in the homes and communities they've known for decades. MarkoCare honors that preference by providing the professional support they need — trained W2 caregivers, RN oversight, and flexible scheduling to meet the diverse needs of Carroll County families."
+      intro="MarkoCare proudly serves Carroll County, Maryland — a community known for its rolling farmland, small-town warmth, and strong sense of family values. We provide professional, compassionate home care throughout Westminster, Eldersburg, Sykesville, Taneytown, and all Carroll County communities — bringing expert care directly to families who deserve it."
+      paragraph2="Carroll County has a significant and growing senior population, with many residents preferring to age in place in the homes and communities they have known for decades. MarkoCare honors that preference. We are proud to close the gap in access to high-quality home care in Carroll County by traveling throughout the county to ensure distance is never a barrier to professional support. Our trained W2 caregivers, RN oversight, and flexible scheduling meet the diverse needs of Carroll County families wherever they live."
       localFacts={[
         'Serving Westminster, Eldersburg, Sykesville, Taneytown, and all Carroll County areas',
         'Coordination available with Carroll Hospital Center discharge teams',
