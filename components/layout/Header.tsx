@@ -16,7 +16,6 @@ import {
   Building2,
   HeartPulse,
   Layers,
-  MapPin,
   type LucideIcon,
 } from 'lucide-react';
 import { brand } from '@/config/brand';
@@ -64,16 +63,7 @@ const navItems: NavItem[] = [
       ...(SERVICE_META[s.slug] ?? {}),
     })),
   },
-  {
-    label: 'Service Areas',
-    href: '/service-areas',
-    children: brand.countyPages.map((c) => ({
-      label: c.name,
-      href: `/service-areas/${c.slug}`,
-      icon: MapPin,
-      desc: 'Maryland',
-    })),
-  },
+  { label: 'Service Areas', href: '/service-areas' },
   { label: 'About', href: '/about' },
   { label: 'Referral Partners', href: '/referral-partners' },
   { label: 'Careers', href: '/careers' },

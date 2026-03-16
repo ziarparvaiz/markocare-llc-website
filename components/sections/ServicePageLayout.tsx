@@ -632,7 +632,7 @@ export default function ServicePageLayout({
             {brand.countyPages.map((county) => (
               <Link
                 key={county.slug}
-                href={`/service-areas/${county.slug}`}
+                href="/service-areas"
                 className="group flex flex-col items-center gap-3 rounded-2xl border border-mc-stone bg-mc-sage p-6 text-center hover:border-mc-leaf-300 hover:bg-mc-leaf-50 transition-all"
               >
                 <div className="w-10 h-10 rounded-xl bg-mc-forest flex items-center justify-center group-hover:bg-mc-leaf-600 transition-colors">

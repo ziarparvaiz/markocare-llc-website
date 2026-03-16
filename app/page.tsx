@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import { brand } from "@/config/brand";
 import LocalBusinessSchema from "@/components/seo/LocalBusinessSchema";
+import HomeFAQSection from "@/components/sections/HomeFAQSection";
 
 export const metadata: Metadata = {
   title: "Home Care Agency Maryland | MarkoCare",
@@ -723,7 +724,7 @@ export default function HomePage() {
             {brand.countyPages.map((county) => (
               <Link
                 key={county.slug}
-                href={`/service-areas/${county.slug}`}
+                href="/service-areas"
                 className="mc-card-hover group flex flex-col items-center text-center py-8 gap-4"
               >
                 <div className="w-12 h-12 rounded-2xl bg-mc-leaf-50 border border-mc-leaf-100 flex items-center justify-center group-hover:bg-mc-leaf-100 transition-colors">
@@ -742,7 +743,12 @@ export default function HomePage() {
       </section>
 
       {/* ════════════════════════════════════════════════════════════════════════
-          §8  FINAL CTA — Logo green background, centered, strong contrast
+          §8  FAQ
+      ════════════════════════════════════════════════════════════════════════ */}
+      <HomeFAQSection />
+
+      {/* ════════════════════════════════════════════════════════════════════════
+          §9  FINAL CTA — Logo green background, centered, strong contrast
       ════════════════════════════════════════════════════════════════════════ */}
       <section className="section-pad bg-mc-leaf-400 relative overflow-hidden">
         {/* Subtle dot texture */}

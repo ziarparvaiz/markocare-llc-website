@@ -27,12 +27,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  const countyPages: MetadataRoute.Sitemap = brand.countyPages.map((county) => ({
-    url: `${baseUrl}/service-areas/${county.slug}`,
-    lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: 0.85,
-  }));
-
-  return [...staticPages, ...servicePages, ...countyPages];
+  return [...staticPages, ...servicePages];
 }

@@ -68,7 +68,7 @@ export default function Footer() {
               {brand.countyPages.map((county) => (
                 <li key={county.slug}>
                   <Link
-                    href={`/service-areas/${county.slug}`}
+                    href="/service-areas"
                     className="text-sm text-white/50 hover:text-white transition-colors"
                   >
                     {county.name}
