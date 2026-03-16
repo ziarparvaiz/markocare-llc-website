@@ -15,7 +15,12 @@ const availabilityOptions = [
   'Flexible',
 ];
 
-export default function CaregiverForm() {
+type Props = {
+  /** Pre-selects the position dropdown. Must match the caregiverSchema position enum. */
+  defaultPosition?: 'caregiver' | 'cna' | 'rn' | 'lpn' | 'companion';
+};
+
+export default function CaregiverForm({ defaultPosition }: Props) {
   const { toast, showToast, clearToast } = useToast();
 
   const {
@@ -26,6 +31,7 @@ export default function CaregiverForm() {
   } = useForm<CaregiverFormData>({
     resolver: zodResolver(caregiverSchema),
     defaultValues: {
+      ...(defaultPosition ? { position: defaultPosition } : {}),
       hasCPR: false,
       hasCNA: false,
       hasDriversLicense: false,
