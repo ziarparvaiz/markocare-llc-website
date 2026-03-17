@@ -1,174 +1,147 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight, Calendar, Tag } from 'lucide-react';
+import { ArrowRight, BookOpen, Calendar, Clock } from 'lucide-react';
 import { brand } from '@/config/brand';
 import CTABanner from '@/components/sections/CTABanner';
-import SectionHeader from '@/components/ui/SectionHeader';
+import BlogIndexClient from '@/components/blog/BlogIndexClient';
+import { getAllPostsMeta, getFeaturedPost, formatBlogDate } from '@/lib/blog';
 
 export const metadata: Metadata = {
   title: 'Home Care Resources for Maryland Families | MarkoCare',
   description:
-    "MarkoCare's resource library for Maryland families navigating senior home care — guides, checklists, local agencies, and aging-in-place tools. Start here.",
+    "Educational guides and resources from MarkoCare — helping Maryland families understand home care options, navigate hospital discharge, manage dementia care, and access local senior services.",
   keywords: [
     'home care resources Maryland families',
-    'senior care resources Maryland',
-    'Maryland home care guide',
+    'senior care guides Maryland',
+    'Maryland home care education',
     'aging in place resources MD',
+    'dementia care tips Maryland',
+    'hospital discharge planning home care',
   ],
   alternates: { canonical: `${brand.siteUrl}/resources` },
   openGraph: {
-    title: 'Home Care Resources for Maryland Families | MarkoCare',
-    description: 'Guides, checklists & Maryland-specific resources for families navigating senior home care. From the team at MarkoCare, RSA-licensed in 4 Maryland counties.',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Maryland family reviewing home care planning resources and guides' }],
+    title: 'Home Care Guides & Resources | MarkoCare',
+    description:
+      'Educational articles and guides to help Maryland families make confident decisions about home care. From the team at MarkoCare.',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'MarkoCare home care educational resources for Maryland families',
+      },
+    ],
   },
   robots: { index: true, follow: true },
 };
 
-const articles = [
-  {
-    slug: 'signs-its-time-for-home-care',
-    title: '7 Signs It May Be Time to Consider Home Care for Your Parent',
-    excerpt:
-      'Recognizing when an aging parent needs professional help is one of the hardest calls a family makes. Here are seven meaningful indicators — physical, cognitive, and behavioral — that home care may be the right next step.',
-    category: 'Family Guidance',
-    date: 'January 2025',
-    readTime: '5 min read',
-  },
-  {
-    slug: 'post-hospital-discharge-planning',
-    title: 'How to Plan a Safe Hospital Discharge to Home Care in Maryland',
-    excerpt:
-      'The transition from hospital to home is one of the most vulnerable moments in recovery. This guide walks families through the key steps of discharge planning, what to ask before leaving, and how a home care agency helps close dangerous care gaps.',
-    category: 'Post-Hospital Care',
-    date: 'January 2025',
-    readTime: '7 min read',
-  },
-  {
-    slug: 'dementia-home-care-tips',
-    title: 'Dementia Home Care: Practical Tips for Maryland Families',
-    excerpt:
-      'Caring for a loved one with Alzheimer\'s or dementia at home is challenging and deeply emotional. These evidence-informed strategies help families provide safer, more compassionate daily care — and know when professional support is needed.',
-    category: 'Dementia Care',
-    date: 'February 2025',
-    readTime: '6 min read',
-  },
-  {
-    slug: 'understanding-rsa-maryland',
-    title: 'Understanding Maryland\'s Residential Service Agency (RSA) Model',
-    excerpt:
-      'What is a Residential Service Agency, and why does RSA licensure matter when choosing a home care provider in Maryland? A clear, plain-language guide to what families should look for and why it matters.',
-    category: 'Maryland Regulations',
-    date: 'February 2025',
-    readTime: '4 min read',
-  },
-  {
-    slug: 'caregiver-burnout-prevention',
-    title: 'Caregiver Burnout: How to Recognize It and Find Relief',
-    excerpt:
-      'Family caregivers are among the most vulnerable to burnout — and it affects not just the caregiver but the quality of care their loved one receives. This guide covers warning signs, prevention strategies, and how respite care provides critical relief.',
-    category: 'Caregiver Support',
-    date: 'February 2025',
-    readTime: '5 min read',
-  },
-  {
-    slug: 'howard-county-senior-resources',
-    title: 'Top Senior Care Resources in Howard County, Maryland',
-    excerpt:
-      'A comprehensive guide to senior care resources available in Howard County — from the Office on Aging and Independence to local senior centers, transportation programs, Medicaid waiver options, and home care.',
-    category: 'Howard County',
-    date: 'March 2025',
-    readTime: '6 min read',
-  },
-  {
-    slug: 'paying-for-home-care',
-    title: 'Paying for Home Care: A Guide to Your Options in Maryland',
-    excerpt:
-      'From long-term care insurance to Medicaid waiver programs and veterans benefits, this guide explains the financial resources available to Maryland families — so cost is never the only reason a loved one goes without support.',
-    category: 'Financial Guidance',
-    date: 'March 2025',
-    readTime: '6 min read',
-  },
-  {
-    slug: 'talking-to-doctor-about-home-care',
-    title: 'How to Talk to Your Loved One\'s Doctor About Home Care Needs',
-    excerpt:
-      'Many families hesitate to raise home care concerns with a physician. This guide offers practical tips for having an honest, productive conversation that results in better care coordination and a clearer path forward.',
-    category: 'Family Guidance',
-    date: 'March 2025',
-    readTime: '4 min read',
-  },
-];
-
 export default function ResourcesPage() {
+  const allPosts = getAllPostsMeta();
+  const featured = getFeaturedPost();
+  const gridPosts = allPosts.filter((p) => p.slug !== featured?.slug);
+  const totalCategories = new Set(allPosts.map((p) => p.category)).size;
+
   return (
     <>
+      {/* ── Hero ── */}
       <section className="bg-mc-forest text-white py-16 md:py-20">
-        <div className="container-pad max-w-3xl">
-          <span className="badge-green mb-4 inline-flex">Resources</span>
-          <h1 className="text-4xl md:text-5xl font-bold mb-5">
+        <div className="container-pad max-w-4xl">
+          <span className="mc-badge-dark mb-5 inline-flex">Resources</span>
+          <h1 className="heading-display text-white text-4xl md:text-5xl mb-5">
             Home Care Guides & Resources
           </h1>
-          <p className="text-lg text-white/80 leading-relaxed">
-            Caring for a loved one or navigating a health transition is complex. MarkoCare is
-            committed to supporting families not just through our care services, but with the
-            knowledge and tools you need to make confident, informed decisions.
+          <p className="text-lg text-white/75 leading-relaxed max-w-2xl">
+            MarkoCare publishes educational guides to help Maryland families understand their care
+            options, make informed decisions, and feel confident at every step of the journey.
           </p>
+
+          {/* Stats strip */}
+          <div className="mt-8 flex flex-wrap gap-6">
+            <div className="flex items-center gap-2 text-white/60 text-sm">
+              <BookOpen className="h-4 w-4 text-mc-leaf-400" />
+              <span>{allPosts.length} Guides</span>
+            </div>
+            <span className="text-white/20">·</span>
+            <div className="flex items-center gap-2 text-white/60 text-sm">
+              <span>{totalCategories} Topics</span>
+            </div>
+            <span className="text-white/20">·</span>
+            <div className="flex items-center gap-2 text-white/60 text-sm">
+              <span>Free to Read</span>
+            </div>
+          </div>
         </div>
       </section>
 
       <section className="section-pad bg-white">
         <div className="container-pad">
-          <SectionHeader
-            badge="Educational Articles"
-            title="Resources for Families and Caregivers"
-            subtitle="Practical knowledge, trusted tools, and local connections to help you navigate the journey ahead — from understanding care options to managing the financial side of home care."
-          />
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {articles.map((article) => (
-              <div key={article.slug} className="card-hover group flex flex-col">
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="badge-green text-xs">{article.category}</span>
-                </div>
-                <h2 className="font-bold text-brand-navy-800 mb-3 group-hover:text-brand-green-700 transition-colors leading-snug">
-                  {article.title}
-                </h2>
-                <p className="text-sm text-gray-600 leading-relaxed flex-1 mb-4">
-                  {article.excerpt}
-                </p>
-                <div className="flex items-center justify-between text-xs text-gray-400 border-t border-gray-100 pt-4">
-                  <div className="flex items-center gap-1.5">
-                    <Calendar className="h-3.5 w-3.5" />
-                    {article.date}
+          {/* ── Featured Article ── */}
+          {featured && (
+            <div className="mb-16">
+              <p className="text-xs font-semibold text-mc-leaf-700 uppercase tracking-widest mb-4">
+                Featured Guide
+              </p>
+              <div className="rounded-2xl border border-mc-stone overflow-hidden grid grid-cols-1 lg:grid-cols-2 group hover:shadow-md transition-shadow">
+                {/* Visual panel */}
+                <div className="h-56 lg:h-auto bg-gradient-to-br from-mc-forest via-mc-forest to-mc-leaf-700 relative flex items-end p-8 min-h-[14rem]">
+                  <div className="absolute inset-0 opacity-10">
+                    <div className="absolute top-6 left-6 w-24 h-24 rounded-full border border-white" />
+                    <div className="absolute bottom-8 right-8 w-40 h-40 rounded-full border border-white" />
+                    <div className="absolute top-1/2 left-1/3 w-16 h-16 rounded-full border border-white" />
                   </div>
-                  <div className="flex items-center gap-1.5">
-                    <Tag className="h-3.5 w-3.5" />
-                    {article.readTime}
-                  </div>
+                  <span className="relative text-white/30 font-serif text-7xl font-bold leading-none select-none">
+                    MC
+                  </span>
                 </div>
-                {/* TODO: Link to individual blog post pages when content is ready */}
-                <div className="mt-3 flex items-center gap-1 text-sm font-semibold text-brand-green-600 group-hover:gap-2 transition-all">
-                  Read Article <ArrowRight className="h-4 w-4" />
+
+                {/* Content panel */}
+                <div className="p-8 md:p-10 flex flex-col justify-center">
+                  <span className="badge-green text-xs mb-4 self-start">{featured.category}</span>
+                  <h2 className="heading-display text-2xl md:text-3xl mb-4 group-hover:text-mc-leaf-700 transition-colors">
+                    {featured.title}
+                  </h2>
+                  <p className="text-gray-600 leading-relaxed mb-6 text-sm md:text-base">
+                    {featured.description}
+                  </p>
+                  <div className="flex items-center gap-4 text-xs text-gray-400 mb-6">
+                    <span className="flex items-center gap-1.5">
+                      <Calendar className="h-3.5 w-3.5" />
+                      {formatBlogDate(featured.date)}
+                    </span>
+                    <span>·</span>
+                    <span className="flex items-center gap-1.5">
+                      <Clock className="h-3.5 w-3.5" />
+                      {featured.readingTime}
+                    </span>
+                  </div>
+                  <Link
+                    href={`/resources/${featured.slug}`}
+                    className="btn-mc-primary self-start"
+                  >
+                    Read Article
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
                 </div>
               </div>
-            ))}
+            </div>
+          )}
+
+          {/* ── All Articles: filter + grid ── */}
+          <div>
+            <p className="text-xs font-semibold text-mc-leaf-700 uppercase tracking-widest mb-6">
+              All Guides
+            </p>
+            <BlogIndexClient posts={allPosts} />
           </div>
 
-          <div className="mt-12 rounded-3xl bg-brand-navy-50 border border-brand-navy-100 p-8 text-center max-w-2xl mx-auto">
-            <h3 className="text-xl font-bold text-brand-navy-800 mb-3">
-              Have a Topic You&apos;d Like Us to Cover?
-            </h3>
-            <p className="text-gray-600 text-sm mb-5">
-              Email us your question or topic suggestion and we&apos;ll add it to our resource library.
-            </p>
-            <a href="mailto:hello@markocare.com" className="btn-outline">
-              Suggest a Topic
-            </a>
-          </div>
         </div>
       </section>
 
-      <CTABanner title="Ready to Talk to a Care Expert?" subtitle="Our care coordinators are available to answer your questions and help you explore your options." />
+      <CTABanner
+        title="Ready to Talk to a Care Expert?"
+        subtitle="Our care coordinators are available to answer your questions, discuss your family's situation, and help you explore your options — at no cost."
+      />
     </>
   );
 }
