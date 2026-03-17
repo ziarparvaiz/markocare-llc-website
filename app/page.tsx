@@ -16,12 +16,12 @@ import {
   RefreshCw,
   Ribbon,
   Star,
-  Quote,
   Award,
 } from "lucide-react";
 import { brand } from "@/config/brand";
 import LocalBusinessSchema from "@/components/seo/LocalBusinessSchema";
 import HomeFAQSection from "@/components/sections/HomeFAQSection";
+import Testimonials from "@/components/sections/Testimonials";
 
 export const metadata: Metadata = {
   title: "Home Care Agency Maryland | MarkoCare",
@@ -112,35 +112,6 @@ const services = [
     name: "Companion Care",
     slug: "companion-care",
     desc: "Loneliness diminishes quality of life. Our caregivers engage clients in meaningful conversation, activities, and outings so every day feels purposeful and connected.",
-  },
-];
-
-const featuredTestimonial = {
-  name: "Patricia M.",
-  relation: "Daughter of a Howard County client",
-  initial: "P",
-  stars: 5,
-  text: "The team at MarkoCare truly understands what it means to care. My mother's caregiver was not only professional but genuinely warm. The RN check-ins gave us real peace of mind during a very difficult time — I can't recommend them enough.",
-};
-
-const secondaryTestimonials = [
-  {
-    name: "Robert T.",
-    relation: "Post-surgical client · Anne Arundel County",
-    stars: 5,
-    text: "After my hip replacement I wasn't sure how I'd manage at home. MarkoCare's caregiver arrived the day of discharge and handled everything. The coordination with my discharge planner was seamless.",
-  },
-  {
-    name: "Sandra K.",
-    relation: "Family caregiver – Respite client · Carroll County",
-    stars: 5,
-    text: "Caring for my husband with dementia was overwhelming. MarkoCare's respite service gave me the break I desperately needed. Patient, calm, and deeply knowledgeable.",
-  },
-  {
-    name: "James W.",
-    relation: "Cancer care client · Frederick County",
-    stars: 5,
-    text: "The compassion shown throughout my treatment was exceptional. They truly go above and beyond to make difficult days more manageable and less lonely.",
   },
 ];
 
@@ -619,93 +590,9 @@ export default function HomePage() {
       </section>
 
       {/* ════════════════════════════════════════════════════════════════════════
-          §6  TESTIMONIALS — Featured large card + 3 supporting cards
+          §6  TESTIMONIALS
       ════════════════════════════════════════════════════════════════════════ */}
-      <section className="section-pad bg-white">
-        <div className="container-pad">
-          {/* Header */}
-          <div className="text-center mb-12">
-            <span className="eyebrow">What Families Say</span>
-            <h2 className="heading-display text-3xl md:text-4xl mt-3">
-              Trusted by Maryland Families
-            </h2>
-          </div>
-
-          {/* Featured testimonial — large card */}
-          <div className="mc-card p-8 md:p-10 lg:p-12 flex flex-col md:flex-row gap-8 items-start mb-6">
-            {/* Avatar */}
-            <div className="shrink-0">
-              <div className="w-20 h-20 rounded-2xl bg-mc-leaf-50 border-2 border-mc-leaf-100 flex items-center justify-center">
-                <span className="text-3xl font-serif font-bold text-mc-leaf-400">
-                  {featuredTestimonial.initial}
-                </span>
-              </div>
-            </div>
-
-            {/* Content */}
-            <div className="flex-1">
-              <div className="flex gap-0.5 mb-4">
-                {Array.from({ length: featuredTestimonial.stars }).map(
-                  (_, i) => (
-                    <Star
-                      key={i}
-                      className="h-4 w-4 fill-amber-400 text-amber-400"
-                    />
-                  ),
-                )}
-              </div>
-              <Quote className="h-8 w-8 text-mc-leaf-100 mb-3" />
-              <p className="text-[1.05rem] text-gray-700 leading-relaxed italic mb-7">
-                "{featuredTestimonial.text}"
-              </p>
-              <div className="flex items-center gap-4">
-                <div>
-                  <p className="font-semibold text-mc-forest">
-                    {featuredTestimonial.name}
-                  </p>
-                  <p className="text-sm text-gray-400 mt-0.5">
-                    {featuredTestimonial.relation}
-                  </p>
-                </div>
-                <span className="mc-badge">Howard County</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Supporting testimonials — 3 cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {secondaryTestimonials.map((t) => (
-              <div key={t.name} className="mc-card relative flex flex-col">
-                <Quote className="absolute top-4 right-4 h-7 w-7 text-mc-leaf-50 pointer-events-none" />
-                <div className="flex gap-0.5 mb-3">
-                  {Array.from({ length: t.stars }).map((_, i) => (
-                    <Star
-                      key={i}
-                      className="h-3.5 w-3.5 fill-amber-400 text-amber-400"
-                    />
-                  ))}
-                </div>
-                <p className="text-sm text-gray-700 leading-relaxed italic mb-5 flex-1">
-                  "{t.text}"
-                </p>
-                <div className="pt-4 border-t border-mc-stone">
-                  <p className="text-sm font-semibold text-mc-forest">
-                    {t.name}
-                  </p>
-                  <p className="text-[11px] text-gray-400 mt-0.5">
-                    {t.relation}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <p className="text-center text-[11px] text-gray-300 mt-7">
-            * Testimonials reflect the experiences of actual clients. Individual
-            outcomes may vary.
-          </p>
-        </div>
-      </section>
+      <Testimonials />
 
       {/* ════════════════════════════════════════════════════════════════════════
           §7  SERVICE AREAS — County links on sage background

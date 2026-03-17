@@ -1,0 +1,31 @@
+{
+  "label": "What Families Say",
+  "title": "Trusted by Maryland Families",
+  "description": "Our clients and their families speak to the quality, professionalism, and warmth that defines MarkoCare.",
+  "items": [
+    {
+      "id": 1,
+      "name": "Patricia M.",
+      "relation": "Daughter of a Howard County client",
+      "county": "Howard County",
+      "stars": 5,
+      "quote": "The team at MarkoCare truly understands what it means to care. My mother's caregiver was not only professional but genuinely warm. The RN check-ins gave us real peace of mind during a very difficult time — I can't recommend them enough."
+    },
+    {
+      "id": 2,
+      "name": "Robert T.",
+      "relation": "Post-surgical recovery client",
+      "county": "Anne Arundel County",
+      "stars": 5,
+      "quote": "After my hip replacement, I wasn't sure how I'd manage at home. MarkoCare's caregiver arrived the day of discharge and handled everything. The coordination with my discharge planner was seamless."
+    },
+    {
+      "id": 3,
+      "name": "Sandra K.",
+      "relation": "Family caregiver – Respite client",
+      "county": "Carroll County",
+      "stars": 5,
+      "quote": "Caring for my husband with dementia was overwhelming. MarkoCare's respite service gave me the break I desperately needed. They knew exactly how to work with him — patient, calm, and knowledgeable."
+    }
+  ]
+}

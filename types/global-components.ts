@@ -1,3 +1,46 @@
+// ─── FAQ types ───────────────────────────────────────────────────────────────
+
+export interface FaqItem {
+  id: number;
+  question: string;
+  answer: string;
+}
+
+export interface FaqCategory {
+  slug: string;
+  title: string;
+  items: FaqItem[];
+}
+
+export interface FaqData {
+  categories: FaqCategory[];
+}
+
+export interface GlobalFaqConfig {
+  label: string;
+  title: string;
+  description: string;
+  selectedIds: number[];
+}
+
+// ─── Testimonial types ────────────────────────────────────────────────────────
+
+export interface TestimonialItem {
+  id: number;
+  name: string;
+  relation: string;
+  county: string;
+  stars: number;
+  quote: string;
+}
+
+export interface TestimonialData {
+  label: string;
+  title: string;
+  description: string;
+  items: TestimonialItem[];
+}
+
 // ─── Shared primitives ──────────────────────────────────────────────────────
 
 export interface NavLink {

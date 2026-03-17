@@ -5,33 +5,10 @@ import Link from 'next/link';
 import { ChevronDown, Phone, ArrowRight } from 'lucide-react';
 import { brand } from '@/config/brand';
 import { cn } from '@/lib/utils';
+import { getGlobalFaqConfig, getFaqItemsByIds } from '@/lib/faq-data';
 
-const faqs = [
-  {
-    q: 'What areas of Maryland do you serve?',
-    a: 'We serve Howard County, Carroll County, Anne Arundel County, and Frederick County in Maryland. Our Columbia office serves as the operational hub for all four counties. Contact us if you are in a nearby area — we may be able to accommodate your needs.',
-  },
-  {
-    q: 'How quickly can care start after I reach out?',
-    a: 'For non-emergency placements, we typically aim for a care start within 48–72 hours of completing your assessment. For urgent post-hospital discharges, we offer expedited placement. Contact our intake line directly for time-sensitive needs.',
-  },
-  {
-    q: 'What types of home care services do you offer?',
-    a: 'We offer a comprehensive range of in-home care services including Personal Care, Companion Care, Dementia Care, Respite Care, Post-Hospital Support, Cancer Care Support, and IPOP Transitional Care. All services are RN-supervised and delivered by our W2 caregiver team.',
-  },
-  {
-    q: 'Are care plans personalized to each individual?',
-    a: "Absolutely. Every client receives a customized care plan developed in collaboration with their family and our registered nurse. Plans are reviewed and updated regularly to ensure care evolves with the client's changing needs.",
-  },
-  {
-    q: 'Are your caregivers W2 employees or independent contractors?',
-    a: 'All MarkoCare caregivers are W2 employees. This means they are fully vetted, background-checked, insured through our agency, and benefit from our structured training and RN supervision — unlike agencies that use independent contractors.',
-  },
-  {
-    q: 'How do I schedule a free care assessment?',
-    a: 'Simply visit our Service Areas page and fill out the Request Free Assessment form, or call us directly. A care coordinator will contact you within one business day to discuss your needs and schedule an in-home assessment at your convenience.',
-  },
-];
+const config = getGlobalFaqConfig();
+const faqs = getFaqItemsByIds(config.selectedIds);
 
 export default function HomeFAQSection() {
   const [open, setOpen] = useState<number | null>(null);
@@ -42,12 +19,12 @@ export default function HomeFAQSection() {
 
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="eyebrow mb-3 block">Common Questions</span>
+          <span className="eyebrow mb-3 block">{config.label}</span>
           <h2 className="heading-display text-3xl md:text-4xl mb-4">
-            Frequently Asked Questions
+            {config.title}
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Clear, honest answers to help your family make confident care decisions.
+            {config.description}
           </p>
         </div>
 
@@ -57,7 +34,7 @@ export default function HomeFAQSection() {
             const isOpen = open === i;
             return (
               <div
-                key={i}
+                key={faq.id}
                 className={cn(
                   'rounded-2xl border overflow-hidden transition-all duration-200',
                   isOpen
@@ -89,7 +66,7 @@ export default function HomeFAQSection() {
                       isOpen ? 'text-mc-forest' : 'text-gray-800',
                     )}
                   >
-                    {faq.q}
+                    {faq.question}
                   </span>
 
                   {/* Chevron pill */}
@@ -117,7 +94,7 @@ export default function HomeFAQSection() {
                 >
                   <div className="px-6 pb-6">
                     <div className="h-px bg-gradient-to-r from-mc-leaf-200 via-mc-leaf-100 to-transparent mb-4" />
-                    <p className="text-[0.9375rem] text-gray-600 leading-[1.75]">{faq.a}</p>
+                    <p className="text-[0.9375rem] text-gray-600 leading-[1.75]">{faq.answer}</p>
                   </div>
                 </div>
               </div>

@@ -1,0 +1,181 @@
+{
+  "categories": [
+    {
+      "slug": "about-markocare",
+      "title": "About MarkoCare",
+      "items": [
+        {
+          "id": 1,
+          "question": "Is MarkoCare a licensed home care agency in Maryland?",
+          "answer": "MarkoCare is actively pursuing licensure as a Residential Service Agency (RSA) with the Maryland Department of Health. We are in the pre-launch phase, preparing all operational systems, clinical protocols, and compliance frameworks. We will begin accepting clients upon receipt of our RSA license."
+        },
+        {
+          "id": 2,
+          "question": "What is a Residential Service Agency (RSA)?",
+          "answer": "A Residential Service Agency (RSA) is a type of home care agency licensed by the Maryland Department of Health under COMAR 10.07.14. RSAs provide non-medical home care services including personal care, companion care, and related supportive services. MarkoCare is pursuing RSA licensure."
+        },
+        {
+          "id": 3,
+          "question": "Where is MarkoCare located?",
+          "answer": "Our administrative office is located at 10490 Little Patuxent Pkwy #600, Columbia, MD 21044. We provide in-home services throughout Howard, Carroll, Anne Arundel, and Frederick Counties."
+        },
+        {
+          "id": 4,
+          "question": "What counties does MarkoCare serve?",
+          "answer": "We currently serve Howard County, Carroll County, Anne Arundel County, and Frederick County in Maryland. If you are in an adjacent area, contact us to discuss whether we can accommodate your needs."
+        }
+      ]
+    },
+    {
+      "slug": "services-care",
+      "title": "Services & Care",
+      "items": [
+        {
+          "id": 5,
+          "question": "What types of home care services does MarkoCare provide?",
+          "answer": "We offer personal care, companion care, dementia/memory care, respite care, post-hospital support, cancer care support, and IPOP transitional care. All services are delivered by W2 employees under RN supervision."
+        },
+        {
+          "id": 6,
+          "question": "Do you provide 24-hour or live-in care?",
+          "answer": "Yes. We offer flexible scheduling including hourly, daily, overnight, and live-in care arrangements depending on client needs and caregiver availability. Contact us to discuss 24-hour or live-in options."
+        },
+        {
+          "id": 7,
+          "question": "Can I start with just a few hours of care per week?",
+          "answer": "Absolutely. We offer flexible hourly scheduling. Many clients start with a few hours and expand as their needs change. There is no minimum hour commitment — though some schedules may vary."
+        },
+        {
+          "id": 8,
+          "question": "Do you provide skilled nursing services?",
+          "answer": "MarkoCare is a non-medical home care (RSA) agency. We do not provide skilled nursing services directly. However, our Registered Nurse conducts supervisory assessments and develops care plans. For skilled nursing needs, we coordinate with separate skilled home health agencies."
+        }
+      ]
+    },
+    {
+      "slug": "caregivers-hiring",
+      "title": "Caregivers & Hiring",
+      "items": [
+        {
+          "id": 9,
+          "question": "Are your caregivers employees or independent contractors?",
+          "answer": "All MarkoCare caregivers are W2 employees. This is a deliberate model choice. W2 employment means caregivers are fully vetted, insured by the agency, trained per our standards, and supervised by our RN — providing far greater accountability than an independent contractor model."
+        },
+        {
+          "id": 10,
+          "question": "What background checks do caregivers undergo?",
+          "answer": "Every caregiver undergoes a comprehensive state and federal criminal background check, sex offender registry check, and OIG (Office of Inspector General) exclusion list review. Reference checks are also completed as part of our hiring process."
+        },
+        {
+          "id": 11,
+          "question": "Will I have the same caregiver each visit?",
+          "answer": "Caregiver consistency is a priority. We work hard to assign consistent caregivers to each client. In cases of caregiver absence, we provide advance notice and ensure substitute caregivers are fully briefed on the client's care plan."
+        },
+        {
+          "id": 12,
+          "question": "Are caregivers supervised?",
+          "answer": "Yes. All caregivers work under the supervision of our Registered Nurse, who develops care plans, conducts supervisory home visits, and provides ongoing clinical guidance. Caregivers also have access to on-call supervisor support."
+        }
+      ]
+    },
+    {
+      "slug": "insurance-payment",
+      "title": "Insurance & Payment",
+      "items": [
+        {
+          "id": 13,
+          "question": "Do you accept Medicaid?",
+          "answer": "MarkoCare is actively positioning for Medicaid provider enrollment with the Maryland Department of Health. Currently, we are serving private-pay clients. We will communicate Medicaid acceptance status as it becomes available."
+        },
+        {
+          "id": 14,
+          "question": "Does MarkoCare accept private insurance or long-term care insurance?",
+          "answer": "We work with clients to verify long-term care insurance benefits and other applicable coverage. Contact us to discuss your specific insurance situation and we will do our best to assist with verification."
+        },
+        {
+          "id": 15,
+          "question": "What are your rates?",
+          "answer": "Care rates vary based on the level of care, number of hours, and specific client needs. We provide transparent, customized quotes during the free in-home assessment. Contact us for a personalized rate discussion."
+        },
+        {
+          "id": 16,
+          "question": "Are there any hidden fees?",
+          "answer": "No. We believe in transparent pricing. All fees are discussed upfront, and there are no hidden charges. Any changes to care scope or rates are communicated in advance."
+        }
+      ]
+    },
+    {
+      "slug": "getting-started",
+      "title": "Getting Started",
+      "items": [
+        {
+          "id": 17,
+          "question": "How do I get started with MarkoCare?",
+          "answer": "The first step is to request a free in-home assessment. Our care coordinator will contact you, discuss your needs, and arrange a home visit from our RN. From there, we develop a care plan and match you with an appropriate caregiver."
+        },
+        {
+          "id": 18,
+          "question": "How quickly can care start?",
+          "answer": "For planned care, we typically begin within 48–72 hours of the in-home assessment. For urgent post-hospital discharges, we offer expedited placement — often same-day or next-day. Call us directly for time-sensitive situations."
+        },
+        {
+          "id": 19,
+          "question": "What happens during the free in-home assessment?",
+          "answer": "Our Registered Nurse or care coordinator visits your home to evaluate care needs, discuss goals and preferences, assess the home environment for safety, and gather information needed to create a personalized care plan."
+        },
+        {
+          "id": 20,
+          "question": "Can I change or stop services if my needs change?",
+          "answer": "Yes. We understand that care needs evolve. You can adjust schedules, change care levels, or discontinue services at any time with reasonable notice. Flexibility is core to how we operate."
+        },
+        {
+          "id": 21,
+          "question": "Do you offer free consultations?",
+          "answer": "Yes. Our free in-home assessment is a no-pressure conversation where our care coordinator listens to your situation, answers all your questions honestly, and helps you understand what care options are available — with no obligation to proceed."
+        }
+      ]
+    },
+    {
+      "slug": "home-care-vs-options",
+      "title": "Home Care vs. Other Options",
+      "items": [
+        {
+          "id": 22,
+          "question": "How is home care different from assisted living or a nursing home?",
+          "answer": "Home care allows your loved one to remain in their own home — surrounded by familiar belongings, routines, and community — while receiving professional support. It is typically more affordable than residential care facilities and offers far greater scheduling flexibility. Many families find that clients do better emotionally and physically when they can age or recover in their own space."
+        },
+        {
+          "id": 23,
+          "question": "Is home care a cost-effective alternative to a care facility?",
+          "answer": "For many families, yes. Home care can be significantly less expensive than assisted living or skilled nursing facilities, especially when only part-time support is needed. It also eliminates the stress and disruption of relocating your loved one. We are happy to discuss a cost comparison during your free assessment."
+        },
+        {
+          "id": 24,
+          "question": "Can home care be used alongside other medical services?",
+          "answer": "Absolutely. MarkoCare works alongside skilled home health agencies, physical therapists, occupational therapists, physicians, and specialists to provide coordinated, comprehensive care. We complement — not replace — the medical services your loved one may be receiving."
+        }
+      ]
+    },
+    {
+      "slug": "why-markocare",
+      "title": "Why MarkoCare",
+      "items": [
+        {
+          "id": 25,
+          "question": "Are care plans personalized to each individual?",
+          "answer": "Absolutely. Every client receives a customized care plan developed in collaboration with their family and our Registered Nurse. Plans are reviewed and updated regularly to ensure care evolves with the client's changing needs."
+        },
+        {
+          "id": 26,
+          "question": "What makes MarkoCare different from other home care agencies?",
+          "answer": "MarkoCare combines clinical excellence with genuine human warmth. Our care is supervised by registered nurses, our caregivers are W2 employees who are thoroughly vetted, and our care plans are truly individualized — not templated. Beyond credentials, we are a local agency with deep community roots, and we treat every client with the dignity and respect their family expects."
+        },
+        {
+          "id": 27,
+          "question": "What if I am not happy with my assigned caregiver?",
+          "answer": "Your comfort and satisfaction are our priority. If a caregiver is not the right fit — for any reason — please let us know immediately. We will arrange a replacement promptly and without judgment. Good matching matters, and we take the time to get it right."
+        }
+      ]
+    }
+  ]
+}

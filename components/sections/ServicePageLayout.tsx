@@ -4,8 +4,6 @@ import {
   CheckCircle,
   ShieldCheck,
   ArrowRight,
-  Star,
-  Quote,
   MapPin,
   Phone,
   ClipboardList,
@@ -22,6 +20,7 @@ import {
 } from "lucide-react";
 import AssessmentForm from "@/components/forms/AssessmentForm";
 import CTABanner from "@/components/sections/CTABanner";
+import Testimonials from "@/components/sections/Testimonials";
 import { brand } from "@/config/brand";
 
 /* ─── Types ─────────────────────────────────────────────────────────────── */
@@ -99,30 +98,6 @@ const WHY_CHOOSE_US = [
     icon: HeartHandshake,
     title: "Local Maryland Team",
     desc: "We are a Maryland-based agency with deep roots in the communities we serve. Our team is nearby and personally invested in your family's wellbeing.",
-  },
-];
-
-const TESTIMONIALS = [
-  {
-    name: "Patricia M.",
-    relation: "Daughter of a Howard County client",
-    county: "Howard County",
-    stars: 5,
-    text: "The team at MarkoCare truly understands what it means to care. My mother's caregiver was not only professional but genuinely warm. The RN check-ins gave us real peace of mind during a difficult time.",
-  },
-  {
-    name: "Robert T.",
-    relation: "Post-surgical recovery client",
-    county: "Anne Arundel County",
-    stars: 5,
-    text: "After my hip replacement, I wasn't sure how I'd manage at home. MarkoCare's caregiver arrived the day of discharge and handled everything. The coordination with my discharge planner was seamless.",
-  },
-  {
-    name: "Sandra K.",
-    relation: "Family caregiver – Respite client",
-    county: "Carroll County",
-    stars: 5,
-    text: "Caring for my husband with dementia was overwhelming. MarkoCare's respite service gave me the break I desperately needed. They knew exactly how to work with him — patient, calm, and knowledgeable.",
   },
 ];
 
@@ -659,61 +634,7 @@ export default function ServicePageLayout({
       {/* ══════════════════════════════════════════════════════════════════
           10. TESTIMONIALS — social proof
       ══════════════════════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-24 bg-mc-sage border-y border-mc-stone">
-        <div className="container-pad">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="eyebrow">What Families Say</span>
-            <h2 className="text-2xl md:text-3xl font-bold text-mc-forest mt-2">
-              Trusted by Maryland Families
-            </h2>
-            <p className="text-gray-600 mt-3">
-              Real families share their experiences with MarkoCare&apos;s
-              compassionate care team.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {TESTIMONIALS.map((t) => (
-              <div
-                key={t.name}
-                className="relative bg-white rounded-2xl border border-mc-stone p-6 shadow-premium"
-              >
-                <Quote
-                  className="absolute top-4 right-4 h-8 w-8 text-mc-leaf-100"
-                  aria-hidden="true"
-                />
-                <div className="flex gap-0.5 mb-4">
-                  {Array.from({ length: t.stars }).map((_, i) => (
-                    <Star
-                      key={i}
-                      className="h-4 w-4 fill-amber-400 text-amber-400"
-                      aria-hidden="true"
-                    />
-                  ))}
-                </div>
-                <p className="text-sm text-gray-700 leading-relaxed mb-5 italic">
-                  &ldquo;{t.text}&rdquo;
-                </p>
-                <div className="border-t border-mc-stone pt-4">
-                  <p className="font-semibold text-mc-forest text-sm">
-                    {t.name}
-                  </p>
-                  <p className="text-xs text-gray-500 mt-0.5">{t.relation}</p>
-                  <span className="inline-flex items-center gap-1 mt-2 text-xs font-semibold text-mc-leaf-700 bg-mc-leaf-50 border border-mc-leaf-100 rounded-full px-2.5 py-0.5">
-                    <MapPin className="h-3 w-3" aria-hidden="true" />
-                    {t.county}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <p className="text-center text-xs text-gray-400 mt-6">
-            * Testimonials represent the experiences of real clients. Individual
-            outcomes may vary.
-          </p>
-        </div>
-      </section>
+      <Testimonials variant="sage" />
 
       {/* ══════════════════════════════════════════════════════════════════
           11. CONVERSION CTA — dark forest, high-contrast close
