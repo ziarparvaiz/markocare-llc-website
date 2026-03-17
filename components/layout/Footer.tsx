@@ -159,30 +159,28 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/10">
-        <div className="container-pad py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-white/30">
+        <div className="container-pad py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <p className="text-xs text-white/30 shrink-0">
             © {year} {brand.brandName} LLC. All rights reserved.
           </p>
-          <div className="flex items-center gap-5 text-xs text-white/30">
-            <Link
-              href="/legal/privacy"
-              className="hover:text-white transition-colors"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/legal/terms"
-              className="hover:text-white transition-colors"
-            >
-              Terms of Service
-            </Link>
-            <Link
-              href="/legal/compliance"
-              className="hover:text-white transition-colors"
-            >
-              Compliance
-            </Link>
-          </div>
+          <nav aria-label="Legal" className="flex flex-wrap gap-x-5 gap-y-2">
+            {[
+              { label: "Privacy Policy",       href: "/legal/privacy-policy" },
+              { label: "Terms of Service",     href: "/legal/terms-of-service" },
+              { label: "Cookie Policy",        href: "/legal/cookie-policy" },
+              { label: "HIPAA Notice",         href: "/legal/hipaa-notice-of-privacy-practices" },
+              { label: "Non-Discrimination",   href: "/legal/non-discrimination-notice" },
+              { label: "Compliance",           href: "/legal/compliance" },
+            ].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-xs text-white/30 hover:text-white transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
         </div>
       </div>
     </footer>
