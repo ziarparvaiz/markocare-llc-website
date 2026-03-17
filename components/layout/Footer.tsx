@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin, Clock, Shield } from "lucide-react";
 import { brand } from "@/config/brand";
+import { getFooterData } from "@/lib/footer-data";
+
+const footerData = getFooterData();
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -23,13 +26,12 @@ export default function Footer() {
                   {brand.brandName}
                 </span>
                 <span className="block text-[9px] font-semibold uppercase tracking-widest text-white/40 leading-tight">
-                  Home Care Agency
+                  {brand.brandName}
                 </span>
               </div>
             </div>
             <p className="text-sm text-white/70 leading-relaxed mb-5">
-              {brand.tagline}. Serving Maryland families with professional,
-              compassionate home care.
+              {footerData.description}
             </p>
             {/* License badge */}
             <div className="inline-flex items-center gap-2 rounded-xl bg-white/10 border border-mc-leaf-400 px-3 py-2 text-xs text-white/60">
@@ -80,13 +82,7 @@ export default function Footer() {
               Company
             </h3>
             <ul className="space-y-3">
-              {[
-                { label: "About Us", href: "/about" },
-                { label: "Referral Partners", href: "/referral-partners" },
-                { label: "Careers", href: "/careers" },
-                { label: "Resources", href: "/resources" },
-                { label: "FAQ", href: "/faq" },
-              ].map((link) => (
+              {footerData.companyLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -147,10 +143,10 @@ export default function Footer() {
 
             <div className="mt-7">
               <Link
-                href="/contact"
+                href={footerData.cta.href}
                 className="btn-mc-primary text-sm py-2.5 px-5 w-full justify-center"
               >
-                Request Free Assessment
+                {footerData.cta.label}
               </Link>
             </div>
           </div>
@@ -164,14 +160,7 @@ export default function Footer() {
             © {year} {brand.brandName} LLC. All rights reserved.
           </p>
           <nav aria-label="Legal" className="flex flex-wrap gap-x-5 gap-y-2">
-            {[
-              { label: "Privacy Policy",       href: "/legal/privacy-policy" },
-              { label: "Terms of Service",     href: "/legal/terms-of-service" },
-              { label: "Cookie Policy",        href: "/legal/cookie-policy" },
-              { label: "HIPAA Notice",         href: "/legal/hipaa-notice-of-privacy-practices" },
-              { label: "Non-Discrimination",   href: "/legal/non-discrimination-notice" },
-              { label: "Compliance",           href: "/legal/compliance" },
-            ].map((link) => (
+            {footerData.legalLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}

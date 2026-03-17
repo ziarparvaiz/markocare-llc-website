@@ -1,0 +1,22 @@
+{
+  "description": "Serving Maryland families with professional, compassionate home care.",
+  "companyLinks": [
+    { "label": "About Us", "href": "/about" },
+    { "label": "Referral Partners", "href": "/referral-partners" },
+    { "label": "Careers", "href": "/careers" },
+    { "label": "Resources", "href": "/resources" },
+    { "label": "FAQ", "href": "/faq" }
+  ],
+  "legalLinks": [
+    { "label": "Privacy Policy",      "href": "/legal/privacy-policy" },
+    { "label": "Terms of Service",    "href": "/legal/terms-of-service" },
+    { "label": "Cookie Policy",       "href": "/legal/cookie-policy" },
+    { "label": "HIPAA Notice",        "href": "/legal/hipaa-notice-of-privacy-practices" },
+    { "label": "Non-Discrimination",  "href": "/legal/non-discrimination-notice" },
+    { "label": "Compliance",          "href": "/legal/compliance" }
+  ],
+  "cta": {
+    "label": "Request Free Assessment",
+    "href": "/contact"
+  }
+}

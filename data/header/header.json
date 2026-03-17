@@ -1,0 +1,23 @@
+{
+  "announcementBar": {
+    "enabled": true,
+    "label": "Maryland Residential Service Agency (Licensure in Progress)",
+    "badge": "24/7 On-Call Support Available"
+  },
+  "navigation": [
+    { "label": "Home", "href": "/" },
+    { "label": "Services", "href": "/services", "brandChildrenKey": "services" },
+    { "label": "Service Areas", "href": "/service-areas" },
+    { "label": "About", "href": "/about" },
+    { "label": "Referral Partners", "href": "/referral-partners" },
+    { "label": "Careers", "href": "/careers" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "cta": {
+    "label": "Request Free Assessment",
+    "href": "/contact"
+  },
+  "mobileCta": {
+    "trustLine": "RN Supervised Care · Maryland"
+  }
+}

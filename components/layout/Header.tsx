@@ -20,25 +20,20 @@ import {
 } from 'lucide-react';
 import { brand } from '@/config/brand';
 import { cn } from '@/lib/utils';
+import { getHeaderData } from '@/lib/header-data';
+import type { NavItem, NavChildItem } from '@/types/global-components';
 
-// ─── Types ──────────────────────────────────────────────────────────────────
+// ─── Service metadata map (UI concern — icons cannot live in JSON) ───────────
 
 type Icon = LucideIcon;
 
-interface NavChild {
-  label: string;
-  href: string;
+interface EnrichedNavChild extends NavChildItem {
   icon?: Icon;
-  desc?: string;
 }
 
-interface NavItem {
-  label: string;
-  href: string;
-  children?: NavChild[];
+interface EnrichedNavItem extends NavItem {
+  children?: EnrichedNavChild[];
 }
-
-// ─── Service metadata map ───────────────────────────────────────────────────
 
 const SERVICE_META: Record<string, { icon: Icon; desc: string }> = {
   'personal-care':         { icon: Heart,      desc: 'Daily living assistance'            },
@@ -50,25 +45,21 @@ const SERVICE_META: Record<string, { icon: Icon; desc: string }> = {
   'ipop-transitional-care':{ icon: Layers,     desc: 'Integrated care transitions'        },
 };
 
-// ─── Nav items ──────────────────────────────────────────────────────────────
+// ─── Load data from JSON + brand, enrich with icons ─────────────────────────
 
-const navItems: NavItem[] = [
-  { label: 'Home', href: '/' },
-  {
-    label: 'Services',
-    href: '/services',
-    children: brand.services.map((s) => ({
-      label: s.name,
-      href: `/services/${s.slug}`,
-      ...(SERVICE_META[s.slug] ?? {}),
-    })),
-  },
-  { label: 'Service Areas', href: '/service-areas' },
-  { label: 'About', href: '/about' },
-  { label: 'Referral Partners', href: '/referral-partners' },
-  { label: 'Careers', href: '/careers' },
-  { label: 'Contact', href: '/contact' },
-];
+const { announcementBar, navigation: rawNav, cta: headerCta, mobileCta } = getHeaderData();
+
+const navItems: EnrichedNavItem[] = rawNav.map((item) =>
+  item.children
+    ? {
+        ...item,
+        children: item.children.map((child) => {
+          const slug = child.href.split('/').pop() ?? '';
+          return { ...child, ...(SERVICE_META[slug] ?? {}) };
+        }),
+      }
+    : item,
+);
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
@@ -97,11 +88,12 @@ export default function Header() {
       )}
     >
       {/* ── Top bar ─────────────────────────────────────────────────────── */}
+      {announcementBar.enabled && (
       <div className="bg-mc-forest text-white text-[11.5px]">
         <div className="container-pad flex items-center justify-center gap-6 py-[7px]">
           {/* License label — hidden on smallest screens */}
           <span className="hidden md:block font-medium opacity-85 truncate max-w-xs lg:max-w-none">
-            {brand.licenseStatusLabel}
+            {announcementBar.label ?? brand.licenseStatusLabel}
           </span>
 
           {/* Phone + 24/7 — centred on mobile */}
@@ -114,10 +106,11 @@ export default function Header() {
               {brand.phoneDisplay}
             </a>
             <span className="opacity-25 select-none">|</span>
-            <span className="opacity-80">{brand.emergencyLine}</span>
+            <span className="opacity-80">{announcementBar.badge ?? brand.emergencyLine}</span>
           </div>
         </div>
       </div>
+      )}
 
       {/* ── Main nav ────────────────────────────────────────────────────── */}
       <nav className="container-pad flex items-center justify-between h-[70px]">
@@ -243,7 +236,7 @@ export default function Header() {
         <div className="hidden lg:flex items-center gap-3.5">
           {/* CTA — pill with glow */}
           <Link
-            href="/contact"
+            href={headerCta.href}
             className={cn(
               'inline-flex items-center rounded-full px-5 py-2.5',
               'bg-mc-leaf-400 text-white text-[13px] font-semibold whitespace-nowrap',
@@ -253,7 +246,7 @@ export default function Header() {
               'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mc-leaf-400 focus-visible:ring-offset-2',
             )}
           >
-            Request Free Assessment
+            {headerCta.label}
           </Link>
         </div>
 
@@ -345,10 +338,10 @@ export default function Header() {
           {/* Mobile bottom CTA strip */}
           <div className="container-pad pb-5 pt-3 border-t border-mc-stone space-y-2.5">
             {/* Trust line */}
-            {brand.hasRNSupervision && (
+            {mobileCta?.trustLine && (
               <div className="flex items-center justify-center gap-1.5 text-[11px] font-semibold text-gray-500 py-0.5">
                 <Shield className="h-3 w-3 text-mc-leaf-500 shrink-0" strokeWidth={2.5} />
-                RN Supervised Care · Maryland
+                {mobileCta.trustLine}
               </div>
             )}
 
@@ -363,7 +356,7 @@ export default function Header() {
 
             {/* CTA button */}
             <Link
-              href="/contact"
+              href={headerCta.href}
               className={cn(
                 'flex items-center justify-center rounded-full py-3',
                 'bg-mc-leaf-400 text-white text-sm font-semibold',
@@ -372,7 +365,7 @@ export default function Header() {
               )}
               onClick={closeAll}
             >
-              Request Free Assessment
+              {headerCta.label}
             </Link>
           </div>
         </div>

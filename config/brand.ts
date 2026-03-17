@@ -30,7 +30,7 @@ export const brand = {
   caregiverModel: "W2 Employees",
   insuranceVerified: true,
   backgroundChecked: true,
-  officeHours: "Monday – Friday: 8:00 AM – 6:00 PM",
+  officeHours: "Monday – Friday: 8:00 AM – 5:00 PM",
   emergencyLine: "24/7 On-Call Support Available",
   siteUrl: "https://www.markocare.com",
   socialLinks: {
