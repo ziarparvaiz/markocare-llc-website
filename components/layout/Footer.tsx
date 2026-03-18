@@ -64,21 +64,6 @@ export default function Footer() {
           {/* Service Areas */}
           <div>
             <h3 className="text-[11px] font-bold text-white uppercase tracking-widest mb-5">
-              Service Areas
-            </h3>
-            <ul className="space-y-3 mb-7">
-              {brand.countyPages.map((county) => (
-                <li key={county.slug}>
-                  <Link
-                    href="/service-areas"
-                    className="text-sm text-white/50 hover:text-white transition-colors"
-                  >
-                    {county.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <h3 className="text-[11px] font-bold text-white uppercase tracking-widest mb-5">
               Company
             </h3>
             <ul className="space-y-3">

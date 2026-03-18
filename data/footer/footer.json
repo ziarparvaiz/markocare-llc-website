@@ -2,10 +2,12 @@
   "description": "Serving Maryland families with professional, compassionate home care.",
   "companyLinks": [
     { "label": "About Us", "href": "/about" },
+    { "label": "Service Areas", "href": "/service-areas" },
     { "label": "Referral Partners", "href": "/referral-partners" },
     { "label": "Careers", "href": "/careers" },
     { "label": "Resources", "href": "/resources" },
-    { "label": "FAQ", "href": "/faq" }
+    { "label": "FAQ", "href": "/faq" },
+    { "label": "Contact", "href": "/contact" }
   ],
   "legalLinks": [
     { "label": "Privacy Policy",      "href": "/legal/privacy-policy" },
