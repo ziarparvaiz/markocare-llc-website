@@ -1,0 +1,22 @@
+{
+  "slug": "carroll-county",
+  "county": "Carroll County",
+  "state": "Maryland",
+  "seo": {
+    "title": "Home Care Carroll County MD | MarkoCare",
+    "description": "MarkoCare delivers compassionate, RN-supervised home care in Carroll County, MD. Serving Westminster, Eldersburg, Sykesville & Taneytown. Request a free assessment.",
+    "canonical": "/service-areas/carroll-county",
+    "ogTitle": "Home Care Carroll County MD | MarkoCare",
+    "ogDescription": "Professional in-home care in Carroll County, Maryland. RN-supervised, W2 employee caregivers serving Westminster, Eldersburg, Sykesville, and Taneytown.",
+    "ogImageAlt": "MarkoCare caregiver providing home care in Carroll County Maryland"
+  },
+  "hero": {
+    "eyebrow": "Carroll County, Maryland",
+    "title": "Home Care in Carroll County",
+    "description": "MarkoCare brings professional, RN-supervised home care to Carroll County families in Westminster, Eldersburg, Sykesville, Taneytown, and surrounding rural and suburban communities — combining clinical expertise with the warmth that every family deserves."
+  },
+  "highlight": "Rural & suburban families",
+  "cities": ["Westminster", "Eldersburg", "Sykesville", "Taneytown", "Manchester", "Mount Airy"],
+  "nearbyAreas": ["Howard County", "Frederick County"],
+  "localNote": "Carroll County's mix of rural and suburban communities means we tailor our care scheduling and routing to reach families in more remote locations reliably."
+}

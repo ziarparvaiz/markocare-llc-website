@@ -1,0 +1,64 @@
+{
+  "slug": "/contact",
+  "title": "Contact",
+  "template": "contact",
+  "seo": {
+    "title": "Contact Our Maryland Home Care Team | MarkoCare",
+    "description": "Contact MarkoCare to request a free in-home care consultation in Maryland. Serving Howard, Anne Arundel, Carroll & Frederick Counties. Call or message us today.",
+    "canonical": "/contact",
+    "ogTitle": "Contact Our Maryland Home Care Team | MarkoCare",
+    "ogDescription": "Request a free in-home care consultation in Maryland. MarkoCare serves Howard, Anne Arundel, Carroll & Frederick Counties. 24/7 coordination available.",
+    "ogImageAlt": "MarkoCare care coordinator speaking with a Maryland family about their home care options",
+    "keywords": [
+      "contact home care agency Maryland",
+      "home care consultation Maryland",
+      "Maryland home care free assessment",
+      "MarkoCare contact"
+    ]
+  },
+  "hero": {
+    "eyebrow": "Contact Us",
+    "title": "We Are Here — Ready to Listen",
+    "description": "Choosing home care is one of the most important decisions your family will make. Our care coordinators are here to guide you — with no pressure, no obligation, and no rush. Take the first step whenever you're ready."
+  },
+  "reassuranceCards": [
+    {
+      "icon": "Heart",
+      "title": "Compassionate Care Team",
+      "desc": "Our caregivers are carefully vetted, trained, and chosen for both their skills and their genuine warmth."
+    },
+    {
+      "icon": "Shield",
+      "title": "Personalized Care Plans",
+      "desc": "Every family receives an individualized care plan developed by a Registered Nurse — never a template."
+    },
+    {
+      "icon": "MapPin",
+      "title": "Local Maryland Support",
+      "desc": "We are locally based in Columbia, MD, serving families across Howard, Carroll, Anne Arundel, and Frederick Counties."
+    },
+    {
+      "icon": "MessageCircle",
+      "title": "Responsive Communication",
+      "desc": "Our care coordinators stay connected with families and are reachable when it matters most."
+    }
+  ],
+  "trustStrip": [
+    "W2 Employee Caregivers",
+    "RN-Supervised Care Plans",
+    "Fully Licensed & Insured",
+    "24/7 On-Call Support",
+    "No Obligation Assessment"
+  ],
+  "cta": {
+    "badge": "No Pressure. No Obligation.",
+    "title": "Talk With Our Care Team Today",
+    "lead": "Whether you are ready to begin care or just exploring your options, we welcome your call. Our coordinators are here to answer questions honestly and help your family find the right path forward.",
+    "trustItems": [
+      "Free in-home assessment",
+      "No contracts required",
+      "Speak with a real coordinator",
+      "Care begins on your timeline"
+    ]
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "slug": "/about",
+  "title": "About",
+  "template": "about",
+  "seo": {
+    "title": "Licensed Home Care Agency Maryland | MarkoCare",
+    "description": "MarkoCare is a Maryland RSA-licensed home care agency (COMAR 10.07.05). Learn about our mission, values, and commitment to dignified senior care across 4 counties.",
+    "canonical": "/about",
+    "ogTitle": "Licensed Home Care Agency Maryland | MarkoCare",
+    "ogDescription": "Learn about MarkoCare — Maryland's RSA-licensed home care agency. Our mission, caregivers, and commitment to dignified senior care across 4 counties.",
+    "ogImageAlt": "MarkoCare team members representing the Maryland home care agency's caregiving mission",
+    "keywords": [
+      "Maryland RSA licensed home care agency",
+      "about MarkoCare Maryland",
+      "licensed home care agency background MD",
+      "Maryland OHCQ home care agency"
+    ]
+  },
+  "hero": {
+    "eyebrow": "About MarkoCare",
+    "titleLight": "Where professional",
+    "titleBold": "care feels like",
+    "titleAccent": "family.",
+    "lead": "MarkoCare is a Maryland Residential Service Agency built around one conviction: every family deserves home care they can genuinely trust — clinically supervised by a Registered Nurse and delivered by W2 employee caregivers.",
+    "badges": [
+      { "icon": "Stethoscope", "label": "RN Supervised", "sublabel": "Every Care Plan" },
+      { "icon": "Star", "label": "5-Star Rated", "sublabel": "Client Satisfaction" },
+      { "icon": "ShieldCheck", "label": "W2 Employees" }
+    ],
+    "images": {
+      "hero": "/HeroSectionImage/heroimage.png",
+      "team": "/TeamCaregiverPhoto/caregiverphoto.png"
+    },
+    "cta": {
+      "primary": { "label": "Request Free Assessment", "href": "/contact" },
+      "secondary": { "label": "Our Story & Mission", "href": "#our-mission" }
+    }
+  },
+  "stats": [
+    { "value": "4+", "label": "Counties Served" },
+    { "value": "RN", "label": "Supervised Care" },
+    { "value": "W2", "label": "Employee Model" },
+    { "value": "24/7", "label": "On-Call Support" }
+  ],
+  "missionStats": [
+    { "value": "4+", "label": "Maryland Counties Served" },
+    { "value": "RN", "label": "Supervised Every Care Plan" },
+    { "value": "W2", "label": "Employee Caregivers Only" },
+    { "value": "24/7", "label": "On-Call Support Available" }
+  ],
+  "trustMetrics": [
+    {
+      "icon": "Stethoscope",
+      "title": "RN-Supervised Care",
+      "desc": "Every care plan developed, implemented, and monitored by a Registered Nurse"
+    },
+    {
+      "icon": "UserCheck",
+      "title": "W2 Employee Model",
+      "desc": "All caregivers are direct employees — fully insured and accountable"
+    },
+    {
+      "icon": "ShieldCheck",
+      "title": "Fully Insured & Bonded",
+      "desc": "Comprehensive liability and workers' compensation coverage"
+    },
+    {
+      "icon": "Clock",
+      "title": "24/7 On-Call Support",
+      "desc": "Around-the-clock availability for urgent care needs"
+    }
+  ],
+  "mission": {
+    "blockquote": "To enhance the quality of life for every client we serve by providing compassionate, dignified and skilled home care — empowering individuals to live safely and independently in the comfort of their own homes.",
+    "lead": "We witnessed firsthand how difficult it is to find home care that is both clinically sound and genuinely warm. MarkoCare was created to close that gap — with RN oversight, W2 employees, and a compassion-first culture that shows in every visit."
+  },
+  "approachPillars": [
+    {
+      "icon": "Stethoscope",
+      "title": "RN-Supervised Care",
+      "desc": "Every care plan is created, implemented, and monitored by a Registered Nurse — not a coordinator without clinical credentials. This clinical backbone is non-negotiable."
+    },
+    {
+      "icon": "UserCheck",
+      "title": "W2 Employee Model",
+      "desc": "Our caregivers are employees, not independent contractors. This means full insurance coverage, consistent accountability, and caregivers trained to MarkoCare standards."
+    },
+    {
+      "icon": "Heart",
+      "title": "Compassion-First Culture",
+      "desc": "We hire for heart and train for excellence. We recruit caregivers who treat clients as family — and reinforce that standard through ongoing education, supervision, and recognition."
+    }
+  ],
+  "approach": {
+    "subtitle": "Three pillars drive everything we do — and everything that sets MarkoCare apart from agencies that treat care as a commodity."
+  },
+  "rnSupervision": {
+    "subtitle": "Every client care plan is developed, implemented, and monitored by a Registered Nurse. This clinical backbone is non-negotiable.",
+    "steps": [
+      {
+        "icon": "ClipboardList",
+        "title": "Initial RN Assessment",
+        "desc": "Our RN conducts a thorough in-home assessment to identify care needs, safety risks, and goals before services begin."
+      },
+      {
+        "icon": "Shield",
+        "title": "Individualized Care Plan",
+        "desc": "A written care plan developed by the RN and shared with the client, family, and assigned caregiver."
+      },
+      {
+        "icon": "CheckCircle",
+        "title": "Supervisory Home Visits",
+        "desc": "The RN conducts regular supervisory visits to evaluate quality, update plans, and address emerging needs."
+      }
+    ]
+  },
+  "w2Model": {
+    "lead": "Many home care agencies classify caregivers as independent contractors to reduce their own costs. We chose a different path — because caring for our clients starts with caring for our team. Every MarkoCare caregiver is a W2 employee, because it protects you, your family, and the caregivers who dedicate themselves to your loved one's wellbeing.",
+    "benefits": [
+      "Fully covered by our general liability and workers' compensation insurance",
+      "Consistent wages, schedules, and performance standards",
+      "No client exposure to independent-contractor liability gaps",
+      "Background-checked and trained to MarkoCare standards — not self-reported",
+      "Supervision and accountability built into every assignment"
+    ],
+    "complianceCard": {
+      "title": "Insurance & Coverage Statement",
+      "body1": "MarkoCare carries comprehensive general liability insurance and workers' compensation coverage for all W2 employees. Because our caregivers are employees — not independent contractors — our agency assumes full employer responsibility during all client assignments.",
+      "body2": "We are actively working toward Medicaid provider enrollment with the Maryland Department of Health. In the meantime, we serve private-pay clients and assist families in exploring all available funding options including long-term care insurance."
+    }
+  },
+  "hiringProcess": {
+    "subtitle": "Our multi-step vetting process ensures every caregiver who enters a client's home meets our high standards of professionalism, skill, and character.",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Initial Screening",
+        "desc": "Structured phone interview assessing experience, attitude, and availability."
+      },
+      {
+        "step": "02",
+        "title": "Background Check",
+        "desc": "State and federal criminal history, sex offender registry, and OIG exclusion list screening."
+      },
+      {
+        "step": "03",
+        "title": "Reference Verification",
+        "desc": "Prior employer and personal reference contacts to validate work history and character."
+      },
+      {
+        "step": "04",
+        "title": "Orientation & Training",
+        "desc": "Mandatory orientation covering client safety, infection control, and documentation."
+      },
+      {
+        "step": "05",
+        "title": "RN Competency Evaluation",
+        "desc": "Supervising RN evaluates caregiver competencies before their first client assignment."
+      },
+      {
+        "step": "06",
+        "title": "Ongoing Supervision",
+        "desc": "Regular RN supervisory visits and performance reviews ensure consistent quality of care."
+      }
+    ]
+  },
+  "localPresence": {
+    "lead": "Locally based in Columbia, MD, MarkoCare supports families across multiple counties — close enough to respond quickly, local enough to truly understand the communities we serve."
+  },
+  "cta": {
+    "badge": "Free, No-Obligation Assessment",
+    "title": "Ready to Start Your Care Journey?",
+    "lead": "Get to know us the way we hope to know you — through an honest conversation about your loved one's needs. No pressure, no obligation, just real answers from people who genuinely want to help.",
+    "trustItems": ["No contracts required", "Care starts when you're ready", "Speak with a real coordinator"]
+  }
+}

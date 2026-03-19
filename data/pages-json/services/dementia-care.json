@@ -1,0 +1,63 @@
+{
+  "slug": "dementia-care",
+  "name": "Dementia Care",
+  "icon": "Brain",
+  "accentColor": "text-purple-600 bg-purple-50",
+  "seo": {
+    "title": "Dementia Care at Home Maryland | MarkoCare",
+    "description": "Specialized in-home dementia care in Maryland. MarkoCare's trained caregivers support Alzheimer's patients with dignity & safety across 4 counties. Call today.",
+    "canonical": "/services/dementia-care",
+    "ogTitle": "Dementia Care at Home Maryland | MarkoCare",
+    "ogDescription": "Specialized in-home dementia & Alzheimer's care in Maryland. Trained caregivers, structured routines & RN supervision across 4 counties.",
+    "ogImageAlt": "MarkoCare caregiver engaging a dementia patient in a gentle activity at their Maryland home"
+  },
+  "hero": {
+    "tagline": "Expert, Patient, and Compassionate Memory Care at Home",
+    "description": "Watching a loved one experience cognitive decline is one of the most emotionally complex challenges a family can face. There is grief, uncertainty, and often an exhausting mix of love and worry. MarkoCare's dementia care team is here to ease that burden — with professional expertise, proven approaches, and genuine compassion. Our caregivers understand how dementia progresses and how to create an environment where clients feel calm, safe, and respected — even as the disease advances."
+  },
+  "whoIsItFor": "Our dementia care services are designed for individuals with Alzheimer's disease, vascular dementia, Lewy body dementia, frontotemporal dementia, or other forms of memory impairment who wish to remain at home safely and comfortably.",
+  "included": [
+    "Structured daily routine maintenance",
+    "Cognitive stimulation activities",
+    "Personal care with dementia-informed approach",
+    "Wandering prevention and safety monitoring",
+    "Medication reminders and administration support",
+    "Behavioral redirection techniques",
+    "Sundowning management strategies",
+    "Family communication and education",
+    "Meal preparation adapted to cognitive needs",
+    "Safe home environment checks"
+  ],
+  "safety": [
+    "Caregivers complete specialized dementia care training",
+    "RN creates individualized memory care plan",
+    "Safety assessment of home environment conducted at start of care",
+    "Wandering and elopement risk protocols in place",
+    "Regular RN supervisory visits to monitor cognitive status changes",
+    "Family members are kept informed of behavioral and health changes",
+    "Crisis escalation protocols available 24/7"
+  ],
+  "faqs": [
+    {
+      "q": "Are your caregivers specifically trained in dementia care?",
+      "a": "Yes. Caregivers assigned to dementia clients complete specialized dementia care training covering communication techniques, behavioral management, safety protocols, and family support strategies."
+    },
+    {
+      "q": "Can you help someone with dementia who has difficult behaviors?",
+      "a": "Our caregivers are trained in non-pharmacological behavioral management techniques including redirection, validation therapy, and structured routines that can significantly reduce challenging behaviors."
+    },
+    {
+      "q": "How do you keep my loved one safe at home?",
+      "a": "Our RN conducts a safety assessment of the home environment and creates a plan to address risks such as wandering, falls, medication errors, and kitchen hazards. Caregivers actively monitor these risks throughout every shift."
+    },
+    {
+      "q": "What if my loved one's dementia progresses and care needs increase?",
+      "a": "We reassess care needs regularly. Our RN will update the care plan as the disease progresses. We coordinate with physicians and specialists to ensure the level of care evolves appropriately."
+    }
+  ],
+  "relatedServices": [
+    { "name": "Personal Care", "slug": "personal-care" },
+    { "name": "Respite Care", "slug": "respite-care" },
+    { "name": "Companion Care", "slug": "companion-care" }
+  ]
+}

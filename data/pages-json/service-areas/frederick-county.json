@@ -1,0 +1,22 @@
+{
+  "slug": "frederick-county",
+  "county": "Frederick County",
+  "state": "Maryland",
+  "seo": {
+    "title": "Home Care Frederick County MD | MarkoCare",
+    "description": "MarkoCare delivers RN-supervised home care in Frederick County, MD. Serving Frederick City, Thurmont, Brunswick & Middletown. Request a free assessment today.",
+    "canonical": "/service-areas/frederick-county",
+    "ogTitle": "Home Care Frederick County MD | MarkoCare",
+    "ogDescription": "Professional in-home care in Frederick County, Maryland. RN-supervised, W2 employee caregivers serving Frederick City, Thurmont, Brunswick, and Middletown.",
+    "ogImageAlt": "MarkoCare caregiver providing home care in Frederick County Maryland"
+  },
+  "hero": {
+    "eyebrow": "Frederick County, Maryland",
+    "title": "Home Care in Frederick County",
+    "description": "MarkoCare provides trusted, RN-supervised home care to Frederick County families across Frederick City, Thurmont, Brunswick, Middletown, and surrounding western Maryland communities — bringing clinical oversight and genuine compassion to every home we serve."
+  },
+  "highlight": "Western Maryland families",
+  "cities": ["Frederick City", "Thurmont", "Brunswick", "Middletown", "Emmitsburg", "Walkersville"],
+  "nearbyAreas": ["Carroll County", "Howard County"],
+  "localNote": "Frederick County is our westernmost service area. We coordinate scheduling carefully to maintain the same quality and responsiveness our closer-in clients experience."
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "howard-county",
+  "county": "Howard County",
+  "state": "Maryland",
+  "seo": {
+    "title": "Home Care Howard County MD | MarkoCare",
+    "description": "MarkoCare provides RN-supervised, W2 caregiver home care services in Howard County, MD. Serving Columbia, Ellicott City, Laurel & Elkridge. Request a free assessment.",
+    "canonical": "/service-areas/howard-county",
+    "ogTitle": "Home Care Howard County MD | MarkoCare",
+    "ogDescription": "Professional in-home care in Howard County, Maryland. RN-supervised, W2 employee caregivers serving Columbia, Ellicott City, Laurel, and Elkridge.",
+    "ogImageAlt": "MarkoCare caregiver providing home care in Howard County Maryland"
+  },
+  "hero": {
+    "eyebrow": "Howard County, Maryland",
+    "title": "Home Care in Howard County",
+    "description": "MarkoCare is proud to serve Howard County families with RN-supervised, W2 employee home care — compassionate, professional support delivered right to your door in Columbia, Ellicott City, Laurel, Elkridge, and surrounding communities."
+  },
+  "highlight": "Our primary operations hub",
+  "cities": ["Columbia", "Ellicott City", "Laurel", "Elkridge", "Clarksville", "Highland"],
+  "nearbyAreas": ["Carroll County", "Anne Arundel County"],
+  "localNote": "Our office is located in Columbia, MD, making Howard County our most accessible service area with the fastest response times for new client intake."
+}

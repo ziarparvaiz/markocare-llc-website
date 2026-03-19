@@ -1,0 +1,101 @@
+{
+  "slug": "/careers",
+  "title": "Careers",
+  "template": "careers",
+  "seo": {
+    "title": "Caregiver Jobs Maryland | MarkoCare",
+    "description": "MarkoCare is hiring compassionate caregivers in Maryland. Competitive pay, flexible schedules & RN support. Join our team serving 4 counties. Apply today.",
+    "canonical": "/careers",
+    "ogTitle": "Caregiver Jobs Maryland | MarkoCare",
+    "ogDescription": "Join MarkoCare — Maryland's RSA-licensed home care agency. Competitive pay, flexible schedules & RN support for caregivers across 4 counties. Apply now.",
+    "ogImageAlt": "MarkoCare caregiver team member working in a Maryland senior's home",
+    "keywords": [
+      "caregiver jobs Maryland",
+      "home care jobs Maryland",
+      "CNA jobs Maryland home care",
+      "personal care aide jobs MD"
+    ]
+  },
+  "hero": {
+    "badge": "We're Hiring",
+    "title": "Join the MarkoCare Family",
+    "description": "Our caregivers are the heart of everything we do. If you are compassionate, dedicated, and want to make a real difference every single day — we want to hear from you."
+  },
+  "benefits": [
+    {
+      "icon": "DollarSign",
+      "title": "Meaningful Work Every Day",
+      "desc": "You will end each shift knowing you made a real difference to a real person. That kind of work is rare, and we do not take it for granted."
+    },
+    {
+      "icon": "Shield",
+      "title": "Competitive W2 Compensation",
+      "desc": "Fair hourly wages that recognize the skill and dedication our work requires, with regular performance reviews and clear advancement opportunities."
+    },
+    {
+      "icon": "Award",
+      "title": "Ongoing Training & Development",
+      "desc": "From initial orientation through specialized training in dementia care, cancer support, and post-hospital transitions — we invest in your growth at no cost to you."
+    },
+    {
+      "icon": "Heart",
+      "title": "Supportive Team Culture",
+      "desc": "You are never alone at MarkoCare. Our care coordinators and registered nurses back you up, answer your questions, and make sure you feel valued every day."
+    },
+    {
+      "icon": "Clock",
+      "title": "Flexible Scheduling",
+      "desc": "Part-time, full-time, and flexible shifts built around your life — whether you need a specific shift pattern or want to grow your hours over time."
+    },
+    {
+      "icon": "CheckCircle",
+      "title": "RN Supervision & Support",
+      "desc": "Our supervising RN is available for clinical guidance on every assignment — so you always have the professional backup you need to provide excellent care."
+    }
+  ],
+  "hiringSteps": [
+    {
+      "icon": "Search",
+      "step": "01",
+      "title": "Browse Open Roles",
+      "desc": "Review our current openings and find the position that matches your experience and availability."
+    },
+    {
+      "icon": "FileText",
+      "step": "02",
+      "title": "Submit Your Application",
+      "desc": "Complete our straightforward application form. It takes about 5 minutes and we review every submission."
+    },
+    {
+      "icon": "UserCheck",
+      "step": "03",
+      "title": "HR Review",
+      "desc": "Our team reviews your application within 2 business days and reaches out to qualified candidates."
+    },
+    {
+      "icon": "CalendarCheck",
+      "step": "04",
+      "title": "Interview & Onboarding",
+      "desc": "We schedule a brief interview, complete background checks, and get you ready to start serving clients."
+    }
+  ],
+  "complianceCards": [
+    {
+      "variant": "warning",
+      "icon": "Shield",
+      "title": "Background Check Required",
+      "desc": "All candidates are subject to a comprehensive state and federal criminal background check, sex offender registry check, and OIG exclusion list review as a condition of employment."
+    },
+    {
+      "variant": "neutral",
+      "icon": "Award",
+      "title": "Equal Opportunity Employer",
+      "desc": "MarkoCare is an Equal Opportunity Employer (EOE). We do not discriminate on the basis of race, color, religion, sex, national origin, age, disability, or any other characteristic protected by law."
+    }
+  ],
+  "cta": {
+    "badge": "Ready to Join Us?",
+    "title": "Start Your Application Today",
+    "lead": "Interested in joining the MarkoCare team? Our HR team reviews every application and responds within 2 business days. We would love to hear from you."
+  }
+}

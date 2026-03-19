@@ -1,0 +1,22 @@
+{
+  "slug": "anne-arundel-county",
+  "county": "Anne Arundel County",
+  "state": "Maryland",
+  "seo": {
+    "title": "Home Care Anne Arundel County MD | MarkoCare",
+    "description": "MarkoCare provides RN-supervised home care in Anne Arundel County, MD. Serving Annapolis, Glen Burnie, Severna Park & Pasadena. Request a free assessment today.",
+    "canonical": "/service-areas/anne-arundel-county",
+    "ogTitle": "Home Care Anne Arundel County MD | MarkoCare",
+    "ogDescription": "Professional in-home care in Anne Arundel County, Maryland. RN-supervised, W2 employee caregivers serving Annapolis, Glen Burnie, Severna Park, and Pasadena.",
+    "ogImageAlt": "MarkoCare caregiver providing home care in Anne Arundel County Maryland"
+  },
+  "hero": {
+    "eyebrow": "Anne Arundel County, Maryland",
+    "title": "Home Care in Anne Arundel County",
+    "description": "MarkoCare serves Anne Arundel County families with the same RN-supervised, W2 employee standard of care we bring to every county — providing compassionate, professional home care in Annapolis, Glen Burnie, Severna Park, Pasadena, and coastal Maryland communities."
+  },
+  "highlight": "Coastal Maryland communities",
+  "cities": ["Annapolis", "Glen Burnie", "Severna Park", "Pasadena", "Crofton", "Odenton"],
+  "nearbyAreas": ["Howard County", "Carroll County"],
+  "localNote": "Anne Arundel County includes both urban communities near Baltimore and quieter coastal towns — our caregivers are familiar with both environments and the families who call them home."
+}

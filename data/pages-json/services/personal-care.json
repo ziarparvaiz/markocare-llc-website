@@ -1,0 +1,63 @@
+{
+  "slug": "personal-care",
+  "name": "Personal Care",
+  "icon": "Heart",
+  "accentColor": "text-rose-600 bg-rose-50",
+  "seo": {
+    "title": "Personal Care Aide Services Maryland | MarkoCare",
+    "description": "MarkoCare provides professional personal care aide services for Maryland seniors. RSA-licensed, RN-supervised ADL support across 4 counties. Request a free assessment.",
+    "canonical": "/services/personal-care",
+    "ogTitle": "Personal Care Aide Services Maryland | MarkoCare",
+    "ogDescription": "RSA-licensed personal care aide services for Maryland seniors. Dignified ADL support, RN-supervised care plans across Howard, Anne Arundel, Carroll & Frederick Counties.",
+    "ogImageAlt": "MarkoCare personal care aide assisting a senior with morning grooming at their Maryland home"
+  },
+  "hero": {
+    "tagline": "Assistance With Daily Life — Delivered With Dignity",
+    "description": "The ability to bathe, dress, and care for oneself is deeply tied to self-worth. When age, illness, or injury makes these tasks difficult, having the right support makes all the difference — not just physically, but emotionally. MarkoCare's personal care services provide skilled, respectful assistance with activities of daily living so your loved one can maintain their hygiene, comfort, and dignity without depending entirely on family."
+  },
+  "whoIsItFor": "Personal care is designed for seniors, adults with chronic illness, post-surgical patients, or individuals with physical disabilities who need hands-on assistance with daily tasks but prefer to remain in their own home rather than transition to a care facility.",
+  "included": [
+    "Bathing and showering assistance",
+    "Grooming (hair, oral care, shaving)",
+    "Dressing and undressing",
+    "Toileting and incontinence care",
+    "Mobility and transfer assistance",
+    "Medication reminders",
+    "Meal preparation and feeding assistance",
+    "Light housekeeping related to client care",
+    "Vital signs monitoring (per RN orders)",
+    "Documentation and care plan compliance"
+  ],
+  "safety": [
+    "All caregivers are W2 employees with verified credentials",
+    "State and federal background checks completed before hire",
+    "RN develops individualized care plan for each client",
+    "Regular RN supervisory visits ensure care quality",
+    "Caregivers trained in fall prevention and safe mobility techniques",
+    "Agency is fully insured including workers' compensation",
+    "Incident reporting protocols in place for all adverse events"
+  ],
+  "faqs": [
+    {
+      "q": "What is the difference between personal care and companion care?",
+      "a": "Personal care involves hands-on physical assistance with activities of daily living (ADLs) such as bathing, dressing, and mobility. Companion care focuses on social interaction, light housekeeping, and non-physical daily support. Many clients receive a combination of both."
+    },
+    {
+      "q": "Do I need a doctor's order to start personal care?",
+      "a": "For private-pay clients, a doctor's order is not required. Our RN will conduct an in-home assessment to establish an appropriate care plan. For Medicaid or insurance-funded care, additional documentation may be required."
+    },
+    {
+      "q": "How many hours per day can I receive personal care?",
+      "a": "We offer flexible scheduling from a few hours per day up to 24-hour care, depending on your needs and budget. Our care coordinator will work with your family to find the right schedule."
+    },
+    {
+      "q": "Will I always have the same caregiver?",
+      "a": "We strive for caregiver consistency because it builds trust and improves care quality. While occasional substitutions may occur, we always notify clients in advance and ensure substitute caregivers are fully briefed on your care plan."
+    }
+  ],
+  "relatedServices": [
+    { "name": "Companion Care", "slug": "companion-care" },
+    { "name": "Post-Hospital Support", "slug": "post-hospital-support" },
+    { "name": "Respite Care", "slug": "respite-care" }
+  ]
+}

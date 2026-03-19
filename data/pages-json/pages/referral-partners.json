@@ -1,0 +1,187 @@
+{
+  "slug": "/referral-partners",
+  "title": "Referral Partners",
+  "template": "referral-partners",
+  "seo": {
+    "title": "Home Care Referral Partners Maryland | MarkoCare",
+    "description": "MarkoCare partners with Maryland discharge planners, social workers & case managers. Refer patients to our RSA-licensed, RN-supervised home care team. Fast response, W2 caregivers, 4-county coverage.",
+    "canonical": "/referral-partners",
+    "ogTitle": "Home Care Referral Partners Maryland | MarkoCare",
+    "ogDescription": "Maryland discharge planners and social workers — refer patients to MarkoCare's RSA-licensed, RN-supervised home care team. 24-hour response, 4-county coverage.",
+    "ogImageAlt": "Maryland hospital discharge planner collaborating with MarkoCare care coordinator on a patient referral",
+    "keywords": [
+      "home care referral partners Maryland",
+      "hospital discharge planner home care Maryland",
+      "social worker home care referral MD",
+      "case manager home care partner Maryland",
+      "RN supervised home care Maryland",
+      "HIPAA referral form home care"
+    ]
+  },
+  "hero": {
+    "eyebrow": "Healthcare Referral Partnerships",
+    "title": "Reliable Home Care Support for Your Patients",
+    "description": "MarkoCare partners with hospitals, discharge planning teams, and care coordinators across Maryland to provide seamless transitions to home care. When you refer a patient, you get a named intake coordinator, RN-supervised care, and direct access to a clinical team that communicates proactively.",
+    "stats": [
+      { "label": "Response Time", "value": "< 2 hrs" },
+      { "label": "Counties Served", "value": "4" },
+      { "label": "Care Hours/Wk", "value": "168+" }
+    ],
+    "badges": [
+      { "icon": "Stethoscope", "label": "RN-Supervised Care" },
+      { "icon": "Clock", "label": "24/7 On-Call Support" },
+      { "icon": "Activity", "label": "Fast Referral Response" }
+    ],
+    "primaryCta": "Submit Referral",
+    "secondaryCta": "Call Intake Line"
+  },
+  "advantages": [
+    {
+      "icon": "Clock",
+      "title": "Prompt Response",
+      "desc": "We respond to referrals quickly — often within hours. For urgent discharge situations, we arrange care within 24 hours so your patient is never left without support."
+    },
+    {
+      "icon": "UserCheck",
+      "title": "W2 Employee Model",
+      "desc": "All caregivers are W2 employees — fully vetted, insured, and accountable to MarkoCare standards. No independent contractor gaps or staffing agency uncertainty."
+    },
+    {
+      "icon": "Stethoscope",
+      "title": "RN-Led Care",
+      "desc": "Every client receives an in-home assessment and individualized care plan from a Registered Nurse. Clinical communication with your team is standard, not an exception."
+    },
+    {
+      "icon": "ClipboardList",
+      "title": "Clear Documentation",
+      "desc": "Our care records are detailed and organized — supporting continuity of care, coordination with medical teams, and insurance providers throughout the care relationship."
+    },
+    {
+      "icon": "CheckCircle",
+      "title": "Reliable Follow-Through",
+      "desc": "When we commit to a care start date, we honor it. Your patients will not face gaps in care due to staffing issues or scheduling failures on our end."
+    },
+    {
+      "icon": "Phone",
+      "title": "Dedicated Intake Line",
+      "desc": "Referral partners reach a live care coordinator — not a voicemail — for time-sensitive placements. Priority access is a standard part of our partner relationship."
+    }
+  ],
+  "supportedPrograms": [
+    "Johns Hopkins IPOP (Intensive Patient Outreach Program)",
+    "Hospital discharge planning teams",
+    "Social workers and case managers",
+    "Primary care physician offices",
+    "Rehabilitation centers and SNFs",
+    "Oncology care teams",
+    "Palliative care programs",
+    "ACO and value-based care networks"
+  ],
+  "intakeSteps": [
+    {
+      "step": "01",
+      "title": "Submit Referral",
+      "desc": "Use the secure form or call our dedicated intake line directly."
+    },
+    {
+      "step": "02",
+      "title": "Insurance Verification",
+      "desc": "We verify coverage within 2 hours during business hours."
+    },
+    {
+      "step": "03",
+      "title": "Caregiver Match",
+      "desc": "We identify and confirm the best caregiver for the patient's needs."
+    },
+    {
+      "step": "04",
+      "title": "RN Assessment",
+      "desc": "Our RN conducts an intake assessment and develops the care plan."
+    },
+    {
+      "step": "05",
+      "title": "Care Begins",
+      "desc": "Caregiver reports to the patient's home — often within 24 hours."
+    }
+  ],
+  "trustIndicators": [
+    { "icon": "Lock", "label": "HIPAA Compliant Intake" },
+    { "icon": "UserCheck", "label": "Dedicated Intake Coordinator" },
+    { "icon": "Clock", "label": "Response Within 2 Hours" }
+  ],
+  "urgentBox": {
+    "title": "Urgent Placement?",
+    "desc": "For immediate discharge placements, call our intake coordinator directly.",
+    "note": "Live coordinator available Mon–Fri 8 AM–6 PM · 24/7 on-call for existing clients"
+  },
+  "reliabilityCards": [
+    {
+      "icon": "Stethoscope",
+      "title": "RN Supervision",
+      "desc": "Every care relationship begins with a Registered Nurse assessment. RNs develop, monitor, and update care plans throughout the engagement."
+    },
+    {
+      "icon": "ShieldCheck",
+      "title": "W2 Caregiver Model",
+      "desc": "No independent contractors. Every caregiver is a direct W2 employee — background checked, insured, bonded, and accountable to our internal standards."
+    },
+    {
+      "icon": "ClipboardList",
+      "title": "Care Coordination",
+      "desc": "We communicate proactively with your clinical team — sharing updates, documentation, and status as care progresses."
+    },
+    {
+      "icon": "Calendar",
+      "title": "Reliable Scheduling",
+      "desc": "Consistent caregivers, no gaps in coverage. If a scheduled caregiver is unavailable, we resolve it before it affects your patient."
+    }
+  ],
+  "clinicalReliability": {
+    "subtitle": "Every process at MarkoCare is designed to meet the standards that hospitals, case managers, and care coordinators depend on."
+  },
+  "complianceStrip": [
+    { "icon": "Shield", "label": "Maryland RSA Licensed (COMAR 10.07.05)" },
+    { "icon": "Lock", "label": "HIPAA Compliant Operations" },
+    { "icon": "ShieldCheck", "label": "Fully Insured & Bonded" },
+    { "icon": "BadgeCheck", "label": "Background Checked Staff" }
+  ],
+  "faqs": [
+    {
+      "q": "How quickly can you begin care after a referral is submitted?",
+      "a": "In most cases, we can arrange care to begin within 24 hours of receiving a completed referral during business hours. For urgent discharge situations, call our intake line directly — we maintain capacity specifically for time-sensitive placements."
+    },
+    {
+      "q": "What insurance types do you accept?",
+      "a": "We work with Medicaid, Medicare, private insurance plans, and private pay arrangements. Our intake team verifies insurance coverage within 2 hours of referral receipt so you know quickly what the patient qualifies for."
+    },
+    {
+      "q": "Are your caregivers employees or independent contractors?",
+      "a": "All caregivers are W2 employees of MarkoCare. They are fully insured, background checked, and held to our internal training and conduct standards. We do not use independent contractors or staffing agency placements."
+    },
+    {
+      "q": "Can we communicate directly with your clinical team?",
+      "a": "Yes. Your referring professional will have access to a named intake coordinator and can reach our RN team directly for clinical questions. We treat communication with your team as an essential part of care coordination, not an exception."
+    },
+    {
+      "q": "Which counties do you currently serve?",
+      "a": "We serve Howard County, Carroll County, Anne Arundel County, and Frederick County in Maryland. If your patient is in a neighboring area, contact us to discuss coverage."
+    },
+    {
+      "q": "Is your referral intake form HIPAA compliant?",
+      "a": "Yes. Our intake process is designed to comply with HIPAA Treatment, Payment, and Operations (TPO) provisions. Referrers are required to affirm HIPAA authorization before submitting protected health information."
+    }
+  ],
+  "cta": {
+    "eyebrow": "Start the Conversation",
+    "title": "Partner With a Home Care Team You Can Trust",
+    "lead": "Maryland's discharge planners and care coordinators rely on MarkoCare for prompt response, RN-supervised care, and reliable follow-through — every time.",
+    "primaryCta": "Submit Referral",
+    "secondaryCta": "Call Intake Line",
+    "trustStrip": [
+      "24-Hour Placement Available",
+      "W2 Caregivers Only",
+      "RN Supervised",
+      "4-County Maryland Coverage"
+    ]
+  }
+}
