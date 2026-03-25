@@ -6,14 +6,14 @@ Production-grade Next.js 14 website for **MarkoCare**, a Maryland Residential Se
 
 ## Tech Stack
 
-| Tool | Version | Purpose |
-|------|---------|---------|
-| Next.js | 14.2.x (App Router) | Framework |
-| TypeScript | 5.x | Type safety |
-| Tailwind CSS | 3.x | Styling |
-| react-hook-form | 7.x | Form management |
-| zod | 3.x | Schema validation |
-| lucide-react | 0.4x | Icons |
+| Tool            | Version             | Purpose           |
+| --------------- | ------------------- | ----------------- |
+| Next.js         | 14.2.x (App Router) | Framework         |
+| TypeScript      | 5.x                 | Type safety       |
+| Tailwind CSS    | 3.x                 | Styling           |
+| react-hook-form | 7.x                 | Form management   |
+| zod             | 3.x                 | Schema validation |
+| lucide-react    | 0.4x                | Icons             |
 
 > **CMS**: Sanity integration is stubbed/TODO. See `TODO List` section.
 
@@ -22,11 +22,13 @@ Production-grade Next.js 14 website for **MarkoCare**, a Maryland Residential Se
 ## Quick Start
 
 ### 1. Install dependencies
+
 ```bash
 npm install
 ```
 
 ### 2. Run the development server
+
 ```bash
 npm run dev
 ```
@@ -34,6 +36,7 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000)
 
 ### 3. Build for production
+
 ```bash
 npm run build
 npm start
@@ -135,6 +138,7 @@ config/brand.ts
 ```
 
 Edit this file to update:
+
 - Agency name, tagline, phone, email, address
 - Service counties
 - `isLicensed` boolean — drives license badge logic site-wide
@@ -143,6 +147,7 @@ Edit this file to update:
 - Social links, site URL
 
 **The `isLicensed` flag is critical:**
+
 - `false` → Shows "RSA Licensure in Progress" badges everywhere
 - `true` → Shows "Licensed RSA – Maryland" badges
 
@@ -150,23 +155,24 @@ Edit this file to update:
 
 ## Where to Edit Content
 
-| Content | Location |
-|---------|----------|
-| Homepage copy | `app/page.tsx` |
-| About page | `app/about/page.tsx` |
-| Service page content | `app/services/[service]/page.tsx` |
-| County pages | `app/service-areas/[county]/page.tsx` |
-| FAQ questions | `app/faq/page.tsx` (faqCategories array) |
-| Testimonials | `components/sections/Testimonials.tsx` |
-| Blog post stubs | `app/resources/page.tsx` (articles array) |
-| Form fields/validation | `lib/validations.ts` |
-| Trust badges | `components/sections/TrustBadges.tsx` |
+| Content                | Location                                  |
+| ---------------------- | ----------------------------------------- |
+| Homepage copy          | `app/page.tsx`                            |
+| About page             | `app/about/page.tsx`                      |
+| Service page content   | `app/services/[service]/page.tsx`         |
+| County pages           | `app/service-areas/[county]/page.tsx`     |
+| FAQ questions          | `app/faq/page.tsx` (faqCategories array)  |
+| Testimonials           | `components/sections/Testimonials.tsx`    |
+| Blog post stubs        | `app/resources/page.tsx` (articles array) |
+| Form fields/validation | `lib/validations.ts`                      |
+| Trust badges           | `components/sections/TrustBadges.tsx`     |
 
 ---
 
 ## Lead Data
 
 Form submissions are stored in `data/` as JSON files:
+
 - `data/assessments.json` — Free assessment requests
 - `data/referrals.json` — Hospital referral intakes
 - `data/caregiver-applications.json` — Job applications
@@ -178,6 +184,7 @@ Form submissions are stored in `data/` as JSON files:
 ## Deployment
 
 ### Vercel (Recommended)
+
 ```bash
 npm install -g vercel
 vercel --prod
@@ -186,13 +193,16 @@ vercel --prod
 Or connect your GitHub repo to Vercel for automatic deployments.
 
 ### Environment Variables (for production)
+
 Create `.env.local`:
+
 ```env
 NEXT_PUBLIC_SITE_URL=https://www.markocare.com
 # Add CRM/email keys here when integrated
 ```
 
 ### Custom Domain
+
 Set `brand.siteUrl` in `config/brand.ts` to your production domain.
 This drives all canonical URLs, sitemap, and OpenGraph metadata.
 
@@ -200,33 +210,33 @@ This drives all canonical URLs, sitemap, and OpenGraph metadata.
 
 ## Route Map
 
-| Route | Page | Priority |
-|-------|------|----------|
-| `/` | Homepage | Primary lead capture |
-| `/about` | About MarkoCare | Trust building |
-| `/services` | Services index | SEO hub |
-| `/services/personal-care` | Personal Care | High intent |
-| `/services/companion-care` | Companion Care | High intent |
-| `/services/dementia-care` | Dementia Care | High intent |
-| `/services/respite-care` | Respite Care | High intent |
-| `/services/post-hospital-support` | Post-Hospital | Hospital leads |
-| `/services/cancer-care-support` | Cancer Care | Specialty leads |
-| `/services/ipop-transitional-care` | IPOP Care | Hospital partner |
-| `/service-areas` | Areas index | SEO hub |
-| `/service-areas/howard-county` | Howard County | Local SEO |
-| `/service-areas/carroll-county` | Carroll County | Local SEO |
-| `/service-areas/anne-arundel-county` | Anne Arundel | Local SEO |
-| `/service-areas/frederick-county` | Frederick County | Local SEO |
-| `/referral-partners` | Referral Partners | Hospital leads |
-| `/careers` | Careers | Caregiver recruitment |
-| `/resources` | Blog/Resources | Content SEO |
-| `/faq` | FAQ | Trust / SEO |
-| `/contact` | Contact | Lead capture |
-| `/legal/privacy` | Privacy Policy | Compliance |
-| `/legal/terms` | Terms of Service | Compliance |
-| `/legal/compliance` | Compliance | MDH compliance |
-| `/sitemap.xml` | Auto-generated | SEO |
-| `/robots.txt` | Auto-generated | SEO |
+| Route                                | Page              | Priority              |
+| ------------------------------------ | ----------------- | --------------------- |
+| `/`                                  | Homepage          | Primary lead capture  |
+| `/about`                             | About MarkoCare   | Trust building        |
+| `/services`                          | Services index    | SEO hub               |
+| `/services/personal-care`            | Personal Care     | High intent           |
+| `/services/companion-care`           | Companion Care    | High intent           |
+| `/services/dementia-care`            | Dementia Care     | High intent           |
+| `/services/respite-care`             | Respite Care      | High intent           |
+| `/services/post-hospital-support`    | Post-Hospital     | Hospital leads        |
+| `/services/cancer-care-support`      | Cancer Care       | Specialty leads       |
+| `/services/ipop-transitional-care`   | IPOP Care         | Hospital partner      |
+| `/service-areas`                     | Areas index       | SEO hub               |
+| `/service-areas/howard-county`       | Howard County     | Local SEO             |
+| `/service-areas/carroll-county`      | Carroll County    | Local SEO             |
+| `/service-areas/anne-arundel-county` | Anne Arundel      | Local SEO             |
+| `/service-areas/frederick-county`    | Frederick County  | Local SEO             |
+| `/referral-partners`                 | Referral Partners | Hospital leads        |
+| `/careers`                           | Careers           | Caregiver recruitment |
+| `/resources`                         | Blog/Resources    | Content SEO           |
+| `/faq`                               | FAQ               | Trust / SEO           |
+| `/contact`                           | Contact           | Lead capture          |
+| `/legal/privacy`                     | Privacy Policy    | Compliance            |
+| `/legal/terms`                       | Terms of Service  | Compliance            |
+| `/legal/compliance`                  | Compliance        | MDH compliance        |
+| `/sitemap.xml`                       | Auto-generated    | SEO                   |
+| `/robots.txt`                        | Auto-generated    | SEO                   |
 
 ---
 
@@ -277,13 +287,13 @@ This drives all canonical URLs, sitemap, and OpenGraph metadata.
 
 ## Color Reference
 
-| Color | Hex | Usage |
-|-------|-----|-------|
+| Color     | Hex       | Usage                          |
+| --------- | --------- | ------------------------------ |
 | Green-600 | `#258554` | Primary buttons, badges, icons |
-| Green-700 | `#1e6a44` | Hover states |
-| Navy-700 | `#1a4176` | Secondary buttons, nav |
-| Navy-800 | `#193762` | Hero backgrounds, headings |
-| Navy-900 | `#172f52` | Footer, dark sections |
+| Green-700 | `#1e6a44` | Hover states                   |
+| Navy-700  | `#1a4176` | Secondary buttons, nav         |
+| Navy-800  | `#193762` | Hero backgrounds, headings     |
+| Navy-900  | `#172f52` | Footer, dark sections          |
 
 Customize in `tailwind.config.ts` → `theme.extend.colors.brand`
 
@@ -299,4 +309,4 @@ Customize in `tailwind.config.ts` → `theme.extend.colors.brand`
 
 ---
 
-*Built for MarkoCare — Columbia, Maryland. Questions? hello@markocare.com*
+_Built for MarkoCare — Columbia, Maryland. Questions? hello@markocare.com_

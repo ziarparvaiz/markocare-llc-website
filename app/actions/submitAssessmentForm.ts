@@ -49,7 +49,7 @@ export async function submitAssessmentForm(
   }
 
   // Send thank-you email via Resend
-  const fromEmail = process.env.RESEND_FROM_EMAIL ?? 'hello@markocare.com';
+  const fromEmail = process.env.RESEND_CONTACT_FROM_EMAIL ?? 'info@markocare.com';
   const preferredContactLabel =
     data.preferredContact === 'phone'
       ? 'phone'
