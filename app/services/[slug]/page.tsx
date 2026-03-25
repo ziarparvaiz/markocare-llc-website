@@ -23,6 +23,7 @@ import ServiceWhyChooseUs from '@/components/sections/service/ServiceWhyChooseUs
 import ServiceAreaLinks from '@/components/sections/service/ServiceAreaLinks';
 import ServiceCTASection from '@/components/sections/service/ServiceCTASection';
 import Testimonials from '@/components/sections/Testimonials';
+import AssessmentForm from '@/components/forms/AssessmentForm';
 
 const ICON_MAP: Record<string, LucideIcon> = {
   Heart, Users, Brain, RefreshCw, Hospital, Ribbon, Activity,
@@ -62,24 +63,31 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
   const Icon = ICON_MAP[data.icon] ?? Heart;
 
   return (
-    <MDXRemote
-      source={mdx.content}
-      components={{
-        ServiceHero: () => <ServiceHero name={data.name} tagline={data.hero.tagline} heroDesc={data.hero.description} icon={Icon} />,
-        ServiceContentLayout: ({ children }: { children: React.ReactNode }) => (
-          <ServiceContentLayout serviceName={data.name}>{children}</ServiceContentLayout>
-        ),
-        ServiceIncluded: () => <ServiceIncluded included={data.included} />,
-        ServiceWhoIsItFor: () => <ServiceWhoIsItFor whoIsItFor={data.whoIsItFor} />,
-        ServiceHowCareWorks,
-        ServiceSafety: () => <ServiceSafety safety={data.safety} serviceName={data.name} />,
-        ServiceFAQs: () => <ServiceFAQs faqs={data.faqs} />,
-        ServiceRelatedServices: () => <ServiceRelatedServices services={data.relatedServices} />,
-        ServiceWhyChooseUs,
-        ServiceAreaLinks: () => <ServiceAreaLinks serviceName={data.name} />,
-        Testimonials,
-        ServiceCTA: () => <ServiceCTASection serviceName={data.name} />,
-      }}
-    />
+    <>
+      <MDXRemote
+        source={mdx.content}
+        components={{
+          ServiceHero: () => <ServiceHero name={data.name} tagline={data.hero.tagline} heroDesc={data.hero.description} icon={Icon} />,
+          ServiceContentLayout: ({ children }: { children: React.ReactNode }) => (
+            <ServiceContentLayout serviceName={data.name}>{children}</ServiceContentLayout>
+          ),
+          ServiceIncluded: () => <ServiceIncluded included={data.included} />,
+          ServiceWhoIsItFor: () => <ServiceWhoIsItFor whoIsItFor={data.whoIsItFor} />,
+          ServiceHowCareWorks,
+          ServiceSafety: () => <ServiceSafety safety={data.safety} serviceName={data.name} />,
+          ServiceFAQs: () => <ServiceFAQs faqs={data.faqs} />,
+          ServiceRelatedServices: () => <ServiceRelatedServices services={data.relatedServices} />,
+          ServiceWhyChooseUs,
+          ServiceAreaLinks: () => <ServiceAreaLinks serviceName={data.name} />,
+          Testimonials,
+          ServiceCTA: () => <ServiceCTASection serviceName={data.name} />,
+        }}
+      />
+      <section id="request-assessment" className="py-16 md:py-24 bg-white">
+        <div className="container-pad max-w-2xl mx-auto">
+          <AssessmentForm />
+        </div>
+      </section>
+    </>
   );
 }

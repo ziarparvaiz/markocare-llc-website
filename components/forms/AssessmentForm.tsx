@@ -5,6 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { assessmentSchema, type AssessmentFormData } from '@/lib/validations';
 import { Toast, useToast } from '@/components/ui/Toast';
 import { Loader2, Send } from 'lucide-react';
+import { submitAssessmentForm } from '@/app/actions/submitAssessmentForm';
 
 const counties = [
   'Howard County',
@@ -37,23 +38,17 @@ export default function AssessmentForm() {
 
   const onSubmit = async (data: AssessmentFormData) => {
     try {
-      // TODO: Replace with CRM integration (Sanity, HubSpot, etc.)
-      const response = await fetch('/api/leads/assessment', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...data, submittedAt: new Date().toISOString(), type: 'assessment' }),
-      });
-
-      if (!response.ok) throw new Error('Submission failed');
+      const result = await submitAssessmentForm(data);
+      if (!result.success) throw new Error(result.message);
 
       showToast(
         'Thank you! A care coordinator will contact you within one business day.',
         'success'
       );
       reset();
-    } catch {
+    } catch (err) {
       showToast(
-        'Something went wrong. Please call us directly or try again.',
+        err instanceof Error ? err.message : 'Something went wrong. Please call us directly or try again.',
         'error'
       );
     }

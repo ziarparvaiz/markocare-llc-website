@@ -13,6 +13,7 @@ import ServiceAreaAssessment from '@/components/sections/service-area/ServiceAre
 import ServiceAreaNearby from '@/components/sections/service-area/ServiceAreaNearby';
 import Testimonials from '@/components/sections/Testimonials';
 import CTABanner from '@/components/sections/CTABanner';
+import AssessmentForm from '@/components/forms/AssessmentForm';
 
 export function generateStaticParams() {
   return getAllServiceAreaSlugs().map((slug) => ({ slug }));
@@ -46,24 +47,29 @@ export default function ServiceAreaPage({ params }: { params: { slug: string } }
   if (!mdx) notFound();
 
   return (
-    <MDXRemote
-      source={mdx.content}
-      components={{
-        ServiceAreaHero: () => <ServiceAreaHero county={data.county} hero={data.hero} />,
-        ServiceAreaCitiesServices: () => (
-          <ServiceAreaCitiesServices county={data.county} cities={data.cities} localNote={data.localNote} />
-        ),
-        ServiceAreaAssessment: () => <ServiceAreaAssessment county={data.county} />,
-        ServiceAreaNearby: () => <ServiceAreaNearby nearbyAreas={data.nearbyAreas} />,
-        Testimonials,
-        CTABannerSection: () => (
-          <CTABanner
-            title={`Quality Home Care in ${data.county}`}
-            subtitle={`MarkoCare delivers professional, RN-supervised home care to families across ${data.county}, Maryland.`}
-            variant="green"
-          />
-        ),
-      }}
-    />
+    <>
+      <MDXRemote
+        source={mdx.content}
+        components={{
+          ServiceAreaHero: () => <ServiceAreaHero county={data.county} hero={data.hero} />,
+          ServiceAreaCitiesServices: () => (
+            <ServiceAreaCitiesServices county={data.county} cities={data.cities} localNote={data.localNote} />
+          ),
+          ServiceAreaAssessment: () => <ServiceAreaAssessment county={data.county} />,
+          ServiceAreaNearby: () => <ServiceAreaNearby nearbyAreas={data.nearbyAreas} />,
+          Testimonials,
+          CTABannerSection: () => (
+            <CTABanner
+              title={`Quality Home Care in ${data.county}`}
+              subtitle={`MarkoCare delivers professional, RN-supervised home care to families across ${data.county}, Maryland.`}
+              variant="green"
+            />
+          ),
+        }}
+      />
+      <section id="request-assessment" className="max-w-2xl mx-auto px-4 py-16">
+        <AssessmentForm />
+      </section>
+    </>
   );
 }
